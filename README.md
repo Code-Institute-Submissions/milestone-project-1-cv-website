@@ -1,39 +1,150 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Karina Finegan Online CV/Portfolio
 
-Welcome USER_NAME,
+## Code Institute - First Milestone Project: *User Centric Frontend Development.*
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+This static website is being developed to showcase *Karina Finegan's* resume in an efficient and appealing online format.
 
-## Gitpod Reminders
+---
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- Target users are two-fold: Employers & Recruiters.
+- Targeted much the same way. Except perhaps recruiters are less interested in site content and more interested in having a CV to download and take-away.
+- Employers are more likely to want to browse the online resume and connected accounts.
 
-`python3 -m http.server`
+### User Stories
 
-A blue button should appear to click: *Make Public*,
+#### Tech Recruiters
 
-Another blue button should appear to click: *Open Browser*.
+* I have many clients who are looking for developers. I'd like to be able to quickly browse an online resume to get a sense of whether or not this particular developer might be a good fit for any of my clients.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* As a tech recruiter I'm not 100% sure what languages or tools my client requires, so I would like the ability to download a detailed CV that clearly stipulates all skills. 
 
-A blue button should appear to click: *Make Public*,
+#### Employers
 
-Another blue button should appear to click: *Open Browser*.
+* As an employer looking for a new full stack developer to join my team, I find online resumes incredibly useful to get a broad sense of someone's capabilities. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+* I might then download a more detailed CV before deciding whether to call that candidate for interview.
 
-## Updates Since The Instructional Video
+* As an employer looking for a new front end developer, I am heartened to see the online resumes of potential candidates because it is an instant assurance that they know how to design and build a website. 
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+#### Applicable to both target users
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* As a user I would like to view this candidate's work history.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* As a user I would like to know what languages this candidate is able to work in.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* As a user I would like to see other projects this candidate has developed.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
+### Strategy
+The focus for this project was to create a professional and slick online CV for Karina Finegan, that was carefully balanced between usability and design. The pull towards style over structure is strong in anyone with a design background and because this website is geared towards a number of differnt kinds of employers (not just front end) it is important to reign in any gallop towards flamboyant untethered design. 
 
-Happy coding!
+Essentially the website must demonstate good design principles and use of colour, but its primary goal is to *communicate* information about Karina to potential employers. In order for that communication to be effective, the site needs to be structured well and easily accessible.
+
+The content must be relevant to the user stories and in particular it should steer clear of too much non-essential personal information. 
+
+### Scope
+The project had a clearly defined scope from its inception, as there is a clearly defined framework for CVs and the goal was to place that online: 
+
+Information about Karina, her education and employment history, her skillset, projects she has worked on and a way to contact her. 
+
+### Structure
+As the site is not overly complicated, it will feature a fixed navigation that connects the user to each of the sections on one long scrolling page. 
+
+The sections are as follows:
+
+* Home/Index (landing page)
+* Work History
+* Skills   
+* Selected Projects 
+* Contact 
+
+In addition to these main pages, there is the ability to download a tradition CV in .pdf format.
+
+There is also the option of downloading particular project design files.
+
+
+### Skeleton
+
+### Surface
+
+#### Colour Palette
+The colour palette chosen for this project was primarily dark toned with an almost fluorescent green/yellow accent colour. 
+
+#### Typography
+I wanted to use only sans-serif fonts to enhance the minimalist bold style I've gone with. 
+
+---
+
+## Features
+
+* Navigation Bar - Fixed Bootstrap Navbar.
+
+* Home / Index Page
+
+* Short Bio
+
+* Work History
+
+* Skills
+
+* Selected Projects
+
+* Contact Page
+
+## Future Features to Implement
+
+* I plan to turn this website into a dynamic site, whereby specific project pages are generated dynamically after inputting certain key variables. Title, goal, colour palette, images etc... (Example in wireframe).
+
+* I plan to implement the sequential loading of elements on scroll. So as the user scrolls down elements pop into view.
+
+---
+
+## Tools Used
+Here are the additional tools and resources I used during all stages of this project: 
+
+### **[Figma](https://www.figma.com/)**
+
+My project planning, wireframes initial colour palette & typography testing were all done using Figma.
+
+### **[Adobe Photoshop](https://www.adobe.com/ie/products/photoshopfamily.html)**
+
+Editing and colour correction for the images was done using Adobe Photoshop.
+
+### **[Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)**
+
+### **[Google Fonts](https://fonts.google.com/)**
+
+### **[Font Awesome](https://fontawesome.com/)** 
+
+### **[W3 CSS Validator](https://jigsaw.w3.org/css-validator/)** & **[ W3 HTML Validator](https://validator.w3.org/)**
+
+---
+
+## Technology Used
+
+* HTML5
+
+* CSS3
+
+* Bootstrap
+
+* GitHub
+
+* GitPod
+
+* Git 
+
+---
+
+## Attribution
+
+---
+
+## Acknowledgements
+
+Thank you to my Code Institute mentor Oluwafemi Medale. 
+
+
+
+
