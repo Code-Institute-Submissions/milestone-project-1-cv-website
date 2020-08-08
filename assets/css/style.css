@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
-    box-sizing: border-box;
-}
 
-/* Colours */
+/****************************************** Colours */
 
 :root {
     --pure-black: #000;
@@ -20,6 +17,11 @@
     color: var(--accent-1);
 }
 
+/****************************************** Universal Styles */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -37,66 +39,71 @@ p {
     font-family: "Roboto", sans-serif;
 }
 
+a {
+    font-family: "Roboto", sans-serif;
+}
 
-/* Navigation */
 
-/* Overriding Bootstrap Styles */
-/* Type in the stroke value you want in the svg path. */
+/****************************************** Navigation */
+
+/* Overriding Bootstrap Navbar Styles */
+
+/* Note for future use: To change BS hamburger icon colour: Type in the rgba value you want in the 'stroke' svg path. */
+/* Hamburger Icon Styles */
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(224, 224, 224, 1)' stroke-linecap='round' stroke-miterlimit='6' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.bg-dark {
+.navbar-light .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(227, 255, 114, 1)' stroke-linecap='round' stroke-miterlimit='6' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Navbar Background */
+.nav-bg {
     background-color: var(--light-black)!important;
 }
 
-/* 
-#navigation-section {
+.navbar-ul {
     background-color: var(--light-black);
-} 
-
-#navbarNav >.col > ul > li.nav-item.active > a {
-    color: var(--accent-1);
+    padding: 1.5em;
 }
 
-#navbarNav >.col > ul > li.nav-item > a {
-    color: var(--light-grey);
-}
-
-.navbar-nav {
-    align-items: center;
-    background-color: var(--light-black);
-    height: 100%;
-    border: 2px solid var(--accent-1);
-    border-radius: 8px;
-}
-
-.navbar-nav li {
-    margin-top: 1em;
-    position: relative;
+.navbar .nav-item {
     
 }
 
-.navbar-nav li:hover,
-.navbar-nav li:active {
-    border-bottom: 2px #E3FF72 solid;
-}
-
-.navbar-nav li a {
-    font-family: "Roboto", sans-serif;
+/* Navbar Links (a)  */
+.navbar .navbar-ul .nav-link {
+    color: var(--light-grey);
     font-size: 1.5em;
-}
- */
-
-
-/* Navigation: Font Awesome Styles */
-
-.fab {
-    font-size: 1em; 
+    text-transform: uppercase;
+    
 }
 
-.fab:hover {
+.navbar .navbar-ul .nav-link:hover {
+    color: var(--light-grey);
+    border-bottom: solid var(--accent-1) 2px;
+}
+
+.navbar .navbar-ul .active>.nav-link {
     color: var(--accent-1);
+}
+
+
+/****************************************** Navigation: Social Media Styles */
+
+.social-media-icon {
+    font-size: 1em;
+    color: var(--light-grey); 
+}
+
+.social-media-icon:hover {
+    color: var(--accent-1);
+}
+
+.social-media-link {
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
 }
 
 .arrow-down > i {
@@ -104,7 +111,7 @@ p {
     color: var(--accent-1);
 }
 
-/* Home Section */
+/****************************************** Home Section */
 
 #home-section {
     height: 100vh;
@@ -122,6 +129,6 @@ p {
 }
 
 
-/* Bio Section */
+/****************************************** Bio Section */
 
-/* Work History */
+/****************************************** Work History */
