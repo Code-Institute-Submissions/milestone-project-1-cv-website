@@ -68,9 +68,6 @@ a {
     padding: 1.5em;
 }
 
-.navbar .nav-item {
-    
-}
 
 /* Navbar Links (a)  */
 .navbar .navbar-ul .nav-link {
@@ -106,7 +103,7 @@ a {
     font-size: 1.5rem;
 }
 
-.arrow-down > i {
+a > .arrow-down > i {
     font-size: 2em;
     color: var(--accent-1);
 }
@@ -116,6 +113,7 @@ a {
 #home-section {
     height: 100vh;
     background-color: var(--light-black);
+    align-items: center;
 }
 
 #home-section h1 {
@@ -126,6 +124,12 @@ a {
 
 #home-section p {
     font-size: 0.85em;
+    text-align: center;
+}
+
+.arrow-down {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
