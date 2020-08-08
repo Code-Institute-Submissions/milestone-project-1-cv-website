@@ -17,6 +17,12 @@
     color: var(--accent-1);
 }
 
+/****************************************** Spacing */
+
+.line-br-lg-screens {
+    display: none;
+}
+
 /****************************************** Universal Styles */
 
 * {
@@ -145,7 +151,19 @@ a > .arrow-down > i {
 @media (min-width: 768px) { ... }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) { 
+
+    /****************************************** Home Section */
+
+    #home-section > div:nth-child(1) > div > h1 {
+        font-size: 4em;
+    }
+
+    .line-br-lg-screens {
+    display: block;
+    }
+
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
