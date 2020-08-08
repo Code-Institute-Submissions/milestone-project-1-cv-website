@@ -40,6 +40,17 @@ p {
 
 /* Navigation */
 
+/* Overriding Bootstrap Styles */
+/* Type in the stroke value you want in the svg path. */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(224, 224, 224, 1)' stroke-linecap='round' stroke-miterlimit='6' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.bg-dark {
+    background-color: var(--light-black)!important;
+}
+
+/* 
 #navigation-section {
     background-color: var(--light-black);
 } 
@@ -75,7 +86,7 @@ p {
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
 }
-
+ */
 
 
 /* Navigation: Font Awesome Styles */
