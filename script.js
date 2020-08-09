@@ -46,6 +46,49 @@ $(document).ready(function () {
             }
 });
 
+$(window).resize(function () {
+
+    console.log( $(window).width() )
+     if ( $(window).width() < 768 ) {
+         console.log("window went under 768")
+
+            $(".timeline-icon").mouseover(function () {
+                console.log("window is small");
+                console.log($(this))
+                // $(".timeline-info").css("display", "none"); // hide all timeline-infos
+                $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
+                $(this).css("visibility", "hidden");
+                $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //this would be better with z-index but can't seem to make that work? 
+            
+            })
+            $(".timeline-icon").mouseout(function () {
+                $(".timeline-info").css("display", "none"); // hide all timeline infos
+                $(this).css("visibility", "visible");
+                $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); //this would be better with z-index but can't seem to make that work? 
+                
+            })
+
+        } else if ( $(window).width() >= 768 ) {
+            console.log("window went over 768")
+        //On large screens do this: 
+             $(".timeline-icon").mouseover(function () {
+
+                console.log("window is large");
+                console.log($(this))
+                // $(".timeline-info").css("display", "none"); // hide all timeline-info
+                $(this).css("visibility", "visible");
+                $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
+                $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible");
+                })
+
+                $(".timeline-icon").mouseout(function () {
+                $(".timeline-info").css("display", "none"); // hide all timeline infos
+            
+                })
+
+            }
+});
+
 
 
 
