@@ -100,7 +100,7 @@ I wanted to use only sans-serif fonts to enhance the minimalist bold style I've 
 
 ---
 
-## Tools Used
+## Tools & Other Resources Used & Perused
 Here are the additional tools and resources I used during all stages of this project: 
 
 ### **[Figma](https://www.figma.com/)**
@@ -113,11 +113,21 @@ Editing and colour correction for the images was done using Adobe Photoshop.
 
 ### **[Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)**
 
+Used a LOT for testing CSS and shaping the jQuery code to work for my project.
+
 ### **[Google Fonts](https://fonts.google.com/)**
+
+Both the fonts I've included are Google Fonts: Lato & Roboto.
 
 ### **[Font Awesome](https://fontawesome.com/)** 
 
+All the awesome icons used are from Font Awesome.
+
 ### **[W3 CSS Validator](https://jigsaw.w3.org/css-validator/)** & **[ W3 HTML Validator](https://validator.w3.org/)**
+
+### **[W3C Editor's Draft](https://drafts.csswg.org/mediaqueries-4/#hover)** 
+Great information on using :hover media queries.
+
 
 ---
 
@@ -138,6 +148,9 @@ Editing and colour correction for the images was done using Adobe Photoshop.
 ---
 
 ## Attribution
+
+#### [Will Chow's jQuery Code.](https://jsfiddle.net/wilchow/4hzenxkh/) 
+The jQuery code I used and altered to display the Work History Timeline information on hover/click.  
 
 ---
 
