@@ -205,14 +205,14 @@ a > .arrow-down > i {
     display: none;
 }
 
-/* Will have to move this shortly into its correct media query -lg screens and bigger. */
 
 .timeline-info {
     background-color: var(--light-black);
     padding: 1em;
     border: solid 2px var(--accent-1);
     border-radius: 7px;
-    width: 300px;
+    width: 100vw;
+
 }
 
 .timeline-info .date {
@@ -225,21 +225,15 @@ a > .arrow-down > i {
     font-size: 1.2em;
 }
 
-.timeline-info .event-or-role {
-
-}
-
-.timeline-info-left {
-    left: 25%;
+ .timeline-info-left {
     top: 55%;
 }
 
 .timeline-info-right {
-    right: 25%;
     top: 55%;
-}
+} 
 
-/* End of move content */
+
 
 .end-of-timeline p {
     margin-bottom: 0;
@@ -275,6 +269,21 @@ h1 {
         font-size: 3em;
         margin-left: -4%;
     }
+
+    .timeline-info {
+        width: 280px;
+    }
+
+    .timeline-info-left {
+        left: 60%;
+        top: 55%;
+    }
+
+    .timeline-info-right {
+        right: 60%;
+        top: 55%;
+    }
+
  }
 
 /* Large devices (desktops, 992px and up) */
@@ -307,12 +316,30 @@ h1 {
     }
 
 
- }
+    .timeline-info-left {
+        left: 15%;
+        top: 55%;
+    }
+
+    .timeline-info-right {
+        right: 15%;
+        top: 55%;
+    }
 
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+    .timeline-info-left {
+        left: 20%;
+        top: 55%;
+    }
+
+    .timeline-info-right {
+        right: 20%;
+        top: 55%;
+    }
+ }
 
 /* Devices where users CANNOT hover over elements e.g. phones, tablets, touch-screens etc... Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
 
