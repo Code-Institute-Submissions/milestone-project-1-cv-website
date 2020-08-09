@@ -209,15 +209,15 @@ a > .arrow-down > i {
 .timeline-info {
     background-color: var(--light-black);
     padding: 1em;
-    border: solid 2px var(--accent-1);
     border-radius: 7px;
     width: 100vw;
-
+    height: 180px;
 }
 
 .timeline-info .date {
     font-weight: 300;
     font-style: italic;
+    
 }
 
 .timeline-info .place {
@@ -232,6 +232,21 @@ a > .arrow-down > i {
 .timeline-info-right {
     top: 55%;
 } 
+
+#timeline-tcd,
+#timeline-bmr,
+#timeline-photogs,
+#timeline-argon,
+#timeline-sli,
+#timeline-wbk,
+#timeline-ci {
+    margin-top: 3%;
+}
+
+#timeline-gd,
+#timeline-stills {
+    margin-top: 9%;
+}
 
 
 
@@ -272,6 +287,7 @@ h1 {
 
     .timeline-info {
         width: 280px;
+        border: solid 2px var(--accent-1);
     }
 
     .timeline-info-left {
