@@ -161,7 +161,64 @@ a > .arrow-down > i {
     border: groove var(--accent-1) 1px;
 }
 
-/****************************************** Work History */
+/****************************************** Work History Section */
+
+
+.timeline-container {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.timeline-line::after {
+    position: absolute;
+    content:"";
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: var(--accent-1) dotted 4px;
+ 
+}
+
+#work-history-1 {
+    margin: 0 auto;
+}
+
+.timeline-icon {
+    font-size: 2.4em;
+    margin-left: -6.5%;
+    transition: all ease-in 0.2s;
+}
+
+.timeline-icon:hover {
+    color: var(--accent-1);
+    transform: scale(1.2);
+
+}
+
+.timeline-info {
+    position: absolute;
+    left: 40%;
+    display: none;
+}
+
+
+.end-of-timeline p {
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+.end-of-timeline a {
+    color: var(--accent-1);
+    text-decoration-style: wavy;
+    text-decoration: underline;
+
+}
+
+.end-of-timeline a:hover {
+    font-size: 1.3em;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { ... }
@@ -172,15 +229,34 @@ a > .arrow-down > i {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-    /****************************************** Home Section */
+    /****************************************** Large Screens - Font-Sizing */
+
+h1 {
+    font-size: 3.8em;
+}
+
+/****************************************** Large Screens - Home Section */
 
     #home-section > div:nth-child(1) > div > h1 {
-        font-size: 4em;
+        font-size: 4.2em;
     }
 
     .line-br-lg-screens {
-    display: block;
+        display: block;
     }
+
+/****************************************** Large Screens - Personal Bio Section */
+
+/****************************************** Large Screens - Work History Section */
+    
+
+    .timeline-icon {
+        font-size: 3em;
+        margin-left: -1.5%;
+    }
+
+
+ }
 
  }
 
