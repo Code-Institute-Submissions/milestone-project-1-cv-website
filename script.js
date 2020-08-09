@@ -7,11 +7,13 @@ $(document).ready(function () {
         // $(".timeline-info").css("display", "none"); // hide all timeline-infos
         $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
         $(this).css("visibility", "hidden");
+        $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden");
        
     })
     $(".timeline-icon").mouseout(function () {
         $(".timeline-info").css("display", "none"); // hide all timeline infos
         $(this).css("visibility", "visible");
+        $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible");
         
     })
 });
