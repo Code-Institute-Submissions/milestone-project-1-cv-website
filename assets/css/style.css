@@ -26,12 +26,15 @@
 }
 
 #home-section,
-#skills-section {
+#skills-section,
+#contact-section {
     background-color: var(--light-black);
 }
 
 #bio-section,
-#work-history-section {
+#work-history-section,
+#portfolio-section,
+#footer-section {
     background-color: var(--dark-grey);
 }
 
