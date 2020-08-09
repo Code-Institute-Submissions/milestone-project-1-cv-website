@@ -17,6 +17,16 @@
     color: var(--accent-1);
 }
 
+#home-section,
+#skills-section {
+    background-color: var(--light-black);
+}
+
+#bio-section,
+#work-history-section {
+    background-color: var(--dark-grey);
+}
+
 /****************************************** Spacing */
 
 .line-br-lg-screens {
@@ -118,7 +128,6 @@ a > .arrow-down > i {
 
 #home-section {
     height: 100vh;
-    background-color: var(--light-black);
     position: relative;
 }
 
@@ -140,7 +149,17 @@ a > .arrow-down > i {
 
 
 
-/****************************************** Bio Section */
+/****************************************** Personal Bio Section */
+
+#bio-section .personal-info p {
+    font-size: 1.2em;
+}
+
+#karina-photo {
+    width: 280px;
+    border-radius: 7%;
+    border: groove var(--accent-1) 1px;
+}
 
 /****************************************** Work History */
 
