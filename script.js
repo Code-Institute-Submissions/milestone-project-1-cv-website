@@ -5,7 +5,7 @@ $(document).ready(function () {
         console.log("working");
         console.log($(this).parent().parent())
         // $(".timeline-info").css("display", "none"); // hide all timeline-infos
-        $(this).parent().parent().next(".timeline-info").css("display", "block"); // show current timeline info
+        $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
     })
     $(".timeline-icon").mouseout(function () {
         $(".timeline-info").css("display", "none"); // hide all timeline infos

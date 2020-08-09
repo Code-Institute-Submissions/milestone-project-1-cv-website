@@ -21,6 +21,10 @@
     color: var(--pure-black);
 }
 
+.light-grey-highlight {
+    color: var(--light-grey);
+}
+
 #home-section,
 #skills-section {
     background-color: var(--light-black);
@@ -198,8 +202,17 @@ a > .arrow-down > i {
 
 .timeline-info {
     position: absolute;
-    left: 40%;
     display: none;
+}
+
+.timeline-info-left {
+    left: 25%;
+    top: 55%;
+}
+
+.timeline-info-right {
+    right: 25%;
+    top: 55%;
 }
 
 
