@@ -262,3 +262,29 @@ h1 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
+
+/* Devices where users CANNOT hover over elements e.g. phones, tablets, touch-screens etc... Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
+
+@media (hover:none) {
+    .timeline-instruction-device {
+        display: block;
+    }
+    
+    .timeline-instruction-non-device {  
+        display: none;
+    }
+}
+
+/* Devices where users CAN hover over elements e.g. desktops. Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
+
+
+    @media (hover:hover) {
+        .timeline-instruction-device {
+            display: none;
+        }
+        
+        .timeline-instruction-non-device {  
+            display: block;
+        }
+
+}
