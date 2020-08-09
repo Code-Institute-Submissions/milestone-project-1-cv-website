@@ -205,6 +205,30 @@ a > .arrow-down > i {
     display: none;
 }
 
+/* Will have to move this shortly into its correct media query -lg screens and bigger. */
+
+.timeline-info {
+    background-color: var(--light-black);
+    padding: 1em;
+    border: solid 2px var(--accent-1);
+    border-radius: 7px;
+    width: 300px;
+}
+
+.timeline-info .date {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.timeline-info .place {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.timeline-info .event-or-role {
+
+}
+
 .timeline-info-left {
     left: 25%;
     top: 55%;
@@ -215,6 +239,7 @@ a > .arrow-down > i {
     top: 55%;
 }
 
+/* End of move content */
 
 .end-of-timeline p {
     margin-bottom: 0;
