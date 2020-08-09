@@ -139,6 +139,8 @@ Great information on using :hover media queries.
 
 * Bootstrap
 
+* jQuery
+
 * GitHub
 
 * GitPod
@@ -151,6 +153,9 @@ Great information on using :hover media queries.
 
 #### [Will Chow's jQuery Code.](https://jsfiddle.net/wilchow/4hzenxkh/) 
 The jQuery code I used and altered to display the Work History Timeline information on hover/click.  
+
+#### [@dynamyc-2's jQuery code](https://css-tricks.com/forums/topic/jquery-window-width-condition/)
+I used and altered the first line from this user's question on CSS Tricks.
 
 ---
 

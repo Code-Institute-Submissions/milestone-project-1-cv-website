@@ -5,12 +5,14 @@
 // On screens smaller than 768 - do this: 
 //BUT ALSO: Need to have this NOT apply to the last icon on the timeline - the sun. How????
 
+//The code below works EXCEPT when resizing the windows. Then it gets weird. - Need to fix that somehow?
+
 $(document).ready(function () {
 
      if ( $(window).width() < 768 ) {
 
             $(".timeline-icon").mouseover(function () {
-                console.log("working");
+                console.log("window is small");
                 console.log($(this))
                 // $(".timeline-info").css("display", "none"); // hide all timeline-infos
                 $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
@@ -25,11 +27,11 @@ $(document).ready(function () {
                 
             })
 
-        } else {
+        } else if ( $(window).width() >= 768 ) {
         //On large screens do this: 
              $(".timeline-icon").mouseover(function () {
 
-                console.log("working");
+                console.log("window is large");
                 console.log($(this))
                 // $(".timeline-info").css("display", "none"); // hide all timeline-info
                 $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
