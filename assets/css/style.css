@@ -421,13 +421,18 @@ h3.project-subheading {
     border-radius: 8px;
     display: grid;
     grid-template-areas: 
-        "heading image"
-        "subheading image"
-        "brief image";
+        "heading heading image"
+        "subheading subheading image"
+        "brief brief image"
+        "button-1 button-2 image";
     align-items: center;
     justify-content: left;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 30% 30% 40%;
+    grid-column-gap: 5px;
     }
+.project-container-a:hover {
+    outline: solid var(--accent-1) 4px;
+}
 
 .project-container-b {
     background-color: var(--light-black);
@@ -441,7 +446,8 @@ h3.project-subheading {
         "image brief";
     align-items: center;
     justify-content: right;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 5px;
     }
 
 .project-name-a,
@@ -464,6 +470,14 @@ h3.project-subheading {
     grid-area: image;
 }
 
+.button-1 {
+    grid-area: button-1
+}
+
+.button-2 {
+    grid-area: button-2
+}
+
 .project-name-a,
 .project-subheading-a,
 .project-brief-a,
@@ -480,6 +494,29 @@ h3.project-subheading {
 
 .project-image {
     width: 30vw;
+}
+
+.btn-success {
+    background-color: var(--accent-1);
+    border-color: var(--accent-1);
+    color: var(--light-black);
+    width: 100%;
+    height: 70px;
+}
+
+.btn-success:hover,
+.btn-success:active {
+    background-color: var(--light-black)!important;
+    color: var(--accent-1)!important;
+    border-color: var(--accent-1)!important;
+    border: 3px solid;
+}
+
+.btn-success:focus {
+    background-color: var(--accent-1);
+    color: var(--light-black);
+    border-color: var(--light-grey);
+    box-shadow: 0 0 0 0.2rem var(--accent-1);
 }
 
 
