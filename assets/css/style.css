@@ -442,11 +442,8 @@ a > .arrow-down > i {
     }
 
    
-    .skill-row-box {
+    .skill-row-boxy-box {
         background-color: var(--dark-grey);
-        border: solid 2px red;
-      
-
  }
 
 /* Large devices (desktops, 992px and up) */
