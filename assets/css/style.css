@@ -15,6 +15,10 @@
     --mid-grey: #575757;
 }
 
+body {
+    background-color: var(--light-black);
+}
+
 .accent-highlight {
     color: var(--accent-1);
 }
@@ -671,6 +675,7 @@ h1 {
     }
 
 /****************************************** Extra-Large Screens - Skills Section */
+ 
 
     .skill-row-boxy-box {
         padding: 2em;
@@ -695,6 +700,13 @@ h1 {
 
 
  }
+ 
+@media (min-width: 1330px) { 
+
+       #skills-section {
+        max-width: 88%;
+    }
+}
 
 /* Devices where users CANNOT hover over elements e.g. phones, tablets, touch-screens etc... Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
 
