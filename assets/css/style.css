@@ -430,6 +430,23 @@ a > .arrow-down > i {
         top: 55%;
     }
 
+/****************************************** Medium Screens - Skills Section */
+
+    .divider-short {
+        display: none;
+    }
+
+    .skill-row-boxes {
+        box-sizing: border-box;
+        margin: -30px;
+    }
+
+   
+    .skill-row-box {
+        background-color: var(--dark-grey);
+        border: solid 2px red;
+      
+
  }
 
 /* Large devices (desktops, 992px and up) */
@@ -475,6 +492,11 @@ h1 {
 
 /****************************************** Large Screens - Personal Bio Section */
 
+.personal-info {
+    width: 65%;
+    align-items: center;
+}
+
 /****************************************** Large Screens - Work History Section */
     
 
@@ -498,6 +520,13 @@ h1 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
+/****************************************** Extra-Large Screens - Personal Bio Section */
+
+    .personal-info-col {
+        margin-left: -45px;
+    }
+
     .timeline-info-left {
         left: 20%;
         top: 55%;
