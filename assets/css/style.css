@@ -408,6 +408,48 @@ a > .arrow-down > i {
     height: 30px;
 }
 
+/****************************************** Portfolio Section */
+
+.project-container-a {
+    background-color: var(--light-black);
+    padding: 3em;
+    margin: 1.2em;
+    display: grid;
+    grid-template-areas: 
+        "heading image"
+        "subheading image"
+        "brief image";
+    }
+
+.project-container-b {
+    background-color: var(--light-black);
+    padding: 3em;
+    margin: 1.2em;
+    display: grid;
+    grid-template-areas: 
+        "image heading"
+        "image subheading"
+        "image brief";
+    }
+
+.project-name {
+    grid-area: heading;
+}
+
+.project-subheading {
+    grid-area: subheading;
+}
+
+.project-brief {
+    grid-area: brief;
+}
+
+.project-image {
+    grid-area: image;
+}
+
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { ... }
