@@ -11,6 +11,8 @@
     --accent-1: #E3FF72;
     --light-grey: #E0E0E0;
     --pure-white: #fff; 
+    --accent-2: #b1c951;
+    --mid-grey: #575757;
 }
 
 .accent-highlight {
@@ -37,6 +39,24 @@
 #footer-section {
     background-color: var(--dark-grey);
 }
+
+.progress-bar-colour-1 {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+.progress-bar-colour-2 {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+.progress {
+    background-color: var(--mid-grey);
+}
+
+
+
+
 
 /****************************************** Spacing */
 
@@ -124,13 +144,11 @@ a {
     padding: 1.5em;
 }
 
-
 /* Navbar Links (a)  */
 .navbar .navbar-ul .nav-link {
     color: var(--light-grey);
     font-size: 1.5em;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 
 .navbar .navbar-ul .nav-link:hover {
@@ -375,6 +393,17 @@ a > .arrow-down > i {
     font-size: 1.3em;
     padding-top: 2.3em;
 }
+
+.graph-box {
+    background-color: var(--pure-black);
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.progress {
+    height: 30px;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { ... }
