@@ -44,6 +44,10 @@
     display: none;
 }
 
+.br-from-md {
+    display: none;
+}
+
 /****************************************** Dividers */
 
     
@@ -341,7 +345,7 @@ a > .arrow-down > i {
     border-radius: 9px;
 }
 
-.skills-tools > h2 {
+.skill-tools-boxy-box > h2 {
     text-align: center;
 }
 
@@ -365,6 +369,7 @@ a > .arrow-down > i {
 .languages-col > .skill-icon-wrapper {
     margin-bottom: 1.2em;
 }
+
 
 .skills-code-institute {
     font-size: 1.3em;
@@ -437,13 +442,16 @@ a > .arrow-down > i {
         display: none;
     }
 
-    .skill-row-boxy-box {
+    .skill-row-boxy-box,
+    .skill-human-language-boxy-box,
+    .skill-tech-language-boxy-box {
         background-color: var(--dark-grey);
         padding: 2em;
         height: 340px;
         border-radius: 8px;
         position: relative;      
     }
+
 
     .skill-row-boxy-box > p {
         position: absolute;
@@ -463,6 +471,46 @@ a > .arrow-down > i {
         top: 4%;
         right: 4%;
     }
+
+    .languages-wrapper > p {
+        font-size: 1em;
+        position: absolute;
+        bottom: 2%;
+        left: 15%;
+    }
+
+    .skills-h4-boxes-2 {
+        position: absolute;
+        bottom: 43%;
+        left: 15%;
+    }
+
+    .languages-col {
+        padding: 2.3em 1.5em;
+    }
+
+    .skills-tools {
+        height: 250px;
+    }
+
+    .skill-human-language-boxy-box,
+    .skill-tech-language-boxy-box{
+        height: 250px;
+    }
+
+    .languages-wrapper > p {
+        font-size: 0.9em;
+    }
+
+    .br-from-md {
+        display: block;
+    }
+
+    .skills-code-institute > p {
+        font-size: 0.95em;
+    }
+
+
     
 }
 /* Large devices (desktops, 992px and up) */
@@ -559,6 +607,10 @@ h1 {
         right: 4%;
     }
 
+    .skill-tools-boxy-box > p {
+        margin-top: 25px;
+    }
+
 
 
  }
@@ -589,6 +641,10 @@ h1 {
     .skill-row-boxy-box {
         padding: 2em;
         width: 270px;
+    }
+
+     .skill-tools-boxy-box > p {
+        font-size: 1.15em;
     }
 
 
