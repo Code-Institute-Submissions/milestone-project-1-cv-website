@@ -611,6 +611,11 @@ h1 {
         margin-top: 25px;
     }
 
+    .skills-h4-boxes-2,
+    .languages-wrapper > p {
+        left: 25%;
+    }
+
 
 
  }
@@ -645,6 +650,18 @@ h1 {
 
      .skill-tools-boxy-box > p {
         font-size: 1.15em;
+    }
+
+
+    .languages-wrapper > p {
+        left: 35%;
+        bottom: 6%;
+        font-size: 1.1em;
+    }
+
+    .skills-h4-boxes-2 {
+        left: 35%;
+        bottom: 55%;
     }
 
 
