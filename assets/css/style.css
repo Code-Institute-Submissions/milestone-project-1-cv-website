@@ -44,6 +44,17 @@
     display: none;
 }
 
+/****************************************** Dividers */
+
+    
+
+.divider-short {
+    background-color: var(--light-grey);
+    width: 30%;
+    margin: 0 auto;
+}
+
+
 /****************************************** Universal Styles */
 
 * {
