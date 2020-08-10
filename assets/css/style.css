@@ -436,16 +436,34 @@ a > .arrow-down > i {
         display: none;
     }
 
-    .skill-row-boxes {
-        box-sizing: border-box;
-        margin: -30px;
-    }
-
-   
     .skill-row-boxy-box {
         background-color: var(--dark-grey);
- }
+        padding: 2em;
+        height: 340px;
+        border-radius: 8px;
+        position: relative;      
+    }
 
+    .skill-row-boxy-box > p {
+        position: absolute;
+        left: 6%;
+        bottom: 2%;
+        right: 6%;
+    }
+
+    .skills-h4 {
+        position: absolute;
+        bottom: 55%;
+        left: 6%;
+    }
+
+    .skill-icon {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+    }
+    
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
