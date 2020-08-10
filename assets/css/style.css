@@ -424,14 +424,16 @@ h3.project-subheading {
         "heading heading image"
         "subheading subheading image"
         "brief brief image"
-        "button-1 button-2 image";
+        "download download image"
+        "live-site live-site image";
     align-items: center;
     justify-content: left;
     grid-template-columns: 30% 30% 40%;
     grid-column-gap: 5px;
+    /* outline: solid var(--accent-1) 4px; */
     }
 .project-container-a:hover {
-    outline: solid var(--accent-1) 4px;
+    
 }
 
 .project-container-b {
@@ -446,7 +448,7 @@ h3.project-subheading {
         "image brief";
     align-items: center;
     justify-content: right;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 30% 40%;
     grid-column-gap: 5px;
     }
 
@@ -470,12 +472,12 @@ h3.project-subheading {
     grid-area: image;
 }
 
-.button-1 {
-    grid-area: button-1
+.live-site {
+    grid-area: live-site;
 }
 
-.button-2 {
-    grid-area: button-2
+.download-pro-specs {
+    grid-area: download;
 }
 
 .project-name-a,
@@ -492,22 +494,31 @@ h3.project-subheading {
     justify-self: right;
 }
 
+.project-container-a > a {
+    color: var(--light-grey);
+}
+
+.project-container-a > a:hover {
+    color: var(--accent-1);
+}
+
 .project-image {
     width: 30vw;
+    height: 100%;
 }
 
 .btn-success {
-    background-color: var(--accent-1);
-    border-color: var(--accent-1);
-    color: var(--light-black);
+    background-color: var(--light-black);
+    border-color: var(--light-grey);
+    color: var(--light-grey);
     width: 100%;
-    height: 70px;
+    height: 50px;
 }
 
 .btn-success:hover,
 .btn-success:active {
-    background-color: var(--light-black)!important;
-    color: var(--accent-1)!important;
+    background-color: var(--accent-1)!important;
+    color: var(--light-black)!important;
     border-color: var(--accent-1)!important;
     border: 3px solid;
 }
@@ -658,7 +669,7 @@ h3.project-subheading {
         font-size: 0.95em;
     }
 
-
+/****************************************** Medium Screens - Portfolio Section */
     
 }
 /* Large devices (desktops, 992px and up) */
@@ -813,6 +824,14 @@ h1 {
         bottom: 55%;
     }
 
+/****************************************** Extra-Large Screens - Portfolio Section */
+ 
+
+
+.portfolio-section-wrapper {
+    max-width: 88%;
+    margin: 0 auto;
+}
 
  }
  
@@ -820,6 +839,13 @@ h1 {
 
        #skills-section {
         max-width: 88%;
+    }
+}
+
+@media (min-width: 1400px) { 
+
+    .portfolio-section-wrapper {
+        max-width: 79%;
     }
 }
 
