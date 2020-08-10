@@ -385,19 +385,23 @@ a > .arrow-down > i {
 /****************************************** Medium Screens - Landing Page Section */
 
 #home-section h1 {
-    font-size: 3em;    
+    font-size: 2.7em;    
 }
 
 /****************************************** Medium Screens - Personal Bio Section */
 
 .personal-info {
     width: 80%;
-    margin: 0 auto;
-   
+    margin: 0 auto; 
+}
+
+.personal-info-col {
+    padding: 2em !important;
+    margin-left: -10px;
 }
 
 .profile-pic {
-    margin-top: 3em;
+    margin-top: 2.8em;
 }
 #karina-photo {
     min-height: 350px;
@@ -440,7 +444,7 @@ h1 {
 /****************************************** Large Screens - Home Section */
 
     #home-section > div:nth-child(1) > div > h1 {
-        font-size: 4.2em;
+        font-size: 3em;
     }
 
     .line-br-lg-screens {
