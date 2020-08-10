@@ -72,6 +72,13 @@ h1  {
     color: var(--light-grey);
 }
 
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    color: var(--light-grey);
+    text-transform: uppercase;
+}
+
 h4 {
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
@@ -289,6 +296,16 @@ a > .arrow-down > i {
 
 /****************************************** Skills Section */
 
+.skills-h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skill-icon-wrapper {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
 .skill-icon {
     font-size: 2em;
     color: var(--accent-1);
@@ -300,7 +317,26 @@ a > .arrow-down > i {
 
 .skill-col {
     padding: 1.1em 1.3em;
+    text-align: justify;
+}
+
+.skills-tools {
+    padding: 2.3em 1.5em;
+    margin: 2em 0;
+    border: solid 2px var(--accent-1);
+    border-radius: 8%;
+}
+
+.skills-tools > h2 {
     text-align: center;
+}
+
+.languages-wrapper {
+    justify-content: center;
+}
+
+#human-languages {
+    text-align: justify;
 }
 
 
