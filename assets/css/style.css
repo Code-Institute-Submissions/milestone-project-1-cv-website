@@ -410,43 +410,79 @@ a > .arrow-down > i {
 
 /****************************************** Portfolio Section */
 
+h3.project-subheading {
+    color: var(--light-grey);
+}
+
 .project-container-a {
     background-color: var(--light-black);
     padding: 3em;
     margin: 1.2em;
+    border-radius: 8px;
     display: grid;
     grid-template-areas: 
         "heading image"
         "subheading image"
         "brief image";
+    align-items: center;
+    justify-content: left;
+    grid-template-columns: 65% 35%;
     }
 
 .project-container-b {
     background-color: var(--light-black);
     padding: 3em;
     margin: 1.2em;
+    border-radius: 8px;
     display: grid;
     grid-template-areas: 
         "image heading"
         "image subheading"
         "image brief";
+    align-items: center;
+    justify-content: right;
+    grid-template-columns: 35% 65%;
     }
 
-.project-name {
+.project-name-a,
+.project-name-b {
     grid-area: heading;
 }
 
-.project-subheading {
+.project-subheading-a,
+.project-subheading-b {
     grid-area: subheading;
 }
 
-.project-brief {
+.project-brief-a,
+.project-brief-b {
     grid-area: brief;
 }
 
-.project-image {
+.project-image-a,
+.project-image-b {
     grid-area: image;
 }
+
+.project-name-a,
+.project-subheading-a,
+.project-brief-a,
+.project-image-b {
+    justify-self: left;
+}
+
+.project-name-b,
+.project-subheading-b,
+.project-brief-b,
+.project-image-a {
+    justify-self: right;
+}
+
+.project-image {
+    width: 30vw;
+}
+
+
 
 
 
