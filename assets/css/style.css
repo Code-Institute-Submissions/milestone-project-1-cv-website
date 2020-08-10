@@ -296,6 +296,10 @@ a > .arrow-down > i {
 
 /****************************************** Skills Section */
 
+.skills-intro > p {
+    font-size: 1.2em;
+}
+
 .skills-h4 {
     text-transform: uppercase;
     text-align: center;
@@ -316,29 +320,52 @@ a > .arrow-down > i {
 }
 
 .skill-col {
-    padding: 1.1em 1.3em;
-    text-align: justify;
+    padding: 1.1em 2.6em;
+    text-align: left;
+}
+
+.skill-col > p {
+    font-size: 1.1em;
+    hyphens: auto;
+    letter-spacing: 0.8px;
 }
 
 .skills-tools {
     padding: 2.3em 1.5em;
     margin: 2em 0;
     border: solid 2px var(--accent-1);
-    border-radius: 8%;
+    border-radius: 9px;
 }
 
 .skills-tools > h2 {
     text-align: center;
 }
 
+.skills-tools > p {
+    font-size: 1.1em;
+}
+
 .languages-wrapper {
     justify-content: center;
 }
 
-#human-languages {
-    text-align: justify;
+.languages-wrapper > p {
+    font-size: 1.4em;
 }
 
+.languages-col {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.languages-col > .skill-icon-wrapper {
+    margin-bottom: 1.2em;
+}
+
+.skills-code-institute {
+    font-size: 1.3em;
+    padding-top: 2.3em;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { ... }
