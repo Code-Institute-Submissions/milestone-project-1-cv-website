@@ -152,7 +152,7 @@ a {
 
 .social-media-link {
     margin-right: 0.6rem;
-    font-size: 1.5rem;
+    
 }
 
 a > .arrow-down > i {
@@ -450,6 +450,28 @@ h1 {
     .line-br-lg-screens {
         display: block;
     }
+
+
+/****************************************** Large Screens - Navigation Bar */
+
+    .navbar-ul {
+        padding: 0.5em;
+    }
+
+    .navbar .navbar-ul .nav-link {
+        font-size: 1.2em;
+    }
+
+/****************************************** Large Screens - Navigation: Social Media Styles */
+
+.social-media-icon {
+    font-size: 1em;
+}
+
+.social-media-link {
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
+}
 
 /****************************************** Large Screens - Personal Bio Section */
 
