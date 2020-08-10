@@ -503,8 +503,8 @@ h3.project-subheading {
 }
 
 .project-image {
-    width: 30vw;
-    height: 100%;
+    height: 100%; /* this is causing the overlap fix it */
+    object-fit: cover;
 }
 
 .btn-success {
