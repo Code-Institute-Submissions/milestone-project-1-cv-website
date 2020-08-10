@@ -531,6 +531,36 @@ h1 {
         top: 55%;
     }
 
+/****************************************** Large Screens - Skills Section */
+
+    .skill-col {
+        padding: 1.1em 1.1em;
+    }
+
+    .skill-row-boxy-box {
+        padding: 2em;
+        border-radius: 8px;
+        width: 220px;   
+    }
+
+    .skill-row-boxy-box > p {
+        left: 6%;
+        top: 37%;
+        right: 6%;
+    }
+
+    .skills-h4 {
+        top: 26%;
+        left: 6%;
+    }
+
+    .skill-icon {
+        top: 4%;
+        right: 4%;
+    }
+
+
+
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
