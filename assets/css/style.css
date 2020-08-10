@@ -303,7 +303,8 @@ a > .arrow-down > i {
     font-size: 1.2em;
 }
 
-.skills-h4 {
+.skills-h4,
+.skills-h4-boxes-1 {
     text-transform: uppercase;
     text-align: center;
 }
@@ -451,7 +452,7 @@ a > .arrow-down > i {
         right: 6%;
     }
 
-    .skills-h4 {
+    .skills-h4-boxes-1 {
         position: absolute;
         bottom: 55%;
         left: 6%;
@@ -533,13 +534,12 @@ h1 {
 
 /****************************************** Large Screens - Skills Section */
 
-    .skill-col {
+    .skill-col-boxes {
         padding: 1.1em 1.1em;
     }
 
     .skill-row-boxy-box {
         padding: 2em;
-        border-radius: 8px;
         width: 220px;   
     }
 
@@ -549,7 +549,7 @@ h1 {
         right: 6%;
     }
 
-    .skills-h4 {
+    .skills-h4-boxes-1 {
         top: 26%;
         left: 6%;
     }
@@ -572,6 +572,8 @@ h1 {
         margin-left: -45px;
     }
 
+/****************************************** Extra-Large Screens - Work History Section */
+
     .timeline-info-left {
         left: 20%;
         top: 55%;
@@ -581,6 +583,15 @@ h1 {
         right: 20%;
         top: 55%;
     }
+
+/****************************************** Extra-Large Screens - Skills Section */
+
+    .skill-row-boxy-box {
+        padding: 2em;
+        width: 270px;
+    }
+
+
  }
 
 /* Devices where users CANNOT hover over elements e.g. phones, tablets, touch-screens etc... Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
