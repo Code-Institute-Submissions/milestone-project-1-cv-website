@@ -608,9 +608,99 @@ form button:active {
 
 /****************************************** Footer Section */
 
+/* Footer Spacing and Layout */
+
 footer {
-    height: 500px;
+    min-height: 500px;
 }
+
+.footer-divider {
+    border-bottom: 1px solid var(--light-grey);
+    padding-top: 3em;
+    margin-bottom: 3em;
+    width: 70%;
+}
+
+/* Footer Text Styles */
+
+.footer-main-navigation > a,
+.footer-social-navigation > a {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    color: var(--accent-1);
+    transition: 0.2s ease-in all;
+}
+
+.footer-main-navigation > a:hover,
+.footer-social-navigation > a:hover  {
+    transform: scale(1.1);
+}
+
+.footer-download-trad-cv h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    color: var(--light-grey);
+    padding-top: 2em;
+}
+
+.footer-download-trad-cv p {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    color: var(--light-grey);
+    padding-top: 1em;
+}
+
+.footer-download-trad-cv i,
+.footer-developer-brand i {
+    font-size: 2em;
+    color: var(--light-grey);
+    margin-bottom: 1em;
+}
+
+
+
+
+/* Footer Grid Definitions and Layout */
+
+.footer-grid {
+    display: grid;
+    grid-template-areas: 
+        
+        "download-cv"
+        "social-navigation"
+        "main-navigation"
+        "developer-brand";
+}
+
+.footer-social-navigation {
+    grid-area: social-navigation;
+}
+
+.footer-developer-brand {
+    grid-area: developer-brand;
+}
+
+.footer-main-navigation {
+    grid-area: main-navigation;
+}
+
+.footer-download-trad-cv {
+    grid-area: download-cv;
+}
+
+.footer-social-navigation,
+.footer-main-navigation,
+.footer-download-trad-cv,
+.footer-developer-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-developer-brand {
+    display: flex;  
+    flex-direction: row;
+}
+
 
 
 
@@ -994,21 +1084,10 @@ h1 {
 
 /****************************************** Large Screens Footer Section */
 
-.footer-divider {
-    border-bottom: 1px solid var(--light-grey);
-    padding-top: 7em;
-    width: 70%;
-}
 
 .footer-grid {
     grid-template-areas: 
         ""
-}
-
-.footer-social-media-nav,
-.footer-main-navigation {
-    display: flex;
-    flex-direction: column;
 }
 
 
