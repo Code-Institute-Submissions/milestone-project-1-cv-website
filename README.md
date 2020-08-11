@@ -139,6 +139,7 @@ Specifically their pages on:
 * [Box Shadows](https://css-tricks.com/almanac/properties/b/box-shadow/https://css-tricks.com/almanac/properties/b/box-shadow/)
 * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [TextArea](https://css-tricks.com/textarea-tricks/)
 
 ### **[freeCodeCamp](https://www.freecodecamp.org/)**
 Specifically [This article](https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/) about all the ways to create responsive images. 
