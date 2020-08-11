@@ -626,7 +626,7 @@ footer {
 .footer-main-navigation > a,
 .footer-social-navigation > a {
     font-family: "Lato", sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     color: var(--accent-1);
     transition: 0.2s ease-in all;
 }
@@ -657,6 +657,22 @@ footer {
     margin-bottom: 1em;
 }
 
+.footer-social-navigation > h4,
+.footer-main-navigation >h4 {
+    font-size: 1.35em;
+}
+
+.footer-developer-brand > p {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.footer-developer-brand > i { 
+    color: var(--accent-1);
+    margin-top: 2.6px;
+}
+
 
 
 
@@ -665,11 +681,12 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-areas: 
-        
         "download-cv"
         "social-navigation"
         "main-navigation"
         "developer-brand";
+    grid-row-gap: 20px;
+    justify-items: center;
 }
 
 .footer-social-navigation {
@@ -686,6 +703,11 @@ footer {
 
 .footer-download-trad-cv {
     grid-area: download-cv;
+    border: var(--accent-1) 2px solid;
+    padding: 1.2em;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 85%;
 }
 
 .footer-social-navigation,
@@ -694,6 +716,10 @@ footer {
 .footer-developer-brand {
     display: flex;
     flex-direction: column;
+}
+
+.download-cv-icon {
+    align-self: center;
 }
 
 .footer-developer-brand {
