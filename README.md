@@ -74,7 +74,7 @@ The colour palette chosen for this project was primarily dark toned with an almo
 #### Typography
 I wanted to use only sans-serif fonts to enhance the minimalist bold style I've gone with. 
 
----
+
 
 ## Features
 
@@ -91,6 +91,11 @@ I wanted to use only sans-serif fonts to enhance the minimalist bold style I've 
 * Selected Projects
 
 * Contact Page
+
+## Accessibility
+
+* My original design had far more dark on dark toned elements, which I love the look of, but after having checked the site and colour themes using the Web Disability Simulator,
+I realised my colour choices were problematic for some potential users. So I chose to use more of the light grey and yellow tones for text elements. 
 
 ## Future Features to Implement
 
@@ -128,6 +133,15 @@ All the awesome icons used are from Font Awesome.
 ### **[W3C Editor's Draft](https://drafts.csswg.org/mediaqueries-4/#hover)** 
 Great information on using :hover media queries.
 
+### **[CSS Tricks](https://css-tricks.com/)**
+Specifically their pages on:
+
+* [Box Shadows](https://css-tricks.com/almanac/properties/b/box-shadow/https://css-tricks.com/almanac/properties/b/box-shadow/)
+* [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+### **[Web Disability Simulator - Chrome Extension](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla?hl=en)**
+Used this to check my design and page layout for accesibility concerns. 
 
 ---
 
