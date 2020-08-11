@@ -414,6 +414,8 @@ h3.project-subheading {
     color: var(--light-grey);
 }
 
+/* Grid definitions and styles for left-heading project boxes */
+
 .project-container-a {
     background-color: var(--light-black);
     padding: 3em;
@@ -421,20 +423,21 @@ h3.project-subheading {
     border-radius: 8px;
     display: grid;
     grid-template-areas: 
-        "heading heading image"
-        "subheading subheading image"
-        "brief brief image"
-        "download download image"
-        "live-site live-site image";
+        "heading heading"
+        "subheading subheading"
+        "brief brief"
+        "download download"
+        "live-site live-site"
+        "image image";
     align-items: center;
     justify-content: left;
-    grid-template-columns: 30% 30% 40%;
-    grid-column-gap: 5px;
-    /* outline: solid var(--accent-1) 4px; */
+    grid-template-columns: 50% 50%;
     }
 .project-container-a:hover {
     
 }
+
+/* Grid definitions and styles for right-heading project boxes */
 
 .project-container-b {
     background-color: var(--light-black);
@@ -443,14 +446,19 @@ h3.project-subheading {
     border-radius: 8px;
     display: grid;
     grid-template-areas: 
-        "image heading"
-        "image subheading"
-        "image brief";
+        "heading heading"
+        "subheading subheading"
+        "brief brief"
+        "download download"
+        "live-site live-site"
+        "image image";
     align-items: center;
     justify-content: right;
-    grid-template-columns: 30% 30% 40%;
+    grid-template-columns: 50% 50%;
     grid-column-gap: 5px;
     }
+
+/* Grid-Area Definitions for elements in the project boxes */
 
 .project-name-a,
 .project-name-b {
@@ -472,17 +480,23 @@ h3.project-subheading {
     grid-area: image;
 }
 
-.live-site {
+.live-site-a,
+.live-site-b {
     grid-area: live-site;
 }
 
-.download-pro-specs {
+.download-pro-specs-a,
+.download-pro-specs-b {
     grid-area: download;
 }
+
+/* Using justify-self to justify elements to the left and right of the project boxes */
 
 .project-name-a,
 .project-subheading-a,
 .project-brief-a,
+.live-site-a,
+.download-pro-specs-a,
 .project-image-b {
     justify-self: left;
 }
@@ -490,10 +504,13 @@ h3.project-subheading {
 .project-name-b,
 .project-subheading-b,
 .project-brief-b,
+.live-site-b,
+.download-pro-specs-b, 
 .project-image-a {
     justify-self: right;
 }
 
+/* Styles for the download & live site links */
 .project-container-a > a {
     color: var(--light-grey);
 }
@@ -502,36 +519,13 @@ h3.project-subheading {
     color: var(--accent-1);
 }
 
+/* Project Image Styles and Layout */
+
 .project-image {
-    height: 100%; /* this is causing the overlap fix it */
-    object-fit: cover;
+    height: auto;
+    width: 100%; 
+    max-width: 450px;
 }
-
-.btn-success {
-    background-color: var(--light-black);
-    border-color: var(--light-grey);
-    color: var(--light-grey);
-    width: 100%;
-    height: 50px;
-}
-
-.btn-success:hover,
-.btn-success:active {
-    background-color: var(--accent-1)!important;
-    color: var(--light-black)!important;
-    border-color: var(--accent-1)!important;
-    border: 3px solid;
-}
-
-.btn-success:focus {
-    background-color: var(--accent-1);
-    color: var(--light-black);
-    border-color: var(--light-grey);
-    box-shadow: 0 0 0 0.2rem var(--accent-1);
-}
-
-
-
 
 
 
@@ -670,7 +664,61 @@ h3.project-subheading {
     }
 
 /****************************************** Medium Screens - Portfolio Section */
-    
+
+
+/* Grid definitions and styles for left-heading project boxes */
+
+.project-container-a {
+    padding: 3em;
+    margin: 1.2em;
+    display: grid;
+    grid-template-areas: 
+        "heading heading"
+        "subheading subheading"
+        "brief brief"
+        "download download"
+        "live-site live-site"
+        "image image";
+    align-items: center;
+    justify-content: left;
+    grid-template-columns: 50% 50%;
+    }
+
+/* Grid definitions and styles for right-heading project boxes */
+
+.project-container-b {
+    padding: 3em;
+    margin: 1.2em;
+    display: grid;
+    grid-template-areas: 
+        "heading heading"
+        "subheading subheading"
+        "brief brief"
+        "download download"
+        "live-site live-site"
+        "image image";
+    align-items: center;
+    justify-content: right;
+    grid-template-columns: 50% 50%;
+    }
+
+/* Using justify-self to justify elements to the left and right of the project boxes */
+
+.project-name-a,
+.project-subheading-a,
+.project-brief-a,
+.project-image-b {
+    justify-self: left;
+}
+
+.project-name-b,
+.project-subheading-b,
+.project-brief-b,
+.project-image-a {
+    justify-self: right;
+}
+
+
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -774,6 +822,65 @@ h1 {
     .languages-wrapper > p {
         left: 25%;
     }
+
+/****************************************** Large Screens Portfolio Section */
+
+
+/* Grid definitions and styles for left-heading project boxes */
+
+.project-container-a {
+    padding: 3em;
+    margin: 1.2em;
+    display: grid;
+    grid-template-areas: 
+        "heading heading image"
+        "subheading subheading image"
+        "brief brief image"
+        "download download image"
+        "live-site live-site image";
+    align-items: center;
+    justify-content: left;
+    grid-template-columns: 30% 30% 40%;
+    grid-column-gap: 5px;
+    }
+
+
+/* Grid definitions and styles for right-heading project boxes */
+
+.project-container-b {
+    padding: 3em;
+    margin: 1.2em;
+    display: grid;
+    grid-template-areas: 
+        "image heading heading"
+        "image subheading subheading"
+        "image brief brief"
+        "image download download"
+        "image live-site live-site";
+    align-items: center;
+    justify-content: right;
+    grid-template-columns: 40% 30% 30%;
+    grid-column-gap: 5px;
+    }
+
+
+/* Styles for the download & live site links */
+.project-container-a > a,
+.project-container-b > a {
+    color: var(--light-grey);
+}
+
+.project-container-a > a:hover,
+.project-container-b > a:hover {
+    color: var(--accent-1);
+}
+
+/* Project Image Styles and Layout */
+
+.project-image {
+    height: auto;
+    width: 100%; 
+}
 
 
 
