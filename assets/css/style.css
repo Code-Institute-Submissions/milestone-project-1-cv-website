@@ -606,6 +606,14 @@ form button:active {
     outline: var(--accent-1) dotted 3px;
 }
 
+/****************************************** Footer Section */
+
+footer {
+    height: 500px;
+}
+
+
+
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -982,6 +990,25 @@ h1 {
 .project-image {
     height: auto;
     width: 100%; 
+}
+
+/****************************************** Large Screens Footer Section */
+
+.footer-divider {
+    border-bottom: 1px solid var(--light-grey);
+    padding-top: 7em;
+    width: 70%;
+}
+
+.footer-grid {
+    grid-template-areas: 
+        ""
+}
+
+.footer-social-media-nav,
+.footer-main-navigation {
+    display: flex;
+    flex-direction: column;
 }
 
 
