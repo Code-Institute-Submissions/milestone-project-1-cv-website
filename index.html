@@ -59,16 +59,18 @@
                 </div>
             </div>
 
-            <div class="row scroll-down-arrow">
-                <div class="col">
-                    <a href="#bio-section">
-                        <div class="arrow-down">
-                            <p>Scroll down for more information.</p>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-                    </a>
-                </div>
-            </div> 
+            <div class="scroll-down-arrow-wrapper">
+                <div class="row scroll-down-arrow">
+                    <div class="col">
+                        <a href="#bio-section">
+                            <div class="arrow-down">
+                                <p>Scroll down for more information.</p>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+            </div>
     </header>
 
 <!-------------------------------------------------------------------------------- Personal Bio Section -->
@@ -497,7 +499,7 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-3 skill-col skill-col-boxes">
-                <div class="skill-row-boxy-box">
+                <div class="skill-row-boxy-box box-to-animate">
                     <div class="skill-icon-wrapper">
                         <i class="fas fa-users-cog skill-icon"></i>
                     </div>
@@ -577,43 +579,39 @@
                     <div class="graph-box">
             
                         <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped progress-bar-colour-1" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML 90%</div>
+                            <div class="progress-bar progress-bar-colour-1" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML 90%</div>
                         </div>
                         <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped progress-bar-colour-1" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS 80%</div>
+                            <div class="progress-bar  progress-bar-colour-1" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS 80%</div>
                         </div>
                         <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped progress-bar-colour-1" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">jQuery 50%</div>
+                            <div class="progress-bar  progress-bar-colour-1" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">jQuery 50%</div>
                         </div>
                         <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped progress-bar-colour-1" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">JavaScript 40%</div>
+                            <div class="progress-bar  progress-bar-colour-1" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">JavaScript 40%</div>
                         </div>
                         <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped progress-bar-colour-1" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python 25%</div>
+                            <div class="progress-bar  progress-bar-colour-1" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python 25%</div>
                         </div>
                         <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped progress-bar-colour-2" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">D3.js 45%</div>
-                        </div>
-                       
-                        <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped progress-bar-colour-2" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">SQL/NoSQL 20%</div>
+                            <div class="progress-bar  progress-bar-colour-2" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">D3.js 45%</div>
                         </div>
                         <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped progress-bar-colour-2" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">MongoDB 15%</div>
+                            <div class="progress-bar progress-bar-colour-2" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">SQL/NoSQL 20%</div>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar  progress-bar-colour-2" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">MongoDB 15%</div>
                         </div>
                       
                         <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped  progress-bar-colour-2" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">Vue.js 15%</div>
+                            <div class="progress-bar  progress-bar-colour-2" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">Vue.js 15%</div>
                         </div>
                         <div class="progress mt-2">
-                            <div class="progress-bar  progress-bar-striped progress-bar-colour-2" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">Django 35%</div>
-                        </div>
-                        
+                            <div class="progress-bar  progress-bar-colour-2" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">Django 35%</div>
+                        </div>       
                     </div>
                 </div>
             </div>
-     
-
     </section>
 
 <!-------------------------------------------------------------------------------- Portfolio Section -->
@@ -625,17 +623,15 @@
                     <h1>Selected Projects<span class="accent-highlight">.</span></h1>
                 </div>
             </div>
-
             <div class="row pr-4 pl-4">
                 <div class="col col-12">
                     <p>
-                        Here are a list of projects. Some are completed, some of them are still in development, others are in their incipient stages. You can download the design specs 
-                        for any that have a link attached. For those still in development, this will link to a pdf. of the wireframes that I have done to date, for those completed, this will link
-                        to a design spec sheet. For the first two projects there is also a link to the live sites.
+                        Here is a list of my projects. Some are completed, some of them are still being developed and others are in their incipient stages. You can download some of their designs and/or planning spec sheets. 
+                        When approaching new projects for development I focus quite heavily on the planning stages, I prefer to meticulously wireframe and prototype new projects as it makes the actual
+                        coding a lot more straightforward. I have included some of these wireframes for your information, just click on the project spec download option.                 
                     </p>
                 </div>
             </div>
-
             <div class="row project-list-wrapper">
                 <div class="col col-12">
                     <div class="project-container-a">
@@ -653,7 +649,7 @@
                         <h3 class="project-subheading project-subheading-b">online resume website</h3>
                         <p class="project-brief project-brief-b"><span class="accent-highlight">BRIEF: </span>create an online cv for full stack developer Karina Finegan</p>
                          <a href="assets/downloads/project-specs.pdf" class="download-pro-specs download-pro-specs-b" download ><i class="fas fa-file-download"></i><h5 class="d-inline ml-2">Download Project Specs</h5></a>
-                         <a href="http://www.weddingsbykara.com" target="_blank" class="d-block live-site live-site-b"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>   
+                         <a href="#home-section" target="_blank" class="d-block live-site live-site-b"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>   
                         <img src="assets/images/project-image-2.jpg" class="project-image project-image-b">
                     </div>
                 </div>
@@ -663,7 +659,7 @@
                         <h3 class="project-subheading project-subheading-a">film & tv production company website</h3>
                         <p class="project-brief project-brief-a"><span class="accent-highlight">BRIEF: </span>A full website re-design to increase brand image perception and modernise.</p>
                         <a href="assets/downloads/project-specs.pdf" class="download-pro-specs download-pro-specs-a" download ><i class="fas fa-file-download"></i><h5 class="d-inline ml-2">Download Project Specs</h5></a>
-                        <a href="http://www.portpictures.ie" target="_blank" class="d-block live-site live-site-a"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>      
+                        <a href="#" class="d-block live-site live-site-a no-live-site-yet"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>      
                         <img src="assets/images/project-image-3.jpg" class="project-image project-image-a">
                     </div>
                 </div>
@@ -673,7 +669,7 @@
                         <h3 class="project-subheading project-subheading-b">online resume website</h3>
                         <p class="project-brief project-brief-b"><span class="accent-highlight">BRIEF: </span>create an online resume to showcase Rachel O'Brien's acting work.</p>
                          <a href="assets/downloads/project-specs.pdf" class="download-pro-specs download-pro-specs-b" download ><i class="fas fa-file-download"></i><h5 class="d-inline ml-2">Download Project Specs</h5></a>
-                         <a href="#" target="_blank" class="d-block live-site live-site-b"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>   
+                         <a href="#" target="_blank" class="d-block live-site live-site-b no-live-site-yet"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>   
                         <img src="assets/images/project-image-4b.jpg" class="project-image project-image-b">
                     </div>
                 </div>
@@ -683,7 +679,7 @@
                         <h3 class="project-subheading project-subheading-a">information website about this Irish historial figure.</h3>
                         <p class="project-brief project-brief-a"><span class="accent-highlight">BRIEF: </span>create a website that is an information hub about the man, his life and his history.</p>
                         <a href="assets/downloads/project-specs.pdf" class="download-pro-specs download-pro-specs-a" download ><i class="fas fa-file-download"></i><h5 class="d-inline ml-2">Download Project Specs</h5></a>
-                        <a href="http://www.weddingsbykara.com" target="_blank" class="d-block live-site live-site-a"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>      
+                        <a href="#" target="_blank" class="d-block live-site live-site-a no-live-site-yet"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>      
                         <img src="assets/images/project-image-6.jpg" class="project-image project-image-a">
                     </div>
                 </div>
@@ -693,7 +689,7 @@
                         <h3 class="project-subheading project-subheading-b">business website for the clinic</h3>
                         <p class="project-brief project-brief-b"><span class="accent-highlight">BRIEF: </span>create a website to drive business to this acupuncture clinic.</p>
                          <a href="assets/downloads/project-specs.pdf" class="download-pro-specs download-pro-specs-b" download ><i class="fas fa-file-download"></i><h5 class="d-inline ml-2">Download Project Specs</h5></a>
-                         <a href="http://www.weddingsbykara.com" target="_blank" class="d-block live-site live-site-b"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>   
+                         <a href="#" target="_blank" class="d-block live-site live-site-b no-live-site-yet"><i class="fas fa-desktop"></i><h5 class="d-inline ml-2">See live site</h5></a>   
                         <img src="assets/images/project-image-5.jpg" class="project-image project-image-b">
                     </div>
                 </div>
