@@ -410,53 +410,56 @@ a > .arrow-down > i {
 
 /****************************************** Portfolio Section */
 
+
+/* Project Box Font Styles */
+
+h2.project-name {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+}
+
 h3.project-subheading {
     color: var(--light-grey);
+    font-size: 1em;
 }
 
-/* Grid definitions and styles for left-heading project boxes */
-
-.project-container-a {
-    background-color: var(--light-black);
-    padding: 3em;
-    margin: 1.2em;
-    border-radius: 8px;
-    display: grid;
-    grid-template-areas: 
-        "heading heading"
-        "subheading subheading"
-        "brief brief"
-        "download download"
-        "live-site live-site"
-        "image image";
-    align-items: center;
-    justify-content: left;
-    grid-template-columns: 50% 50%;
-    }
-.project-container-a:hover {
-    
+p.project-brief {
+    font-size: 0.9em;
 }
 
-/* Grid definitions and styles for right-heading project boxes */
+a.download-pro-specs > h5,
+a.live-site > h5 {
+    font-size: 0.9em;
+}
 
+/* Spacing & base styles for project boxes */
+
+.project-container-a,
 .project-container-b {
     background-color: var(--light-black);
     padding: 3em;
     margin: 1.2em;
     border-radius: 8px;
+    align-items: center;
+}
+
+/* Grid definitions and styles for left-heading & right-heading project boxes */
+
+.project-container-a,
+.project-container-b {
     display: grid;
     grid-template-areas: 
-        "heading heading"
-        "subheading subheading"
-        "brief brief"
-        "download download"
-        "live-site live-site"
-        "image image";
-    align-items: center;
-    justify-content: right;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 5px;
+        "heading"
+        "subheading"
+        "brief"
+        "download"
+        "live-site"
+        "image";
+    grid-template-columns: 100%;
     }
+
+
 
 /* Grid-Area Definitions for elements in the project boxes */
 
@@ -490,32 +493,15 @@ h3.project-subheading {
     grid-area: download;
 }
 
-/* Using justify-self to justify elements to the left and right of the project boxes */
-
-.project-name-a,
-.project-subheading-a,
-.project-brief-a,
-.live-site-a,
-.download-pro-specs-a,
-.project-image-b {
-    justify-self: left;
-}
-
-.project-name-b,
-.project-subheading-b,
-.project-brief-b,
-.live-site-b,
-.download-pro-specs-b, 
-.project-image-a {
-    justify-self: right;
-}
 
 /* Styles for the download & live site links */
-.project-container-a > a {
+.project-container-a > a,
+.project-container-b > a {
     color: var(--light-grey);
 }
 
-.project-container-a > a:hover {
+.project-container-a > a:hover,
+.project-container-b > a:hover {
     color: var(--accent-1);
 }
 
@@ -679,7 +665,6 @@ h3.project-subheading {
         "download download"
         "live-site live-site"
         "image image";
-    align-items: center;
     justify-content: left;
     grid-template-columns: 50% 50%;
     }
@@ -697,7 +682,6 @@ h3.project-subheading {
         "download download"
         "live-site live-site"
         "image image";
-    align-items: center;
     justify-content: right;
     grid-template-columns: 50% 50%;
     }
