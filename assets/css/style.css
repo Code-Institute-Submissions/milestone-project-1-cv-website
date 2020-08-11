@@ -181,10 +181,7 @@ a {
     
 }
 
-a > .arrow-down > i {
-    font-size: 2em;
-    color: var(--accent-1);
-}
+
 
 /****************************************** Home Section */
 
@@ -205,9 +202,20 @@ a > .arrow-down > i {
     text-align: center;
 }
 
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+}
+
 .arrow-down {
     text-align: center;
     margin-bottom: 20px;
+}
+
+a > .arrow-down > i {
+    font-size: 2em;
+    color: var(--accent-1);
 }
 
 
@@ -233,7 +241,7 @@ a > .arrow-down > i {
 .timeline-container {
     position: relative;
     height: 100px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .timeline-line::after {
@@ -248,7 +256,6 @@ a > .arrow-down > i {
 
 .timeline-icon {
     font-size: 2.4em;
-    margin-left: -6.5%;
     transition: all ease-in 0.2s;
 }
 
@@ -321,6 +328,11 @@ a > .arrow-down > i {
 
 .end-of-timeline a:hover {
     font-size: 1.3em;
+}
+
+.scroll-down-arrow-wrapper {
+    height: 100px;
+    position: relative;
 }
 
 /****************************************** Skills Section */
@@ -735,7 +747,13 @@ form button:active {
 
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) { 
+
+    .scroll-down-arrow {
+        left: 35%;
+    }
+
+ }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -751,6 +769,11 @@ form button:active {
 #home-section h1 {
     font-size: 2.7em;    
 }
+
+.scroll-down-arrow {
+    left: 37%;
+}
+
 
 /****************************************** Medium Screens - Personal Bio Section */
 
@@ -776,7 +799,6 @@ form button:active {
 
     .timeline-icon {
         font-size: 3em;
-        margin-left: -4%;
     }
 
     .timeline-info {
@@ -980,7 +1002,13 @@ a.live-site > h5 {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-    /****************************************** Large Screens - Font-Sizing */
+/****************************************** Large Screens - Home Section */
+
+    .scroll-down-arrow {
+    left: 40%;
+}
+
+/****************************************** Large Screens - Font-Sizing */
 
 h1 {
     font-size: 3.8em;
@@ -1030,7 +1058,6 @@ h1 {
 
     .timeline-icon {
         font-size: 3em;
-        margin-left: -1.5%;
     }
 
 
@@ -1180,6 +1207,12 @@ h1 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
+/****************************************** Extra-Large Screens - Personal Bio Section */
+
+    .home-scroll-down {
+    left: 43%;
+}
 
 /****************************************** Extra-Large Screens - Personal Bio Section */
 
