@@ -699,15 +699,19 @@ footer {
 
 .footer-main-navigation {
     grid-area: main-navigation;
+    padding-bottom: 2em;
 }
 
 .footer-download-trad-cv {
     grid-area: download-cv;
-    border: var(--accent-1) 2px solid;
+    border-top: var(--accent-1) 2px solid;
+    border-bottom: var(--accent-1) 2px solid;
     padding: 1.2em;
     margin: 0 auto;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     width: 85%;
+    margin-top: 3.5em;
+    margin-bottom: 2em;
 }
 
 .footer-social-navigation,
@@ -725,6 +729,8 @@ footer {
 .footer-developer-brand {
     display: flex;  
     flex-direction: row;
+    border-top: var(--accent-1) 2px solid;
+    padding: 2em;
 }
 
 
