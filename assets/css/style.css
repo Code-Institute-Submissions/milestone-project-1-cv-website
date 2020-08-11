@@ -546,6 +546,8 @@ form input {
     margin-bottom: 2em;
     outline: none;
     height: 50px;
+    font: "Lato", 1em;
+    color: var(--light-grey);
 }
 
 form textarea {
@@ -555,6 +557,8 @@ form textarea {
     height: 185px;
     outline: none;
     resize: none;
+    font: "Lato", 1em;
+    color: var(--light-grey);
 }
 
 form input:active,
@@ -564,7 +568,7 @@ form textarea:active {
 
 form input:focus,
 form textarea:focus{
-    background-color: var(--light-grey); 
+    
 }
 
 ::placeholder {

@@ -175,7 +175,10 @@ The jQuery code I used and altered to display the Work History Timeline informat
 #### [@dynamyc-2's jQuery code](https://css-tricks.com/forums/topic/jquery-window-width-condition/)
 I used and altered the first line from this user's question on CSS Tricks.
 
----
+#### [MatuDuke's Code from Stack Overflow](https://stackoverflow.com/questions/9707021/how-do-i-auto-hide-placeholder-text-upon-focus-using-css-or-jquery/9707068#9707068)
+I used this user's answer (2nd from the top) to hide the placeholder text in my contact form when the user clicks to type something, as I think it's off-putting when the placeholder 
+text remains until you actually type.
+
 
 ## Acknowledgements
 
