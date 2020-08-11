@@ -140,6 +140,9 @@ Specifically their pages on:
 * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
+### **[freeCodeCamp](https://www.freecodecamp.org/)**
+Specifically [This article](https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/) about all the ways to create responsive images. 
+
 ### **[Web Disability Simulator - Chrome Extension](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla?hl=en)**
 Used this to check my design and page layout for accesibility concerns. 
 
