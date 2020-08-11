@@ -438,10 +438,14 @@ a.live-site > h5 {
 .project-container-a,
 .project-container-b {
     background-color: var(--light-black);
-    padding: 3em;
-    margin: 1.2em;
+    padding: 2em;
+    margin: 1em;
     border-radius: 8px;
     align-items: center;
+}
+
+.project-image {
+    margin-top: 15px;
 }
 
 /* Grid definitions and styles for left-heading & right-heading project boxes */
@@ -651,13 +655,36 @@ a.live-site > h5 {
 
 /****************************************** Medium Screens - Portfolio Section */
 
+/* Project Box Font Styles */
+
+h2.project-name {
+    font-size: 2em;  
+}
+
+h3.project-subheading {
+    font-size: 1.2em;
+}
+
+p.project-brief {
+    font-size: 1.1em;
+}
+
+a.download-pro-specs > h5,
+a.live-site > h5 {
+    font-size: 1em;
+}
+
+/* Spacing & base styles for project boxes */
+
+.project-container-a,
+.project-container-b {
+    padding: 3em;
+    margin: 1.2em;
+}
 
 /* Grid definitions and styles for left-heading project boxes */
 
 .project-container-a {
-    padding: 3em;
-    margin: 1.2em;
-    display: grid;
     grid-template-areas: 
         "heading heading"
         "subheading subheading"
@@ -672,9 +699,6 @@ a.live-site > h5 {
 /* Grid definitions and styles for right-heading project boxes */
 
 .project-container-b {
-    padding: 3em;
-    margin: 1.2em;
-    display: grid;
     grid-template-areas: 
         "heading heading"
         "subheading subheading"
@@ -691,14 +715,18 @@ a.live-site > h5 {
 .project-name-a,
 .project-subheading-a,
 .project-brief-a,
-.project-image-b {
+.project-image-b,
+.live-site-a,
+.download-pro-specs-a {
     justify-self: left;
 }
 
 .project-name-b,
 .project-subheading-b,
 .project-brief-b,
-.project-image-a {
+.project-image-a,
+.live-site-b,
+.download-pro-specs-b {
     justify-self: right;
 }
 
