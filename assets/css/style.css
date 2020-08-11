@@ -950,6 +950,35 @@ a.live-site > h5 {
     justify-self: right;
 }
 
+/****************************************** Medium Screens - Footer Section */
+
+.footer-grid {
+    grid-template-areas: 
+        "social-navigation download-cv main-navigation"
+        "developer-brand developer-brand developer-brand";
+}
+
+.footer-download-trad-cv {
+    border-left: var(--accent-1) 1px solid;
+    border-right: var(--accent-1) 1px solid;
+    border-top: none;
+    border-bottom: none;
+    padding: 1.1em;
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+
+.footer-developer-brand {
+    border-top: none;
+    padding: 1em;
+}
+
+.footer-main-navigation,
+.footer-social-navigation {
+    margin-top: 3.5em;
+    padding: 1.1em;
+}
+
 
 }
 /* Large devices (desktops, 992px and up) */
