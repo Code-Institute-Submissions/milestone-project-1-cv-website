@@ -7,41 +7,45 @@
 
 
 $(document).ready(function () {
+    toggleTimeline()
 
-     if ( $(window).width() < 768 ) {
+    //  if ( $(window).width() < 768 ) {
 
-            $(".timeline-icon").mouseover(function () {
+    //         $(".timeline-icon").mouseover(function () {
     
-                $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current ('this') timeline info
-                $(this).css("visibility", "hidden");
-                $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //this would be better with z-index but can't seem to make that work? 
+    //             $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current ('this') timeline info
+    //             $(this).css("visibility", "hidden");
+    //             $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //this would be better with z-index but can't seem to make that work? 
             
-            })
-            $(".timeline-icon").mouseout(function () {
-                $(".timeline-info").css("display", "none"); // hide the timeline info
-                $(this).css("visibility", "visible");
-                $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); 
+    //         })
+    //         $(".timeline-icon").mouseout(function () {
+    //             $(".timeline-info").css("display", "none"); // hide the timeline info
+    //             $(this).css("visibility", "visible");
+    //             $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); 
                 
-            })
+    //         })
 
-        } else if ( $(window).width() >= 768 ) {
+    //     } else if ( $(window).width() >= 768 ) {
 
-        //On large screens do this: 
-             $(".timeline-icon").mouseover(function () {
-                $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
-                })
+    //     //On large screens do this: 
+    //          $(".timeline-icon").mouseover(function () {
+    //             $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
+    //             })
 
-                $(".timeline-icon").mouseout(function () {
-                $(".timeline-info").css("display", "none"); // hide the timeline info
+    //             $(".timeline-icon").mouseout(function () {
+    //             $(".timeline-info").css("display", "none"); // hide the timeline info
             
-                })
+    //             })
 
-            }
+    //         }
 });
 
 $(window).resize(function () {
+    toggleTimeline()
+});
 
-     if ( $(window).width() < 768 ) {
+function toggleTimeline() {
+    if ( $(window).width() < 768 ) {
          console.log("window went under 768")
 
             $(".timeline-icon").mouseover(function () {
@@ -73,7 +77,7 @@ $(window).resize(function () {
                 })
 
             }
-});
+}
 
 //There must be a shorter way to write the above. Something like "When the document is ready OR when the window is resized - do all this:"
 
