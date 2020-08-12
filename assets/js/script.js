@@ -79,4 +79,3 @@ $(window).resize(function () {
 
 //Also - resizing to small is fine on mobile, but in small windows on mouse hover on desktop there is an annoying flickering effect. Don't know why. 
 
-
