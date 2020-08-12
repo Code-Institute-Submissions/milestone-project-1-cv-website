@@ -59,9 +59,6 @@ body {
 }
 
 
-
-
-
 /****************************************** Spacing */
 
 .line-br-lg-screens {
@@ -93,34 +90,41 @@ body {
     margin: 0;
     padding: 0;
 }
+/****************************************** Font Sizing */
 
-h1  {
+/* h1 */
+
+ .landing-page-heading,
+ .section-heading {
     font-family: "Lato", sans-serif;
     color: var(--light-grey);
     font-size: 2.6em;
 }
 
-h2 {
+.h2-heading {
     font-family: "Roboto", sans-serif;
     font-size: 1.8em;
     color: var(--light-grey);
     text-transform: uppercase;
 }
 
-h4 {
+.h4-heading {
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
     color: var(--light-grey);
-
 }
 
-p {
+.paragraph {
     color: var(--light-grey);
     font-family: "Roboto", sans-serif;
 }
 
 a {
     font-family: "Roboto", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 
@@ -166,7 +170,6 @@ a {
     color: var(--accent-1);
 }
 
-
 /****************************************** Navigation: Social Media Styles */
 
 .social-media-icon {
@@ -183,8 +186,6 @@ a {
     
 }
 
-
-
 /****************************************** Home Section */
 
 #home-section {
@@ -192,11 +193,10 @@ a {
     position: relative;
 }
 
-#home-section h1 {
+.landing-page-heading {
     margin: 1em auto 0;
     padding: 1.5em;
-    font-size: 2.2em;
-    
+    font-size: 2.2em;   
 }
 
 #home-section p {
@@ -204,12 +204,20 @@ a {
     text-align: center;
 }
 
-
-
 .arrow-down {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.arrow-down p {
+    color: var(--light-grey);
+}
+
+.arrow-down p:hover,
+.arrow-down a:hover {
+    color: var(--accent-1);
+}
+
 
 a > .arrow-down > i {
     font-size: 2em;
@@ -221,7 +229,6 @@ a > .arrow-down > i {
     width: 235px;
     position: relative;
     margin: 0 auto;
-
 }
 
 .scroll-down-arrow {
@@ -233,8 +240,6 @@ a > .arrow-down > i {
 
 
 /****************************************** Personal Bio Section */
-
-
 
 #bio-section .personal-info p {
     font-size: 1.2em;
@@ -263,7 +268,6 @@ a > .arrow-down > i {
     top: 0;
     bottom: 0;
     border-left: var(--accent-1) dotted 4px;
- 
 }
 
 .timeline-icon {
@@ -294,12 +298,18 @@ a > .arrow-down > i {
 .timeline-info .date {
     font-weight: 300;
     font-style: italic;
+    color: var(--light-grey);
     
 }
 
 .timeline-info .place {
     font-weight: 500;
     font-size: 1.2em;
+    color: var(--light-grey);
+}
+
+.timeline-info .event-or-role {
+    color: var(--light-grey);
 }
 
  .timeline-info-left {
@@ -348,6 +358,7 @@ a > .arrow-down > i {
 
 .skills-intro > p {
     font-size: 1.2em;
+    color: var(--light-grey);
 }
 
 .skills-h4,
@@ -375,10 +386,11 @@ a > .arrow-down > i {
     text-align: left;
 }
 
-.skill-col > p {
+.skill-row-boxy-box > p {
     font-size: 1.1em;
     hyphens: auto;
     letter-spacing: 0.8px;
+    color: var(--light-grey);
 }
 
 .skills-tools {
@@ -388,12 +400,13 @@ a > .arrow-down > i {
     border-radius: 9px;
 }
 
-.skill-tools-boxy-box > h2 {
+.skill-tools-boxy-box > .h2-heading {
     text-align: center;
 }
 
-.skills-tools > p {
+.skill-tools-boxy-box > p {
     font-size: 1.1em;
+    color: var(--light-grey);
 }
 
 .languages-wrapper {
@@ -402,6 +415,7 @@ a > .arrow-down > i {
 
 .languages-wrapper > p {
     font-size: 1.4em;
+    color: var(--light-grey);
 }
 
 .languages-col {
@@ -417,6 +431,7 @@ a > .arrow-down > i {
 .skills-code-institute {
     font-size: 1.3em;
     padding-top: 2.3em;
+    color: var(--light-grey);
 }
 
 .graph-box {
@@ -431,6 +446,9 @@ a > .arrow-down > i {
 
 /****************************************** Portfolio Section */
 
+.portfolio-intro > p {
+    color: var(--light-grey);
+}
 
 /* Project Box Font Styles */
 
@@ -447,6 +465,7 @@ h3.project-subheading {
 
 p.project-brief {
     font-size: 0.9em;
+    color: var(--light-grey);
 }
 
 a.download-pro-specs > h5,
@@ -544,8 +563,6 @@ a.live-site > h5 {
 
 /* Overlay for Projects in Development  */
 
-
-
 h3.in-development-a,
 h3.in-development-b {
     color: var(--light-grey);
@@ -629,8 +646,7 @@ form button {
     font-weight: 700;
     height: 50px;
     margin-top: 4px;
-    transition: ease-in 0.3s all;
-    
+    transition: ease-in 0.3s all;   
 }
 
 form button:hover {
@@ -638,8 +654,7 @@ form button:hover {
     font-size: 1.3em;
     border: var(--accent-2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 form button:active {
@@ -704,6 +719,7 @@ form button:active {
     font-family: "Lato", sans-serif;
     font-size: 1em;
     padding: 0.5em;
+    color: var(--light-grey);
 }
 
 .footer-developer-brand > i { 
@@ -804,13 +820,14 @@ form button:active {
 
 /****************************************** Medium Screens - Universal Style Changes */
 
-    h1 {
+    .section-heading {
         font-size: 3.8em;
     }   
 
 /****************************************** Medium Screens - Landing Page Section */
 
-#home-section h1 {
+
+.landing-page-heading {
     font-size: 2.7em;    
 }
 
@@ -1077,13 +1094,14 @@ a.live-site > h5 {
 
 /****************************************** Large Screens - Font-Sizing */
 
-h1 {
+.landing-page-heading,
+.section-heading {
     font-size: 3.8em;
 }
 
 /****************************************** Large Screens - Home Section */
 
-    #home-section > div:nth-child(1) > div > h1 {
+    .landing-page-heading {
         font-size: 3em;
     }
 
@@ -1238,7 +1256,7 @@ h1 {
 
 .footer-grid {
     grid-template-areas: 
-        "social-navigation  main-navigation download-cv"
+        "social-navigation  download-cv download-cv"
         "developer-brand developer-brand developer-brand";
     width: 65%;
     margin: 0 auto;
@@ -1265,9 +1283,11 @@ h1 {
     padding: 1.1em;
 }
 
-.footer-main-navigation > h4 {
+.footer-main-navigation > h4,
+.footer-main-navigation {
     display: none;
 }
+
 
 
  }

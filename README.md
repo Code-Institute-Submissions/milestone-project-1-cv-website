@@ -92,10 +92,27 @@ I wanted to use only sans-serif fonts to enhance the minimalist bold style I've 
 
 * Contact Page
 
+* Footer
+
+    I made the choice to include both my social navigation options and my main navigation in the footer as well as via the main nav-bar. 
+    I am aware that this might be considered overkill, or somewhat redundant given that my main navbar is fixed and easily accessible from the footer area, however 
+    I chose to include them in the footer, because on small screens and medium screens up to 992px, the main navigation is hidden behind the hamburger icon and the upper social media links are 
+    small icons, which I think are easily ignored. Ultimately I didn't think the downside of potential redundancy outweighed the positives of potentially reminding a user to connect with me on social media, or have another look at part of my website.
+    Both CTAs which I included as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px. 
+
 ## Accessibility
 
 * My original design had far more dark on dark toned elements, which I love the look of, but after having checked the site and colour themes using the Web Disability Simulator,
-I realised my colour choices were problematic for some potential users. So I chose to use more of the light grey and yellow tones for text elements. 
+I realised my colour choices were problematic for a subsection of potential users. So I chose to use more of the light grey and yellow tones for text elements.
+
+* I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear, as below: <br>
+<input type="text" placeholder="Name:" required onfocus="this.placeholder=''" onblur="this.placeholder='Name:'"><br><br>
+I wrote it like this because I personally find it off-putting to type over something already written. However, I then researched placeholder functionality online and found that this was not acceptable HTML standard. 
+in terms of usability. So I changed it back to the following: <br>
+<input type="text" placeholder="Name:" required><br><br>
+Which I personally find annoying, but the consensus is that this way is more user-friendly, especially when not including form labels, which I have chosen to omit for design reasons.
+
+
 
 ## Future Features to Implement
 
