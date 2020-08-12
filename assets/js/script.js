@@ -8,41 +8,13 @@
 
 $(document).ready(function () {
     toggleTimeline()
-
-    //  if ( $(window).width() < 768 ) {
-
-    //         $(".timeline-icon").mouseover(function () {
-    
-    //             $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current ('this') timeline info
-    //             $(this).css("visibility", "hidden");
-    //             $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //this would be better with z-index but can't seem to make that work? 
-            
-    //         })
-    //         $(".timeline-icon").mouseout(function () {
-    //             $(".timeline-info").css("display", "none"); // hide the timeline info
-    //             $(this).css("visibility", "visible");
-    //             $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); 
-                
-    //         })
-
-    //     } else if ( $(window).width() >= 768 ) {
-
-    //     //On large screens do this: 
-    //          $(".timeline-icon").mouseover(function () {
-    //             $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
-    //             })
-
-    //             $(".timeline-icon").mouseout(function () {
-    //             $(".timeline-info").css("display", "none"); // hide the timeline info
-            
-    //             })
-
-    //         }
 });
 
 $(window).resize(function () {
     toggleTimeline()
 });
+
+/* Timeline toggle function */
 
 function toggleTimeline() {
     if ( $(window).width() < 768 ) {
@@ -62,8 +34,6 @@ function toggleTimeline() {
             })
 
         } else if ( $(window).width() >= 768 ) {
-            console.log("window went over 768")
-            //On large screens do this: 
 
              $(".timeline-icon").mouseover(function () {
                 $(this).css("visibility", "visible");
@@ -78,8 +48,4 @@ function toggleTimeline() {
 
             }
 }
-
-//There must be a shorter way to write the above. Something like "When the document is ready OR when the window is resized - do all this:"
-
-//Also - resizing to small is fine on mobile, but in small windows on mouse hover on desktop there is an annoying flickering effect. Don't know why. 
 
