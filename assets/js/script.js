@@ -1,10 +1,6 @@
 // Code modified from Will Chow's original at: https://jsfiddle.net/wilchow/4hzenxkh/
 // Also used the first line of @dynamyc-2's code from CSS Tricks: https://css-tricks.com/forums/topic/jquery-window-width-condition/
 
-
-//BUT ALSO: Need to have this NOT apply to the last icon on the timeline - the sun. How????
-
-
 $(document).ready(function () {
     toggleTimeline()
 });
@@ -42,11 +38,17 @@ function toggleTimeline() {
 
             $(".timeline-icon").mouseover(function () {
                 
+
                 $(this).parent().parent().find(".timeline-info").css("display", "block"); //show timeline info
                 $(this).css("visibility", "hidden"); //hide icon clicked
                 $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //hide line following icon clicked
-                
                 addBlurDarken()
+
+                if ( $(this).hasClass("fa-sun") ) {
+                    $(this).css("visibility", "visible"); //if the icon clicked is the sun - continue to show it and remove the blur darken filters that were just applied. 
+                    removeBlurDarken();
+                }      
+                
             })
 
             $(".timeline-icon").mouseout(function () {
