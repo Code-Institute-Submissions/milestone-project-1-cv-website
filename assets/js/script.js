@@ -32,6 +32,9 @@ $(window).resize(function () {
 
     Then all this is undone on mouseout. 
 
+    Lines 83-89 are to fix the edge-case scenario whereby a user looks at the timeline on a small screen on a desktop and then resizes it
+    to a large screen. The blur and darken effect was travelling, so these lines stop that unwanted behaviour.
+
 */
 
 const workHistorySection = $("#work-history-section");
@@ -50,6 +53,7 @@ function toggleTimeline() {
                 workHistorySection.find(".timeline-line").addClass("blur-and-darken"); 
                 $(".work-history-heading").addClass("blur-and-darken");
                 $(".timeline-instruction-device").addClass("blur-and-darken");
+                $(".timeline-instruction-non-device").addClass("blur-and-darken");
                 $(".end-of-timeline").addClass("blur-and-darken");
                 $(".arrow-down-history-to-skills").addClass("blur-and-darken");
             })
@@ -63,16 +67,27 @@ function toggleTimeline() {
                 workHistorySection.find(".timeline-line").removeClass("blur-and-darken");
                 $(".work-history-heading").removeClass("blur-and-darken");
                 $(".timeline-instruction-device").removeClass("blur-and-darken");
+                $(".timeline-instruction-non-device").removeClass("blur-and-darken");
                 $(".end-of-timeline").removeClass("blur-and-darken");
                 $(".arrow-down-history-to-skills").removeClass("blur-and-darken");             
             })
 
         } else if ( $(window).width() >= 768 ) {
 
+
              $(".timeline-icon").mouseover(function () {
                 $(this).css("visibility", "visible");
                 $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
                 $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible");
+
+                workHistorySection.find(".timeline-icon").removeClass("blur-and-darken");
+                workHistorySection.find(".timeline-line").removeClass("blur-and-darken");
+                $(".work-history-heading").removeClass("blur-and-darken");
+                $(".timeline-instruction-device").removeClass("blur-and-darken");
+                $(".timeline-instruction-non-device").removeClass("blur-and-darken");
+                $(".end-of-timeline").removeClass("blur-and-darken");
+                $(".arrow-down-history-to-skills").removeClass("blur-and-darken");  
+                
                 })
 
                 $(".timeline-icon").mouseout(function () {
@@ -82,3 +97,5 @@ function toggleTimeline() {
 
             }
 }
+
+
