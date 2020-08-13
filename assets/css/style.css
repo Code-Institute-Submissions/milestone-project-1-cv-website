@@ -79,6 +79,24 @@ body {
     margin: 0 auto;
 }
 
+.arrow-down p {
+    color: var(--light-grey);
+}
+
+.arrow-down p:hover,
+.arrow-down a:hover {
+    color: var(--accent-1);
+}
+
+.arrow-down {
+    text-align: center;
+}
+
+a > .arrow-down > i {
+    font-size: 2em;
+    color: var(--accent-1);
+}
+
 
 /****************************************** Universal Styles */
 
@@ -138,6 +156,7 @@ a:hover {
 
 /* Note for future use: To change BS hamburger icon colour: Type in the rgba value you want in the 'stroke' svg path. */
 /* Hamburger Icon Styles */
+
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(224, 224, 224, 1)' stroke-linecap='round' stroke-miterlimit='6' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -186,8 +205,7 @@ a:hover {
 }
 
 .social-media-link {
-    margin-right: 0.6rem;
-    
+    margin-right: 0.6rem;   
 }
 
 /****************************************** Home Section */
@@ -209,28 +227,10 @@ a:hover {
     text-align: center;
 }
 
-.arrow-down {
-    text-align: center;
+.arrow-down-home-to-bio {
     margin-bottom: 20px;
-    margin-top: 20px;
-    
+    margin-top: 20px; 
 }
-
-.arrow-down p {
-    color: var(--light-grey);
-}
-
-.arrow-down p:hover,
-.arrow-down a:hover {
-    color: var(--accent-1);
-}
-
-
-a > .arrow-down > i {
-    font-size: 2em;
-    color: var(--accent-1);
-}
-
 
 /****************************************** Personal Bio Section */
 
@@ -279,7 +279,6 @@ a > .arrow-down > i {
     display: none;
 }
 
-
 .timeline-info {
     background-color: var(--light-black);
     padding: 1em;
@@ -291,8 +290,7 @@ a > .arrow-down > i {
 .timeline-info .date {
     font-weight: 300;
     font-style: italic;
-    color: var(--light-grey);
-    
+    color: var(--light-grey); 
 }
 
 .timeline-info .place {
@@ -328,7 +326,6 @@ a > .arrow-down > i {
     margin-top: 9%;
 }
 
-
 .end-of-timeline p {
     margin-bottom: 0;
     font-size: 1.2em;
@@ -345,6 +342,9 @@ a > .arrow-down > i {
     font-size: 1.3em;
 }
 
+.arrow-down-history-to-skills {
+    margin-bottom: 20px;
+}
 
 
 /****************************************** Skills Section */
@@ -797,7 +797,7 @@ form button:active {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
-    .arrow-down {
+    .arrow-down-home-to-bio {
         margin-top: 5%;
     }
 
@@ -835,7 +835,7 @@ form button:active {
     font-size: 2.7em;    
 }
 
-.arrow-down {
+.arrow-down-home-to-bio {
     margin-top: 9%;
     
 }
@@ -1093,7 +1093,7 @@ a.live-site > h5 {
 
 /****************************************** Large Screens - Home Section */
 
-.arrow-down {
+.arrow-down-home-to-bio {
     margin-top: 11%;    
 }
 
