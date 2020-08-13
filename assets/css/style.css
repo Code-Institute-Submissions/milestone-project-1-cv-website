@@ -266,7 +266,10 @@ a:hover {
 .timeline-icon {
     font-size: 2.4em;
     transition: all ease-in 0.2s;
+    width: 300px;
 }
+
+
 
 .timeline-icon:hover {
     color: var(--accent-1);
