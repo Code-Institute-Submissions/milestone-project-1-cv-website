@@ -851,7 +851,12 @@ form button:active {
 /****************************************** Small Screens - Personal Bio Section */
 
     #bio-section {
-        position: relative;
+        position: relative;     
+    }
+
+    .personal-info-wrapper {
+        width: 90%;
+        margin: 0 auto;
     }
 
     p.personal-info  {
@@ -859,12 +864,12 @@ form button:active {
     }
 
     .profile-pic {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         float: right;
-        margin-top: 2.8em;
-        width: 40%;
+        margin-top: 1.4em;
         position: relative;
         overflow: hidden;
+        padding: 0.5em;
+        padding-left: 1.2em;
     }
 
     #karina-photo {
@@ -952,6 +957,10 @@ form button:active {
 
 /****************************************** Medium Screens - Personal Bio Section */
 
+.profile-pic {
+    padding-bottom: 0.5em;
+    padding-top: 0;
+}
 
 
 /****************************************** Medium Screens - Work History Section */
@@ -1232,10 +1241,15 @@ a.live-site > h5 {
 
 /****************************************** Large Screens - Personal Bio Section */
 
-.personal-info {
+/* .personal-info {
     width: 65%;
     align-items: center;
-}
+} */
+
+.personal-info-wrapper {
+        width: 75%;
+        margin: 0 auto;
+    }
 
 /****************************************** Large Screens - Work History Section */
     
@@ -1403,8 +1417,9 @@ a.live-site > h5 {
 
 /****************************************** Extra-Large Screens - Personal Bio Section */
 
-    .personal-info-col {
-        margin-left: -45px;
+    .personal-info-wrapper {
+        width: 65%;
+        margin: 0 auto;
     }
 
 /****************************************** Extra-Large Screens - Work History Section */
