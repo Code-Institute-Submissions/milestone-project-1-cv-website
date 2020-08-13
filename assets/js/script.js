@@ -38,7 +38,6 @@ function toggleTimeline() {
 
             $(".timeline-icon").mouseover(function () {
                 
-
                 $(this).parent().parent().find(".timeline-info").css("display", "block"); //show timeline info
                 $(this).css("visibility", "hidden"); //hide icon clicked
                 $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //hide line following icon clicked
@@ -54,8 +53,7 @@ function toggleTimeline() {
             $(".timeline-icon").mouseout(function () {
                 $(".timeline-info").css("display", "none"); //hide timeline info
                 $(this).css("visibility", "visible"); //show icon clicked
-                $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); //show line following icon clicked
-                
+                $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); //show line following icon clicked    
                 removeBlurDarken();            
             })
 
@@ -66,12 +64,11 @@ function toggleTimeline() {
                 $(this).css("visibility", "visible");
                 $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
                 $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible");
-
                 removeBlurDarken()      
                 })
 
             $(".timeline-icon").mouseout(function () {
-                $(".timeline-info").css("display", "none"); // hide all timeline infos
+                $(".timeline-info").css("display", "none"); // hide timeline info
             
             })
 

@@ -94,8 +94,8 @@ I wanted to use only sans-serif fonts to enhance the minimalist bold style I've 
 
 * Footer
 
-    I made the choice to include both my social navigation options and my main navigation in the footer as well as via the main nav-bar. 
-    I am aware that this might be considered overkill, or somewhat redundant given that my main navbar is fixed and easily accessible from the footer area, however 
+    * I made the choice to include both my social navigation and my main navigation in the footer as well as via the main nav-bar. 
+    I am aware that this might be considered somewhat redundant given that my main navbar is fixed and easily accessible from the footer area, however 
     I chose to include them in the footer, because on small screens and medium screens up to 992px, the main navigation is hidden behind the hamburger icon and the upper social media links are 
     small icons, which I think are easily ignored. Ultimately I didn't think the downside of potential redundancy outweighed the positives of potentially reminding a user to connect with me on social media, or have another look at part of my website.
     Both CTAs which I included as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px. 
@@ -120,7 +120,11 @@ Which I personally find annoying, but the consensus is that this way is more use
 
 * I plan to implement the sequential loading of elements on scroll. So as the user scrolls down elements pop into view.
 
----
+## Issues / Bugs
+
+* There is a flickering effect, when the work history timeline is viewed on very small Desktop / non-touch screens. It has something to do with moving the mouse when hovering over the icon. One fix is to make the 
+hover area even larger, but the issue with that is that it becomes difficult for the user to leave the timeline information "modal" (it's not really a modal). I am ok with this bug persisting for the time being, because it does not 
+break anything and it is very unlikely that users will view the timeline on a desktop with a small screen. Furthermore as hover is not available on mobile, this bug does not occur on devices. 
 
 ## Tools & Other Resources Used & Perused
 Here are the additional tools and resources I used during all stages of this project: 

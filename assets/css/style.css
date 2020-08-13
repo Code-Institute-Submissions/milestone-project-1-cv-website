@@ -234,16 +234,31 @@ a:hover {
 
 /****************************************** Personal Bio Section */
 
-#bio-section .personal-info p {
+
+.bio-heading {
+    padding-bottom: 0.3em;
+}
+
+p.personal-info  {
     font-size: 1.2em;
+    text-align: justify;
+    hyphens: auto;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+    padding: 1em;
 }
 
 #karina-photo {
-    width: 100%;
-    max-width: 360px;
-    border-radius: 7%;
-    border: groove var(--accent-1) 1px;
+    width: 200px;
+    border-radius: 7px;
 }
+
+.profile-pic {
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    text-align: center;
+    padding: 2em;
+}
+
 
 /****************************************** Work History Section */
 
@@ -702,11 +717,15 @@ form button:active {
     padding-top: 1em;
 }
 
-.footer-download-trad-cv i,
-.footer-developer-brand i {
+.footer-download-trad-cv i {
     font-size: 2em;
     color: var(--light-grey);
     margin-bottom: 1em;
+}
+
+.footer-developer-brand i {
+    font-size: 2em;
+    color: var(--light-grey);
 }
 
 .footer-social-navigation > h4,
@@ -714,16 +733,22 @@ form button:active {
     font-size: 1.35em;
 }
 
-.footer-developer-brand > p {
+.footer-developer-brand > p,
+.back-to-top-text {
     font-family: "Lato", sans-serif;
     font-size: 1em;
     padding: 0.5em;
     color: var(--light-grey);
 }
 
-.footer-developer-brand > i { 
+.footer-developer-brand > i,
+.footer-developer-brand > a,
+.footer-developer-brand > a > i { 
     color: var(--accent-1);
-    margin-top: 2.6px;
+}
+
+.back-to-top-text {
+    margin-bottom: 5px;
 }
 
 #cv-download {
@@ -823,6 +848,84 @@ form button:active {
         width: 50%;
     }
 
+/****************************************** Small Screens - Personal Bio Section */
+
+    #bio-section {
+        position: relative;
+    }
+
+    p.personal-info  {
+        font-size: 1.2em;
+    }
+
+    .profile-pic {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        float: right;
+        margin-top: 2.8em;
+        width: 40%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #karina-photo {
+        border-radius: 7px;
+        float: right;
+        max-width: 280px;
+        max-height: 350px;
+    }
+
+
+/* Grid definitions and styles for left-heading project boxes */
+
+.project-container-a {
+    grid-template-areas: 
+        "heading heading"
+        "subheading subheading"
+        "brief brief"
+        "download download"
+        "live-site live-site"
+        "image image";
+    justify-content: left;
+    grid-template-columns: 50% 50%;
+    }
+
+/* Grid definitions and styles for right-heading project boxes */
+
+.project-container-b {
+    grid-template-areas: 
+        "heading heading"
+        "subheading subheading"
+        "brief brief"
+        "download download"
+        "live-site live-site"
+        "image image";
+    justify-content: right;
+    grid-template-columns: 50% 50%;
+    }
+
+/* Using justify-self to justify elements to the left and right of the project boxes */
+
+    .project-name-a,
+    .project-subheading-a,
+    .project-brief-a,
+    .project-image-b,
+    .live-site-a,
+    .download-pro-specs-a,
+    .in-development-a {
+        justify-self: left;
+    }
+
+    .project-name-b,
+    .project-subheading-b,
+    .project-brief-b,
+    .project-image-a,
+    .live-site-b,
+    .download-pro-specs-b,
+    .in-development-b {
+        justify-self: right;
+    }
+
+
  }
 
 /* Medium devices (tablets, 768px and up) */
@@ -849,23 +952,7 @@ form button:active {
 
 /****************************************** Medium Screens - Personal Bio Section */
 
-.personal-info {
-    width: 80%;
-    margin: 0 auto; 
-}
 
-.personal-info-col {
-    padding: 2em !important;
-    margin-left: -10px;
-}
-
-.profile-pic {
-    margin-top: 2.8em;
-}
-#karina-photo {
-    min-height: 350px;
-    object-fit: cover; 
-}
 
 /****************************************** Medium Screens - Work History Section */
 
@@ -927,11 +1014,12 @@ form button:active {
         left: 6%;
         bottom: 2%;
         right: 6%;
+        font-size: 0.9em;
     }
 
     .skills-h4-boxes-1 {
         position: absolute;
-        bottom: 55%;
+        bottom: 69%;
         left: 6%;
     }
 
@@ -1180,12 +1268,13 @@ a.live-site > h5 {
 
     .skill-row-boxy-box > p {
         left: 6%;
-        top: 37%;
+        top: 34%;
         right: 6%;
+        font-size: 1em;
     }
 
     .skills-h4-boxes-1 {
-        top: 26%;
+        top: 23%;
         left: 6%;
     }
 
@@ -1221,7 +1310,7 @@ a.live-site > h5 {
     align-items: center;
     justify-content: left;
     grid-template-columns: 30% 30% 40%;
-    grid-column-gap: 5px;
+    grid-column-gap: 15px;
     }
 
 
