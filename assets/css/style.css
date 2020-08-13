@@ -269,8 +269,6 @@ a:hover {
     width: 300px;
 }
 
-
-
 .timeline-icon:hover {
     color: var(--accent-1);
     transform: scale(1.2);
@@ -349,6 +347,11 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/* Timeline Blur & Darken Background on Hover */
+
+.blur-and-darken {
+    filter: blur(3px) brightness(40%);
+}
 
 /****************************************** Skills Section */
 
