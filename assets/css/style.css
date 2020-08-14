@@ -458,6 +458,11 @@ p.personal-info  {
     height: 30px;
 }
 
+.progress-bar {
+    align-items: flex-start;
+    padding-left: 1.5em;
+}
+
 /****************************************** Portfolio Section */
 
 .portfolio-intro > p {
