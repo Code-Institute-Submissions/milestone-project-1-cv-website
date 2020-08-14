@@ -190,6 +190,12 @@ Amazing tool that adds all the browser prefixs automatically.
 ### **[Can I Use?](https://caniuse.com/)**
 Checks web development features for browser compatibility. 
 
+### **[dirtyMarkup by 10 Best Design](https://www.10bestdesign.com/dirtymarkup/)**
+HTML, CSS, JS & API code formatter. Super useful resource thanks to Richard Read (Readri205 @ Code Institute) for the link. 
+
+### **[Google's Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+Useful reference for formatting/style information.
+
 ---
 
 ## Technology Used
