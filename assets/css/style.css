@@ -123,6 +123,7 @@ body {
     font-size: 2em;
 }
 
+
 .h2-heading {
     font-family: "Roboto", sans-serif;
     font-size: 1.8em;
@@ -287,7 +288,7 @@ p.personal-info  {
 .timeline-icon {
     font-size: 2.4em;
     transition: all ease-in 0.2s;
-    width: 300px;
+    width: 50px;
 }
 
 .timeline-icon:hover {
@@ -473,11 +474,20 @@ p.personal-info  {
     margin-bottom: 1.2em;
 }
 
-
 .skills-code-institute {
     font-size: 1.3em;
     padding-top: 2.3em;
     color: var(--light-grey);
+}
+
+#code-institute-link {
+    color: var(--accent-1);
+    transition: 2s ease-in all;
+}
+
+#code-institute-link:hover {
+   transform: scale(1.1);
+   text-decoration: underline;
 }
 
 .graph-box {
@@ -612,18 +622,19 @@ a.live-site > h5 {
     max-width: 450px;
 }
 
-/* Overlay for Projects in Development  */
+/* For Projects in Development  */
 
 h3.in-development-a,
 h3.in-development-b {
     color: var(--light-grey);
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
-    font-size: 1.4em;
+    font-size: 0.8em;
     padding: 0.5em;
     border: 2px dashed var(--accent-1);
     margin-top: 1em;
-    width: 65%;
+    width: 75%;
+    text-align: center;
 }
 
 /****************************************** Contact Form Section */
@@ -672,11 +683,6 @@ form textarea {
 form input:active,
 form textarea:active {
     outline: var(--accent-1) 2px solid;
-}
-
-form input:focus,
-form textarea:focus{
-    
 }
 
 ::placeholder {
@@ -806,8 +812,6 @@ form button:active {
 }
 
 
-
-
 /* Footer Grid Definitions and Layout */
 
 .footer-grid {
@@ -907,12 +911,30 @@ form button:active {
   }
 }
 
+.fa-long-arrow-alt-up:hover {
+    animation: arrow-up 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow-up {
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+      transform: translate(0,-20px);
+  }
+  100% {
+      transform: translate(0,0);
+  }
+}
 
 
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+
+/****************************************** Small Screens - Home Section */
 
     .arrow-down-home-to-bio {
         margin-top: 5%;
@@ -929,10 +951,6 @@ form button:active {
     font-size: 2.2em;   
     }
 
-    h3.in-development-a,
-    h3.in-development-b {
-        width: 50%;
-    }
 
 /****************************************** Small Screens - Personal Bio Section */
 
@@ -965,6 +983,20 @@ form button:active {
         max-height: 350px;
     }
 
+/****************************************** Small Screens - Work History Section */
+
+.timeline-icon {
+    width: 100px;
+}
+
+
+/****************************************** Small Screens - Portfolio Section */
+
+    h3.in-development-a,
+    h3.in-development-b {
+        width: 50%;
+        font-size: 1.3em;
+    }
 
 /* Grid definitions and styles for left-heading project boxes */
 
@@ -1070,6 +1102,10 @@ form button:active {
         top: 55%;
     }
 
+    .timeline-icon {
+    width: 300px;
+}
+
 /****************************************** Medium Screens - Skills Section */
 
     .divider-short {
@@ -1103,13 +1139,12 @@ form button:active {
     }
     }
 
-
     .skill-row-boxy-box > p {
         position: absolute;
         left: 6%;
         bottom: 2%;
         right: 6%;
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 
     .skills-h4-boxes-1 {
@@ -1327,10 +1362,6 @@ a.live-site > h5 {
 
 /****************************************** Large Screens - Personal Bio Section */
 
-/* .personal-info {
-    width: 65%;
-    align-items: center;
-} */
 
 .personal-info-wrapper {
         width: 75%;
@@ -1362,13 +1393,12 @@ a.live-site > h5 {
     }
 
     .skill-row-boxy-box {
-        padding: 2em;
         width: 220px;   
     }
 
     .skill-row-boxy-box > p {
         left: 6%;
-        top: 34%;
+        top: 33%;
         right: 6%;
         font-size: 1em;
     }
@@ -1450,6 +1480,13 @@ a.live-site > h5 {
     height: auto;
     width: 100%; 
 }
+
+
+h3.in-development-a,
+h3.in-development-b {
+width: 50%;
+}
+
 
 /****************************************** Large Screens Footer Section */
 
