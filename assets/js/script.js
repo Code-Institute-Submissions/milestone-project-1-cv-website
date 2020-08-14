@@ -1,11 +1,14 @@
 /* Here I apply the toggleTimeline function univerally when the page has loaded */
+
 $(document).ready(function() {
   toggleTimeline()
   animateUpArrow()
 });
+
 $(window).resize(function() {
   toggleTimeline()
 });
+
 /* FUNCTION 1: Timeline toggle function
 
     This code was modified from Will Chow's original at: https://jsfiddle.net/wilchow/4hzenxkh/
@@ -26,9 +29,8 @@ $(window).resize(function() {
     9. Blur and darken the paragraph at the end of the timeline.
     10. Blur and darken the scrolling arrow and text. 
 
-    Then on mouseout the removeBlurDarken() function undoes all of the above.
+    Then on mouseout the removeBlurDarken() function undoes all of the above. */
 
-*/
 const workHistorySection = $("#work-history-section");
 
 function toggleTimeline() {
@@ -62,6 +64,7 @@ function toggleTimeline() {
     })
   }
 }
+
 /* I was repeating a lot of this code so I separated it out into two functions: 
     FUNCTION 2: Add Blur and Darken Background of Timeline. */
 function addBlurDarken() {
@@ -73,6 +76,7 @@ function addBlurDarken() {
   $(".end-of-timeline").addClass("blur-and-darken");
   $(".arrow-down-history-to-skills").addClass("blur-and-darken");
 }
+
 /* FUNCTION 3: Remove the blur and darkenening effect on the background of the timeline.  */
 function removeBlurDarken() {
   workHistorySection.find(".timeline-icon").removeClass("blur-and-darken");
@@ -83,12 +87,14 @@ function removeBlurDarken() {
   $(".end-of-timeline").removeClass("blur-and-darken");
   $(".arrow-down-history-to-skills").removeClass("blur-and-darken");
 }
+
 /* FUNCTION 4: Add and remove the "active" class to NavBar as a user browses the page.
    Taken from Pete TNT's Stack Overflow Solution at: https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working */
 $(".navbar-nav a").on("click", function() {
   $(".navbar-nav").find(".active").removeClass("active");
   $(this).parent().addClass("active");
 });
+
 /* FUNCTION 5: Code to close the navbar on mobile devices when a user clicks outside of the navigation & when they click on a navigation link.
    Taken from nozzlemans's Stack Overflow Solution at: https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen */
 $(document).ready(function() {
@@ -100,6 +106,7 @@ $(document).ready(function() {
     }
   });
 });
+
 /* FUNCTION 6: Code to animate the up arrow when a user hovers over the entire "Back to Top" div.
 I had this originally as a hover effect over the icon, but I felt the icon was too small a target.  */
 function animateUpArrow() {
