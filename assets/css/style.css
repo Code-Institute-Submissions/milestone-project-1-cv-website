@@ -734,6 +734,10 @@ form button:active {
     margin-bottom: 1em;
 }
 
+.footer-developer-brand {
+    align-items: center;
+}
+
 .footer-developer-brand i {
     font-size: 2em;
     color: var(--light-grey);
@@ -750,6 +754,7 @@ form button:active {
     font-size: 1em;
     padding: 0.5em;
     color: var(--light-grey);
+    margin-bottom: 0;
 }
 
 .footer-developer-brand > i,
@@ -758,8 +763,11 @@ form button:active {
     color: var(--accent-1);
 }
 
-.back-to-top-text {
-    margin-bottom: 5px;
+
+.back-to-top {
+    margin-left: 1.5em;
+    display: flex;
+    align-items: center;
 }
 
 #cv-download {
@@ -831,6 +839,47 @@ form button:active {
     padding: 2em;
 }
 
+.fa-fish:hover {
+    animation: fishyswim 5s ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fishyswim {
+  0% {
+    transform: translate(0,0);
+  }
+  10% {
+      transform: translate(2em, 1em);
+  }
+  20% {
+      transform: translate(6em,-1.5em) rotate(-90deg);
+  }
+  30% {
+      transform: translate(-6em, -1.5em) rotate(-180deg);
+  }
+  40% {
+      transform: translate(-12em, -1em) rotate(-270deg);
+  }
+
+  50% {
+    transform: translate(-12em, -1em) rotate(-360deg);
+  }
+  60% {
+      transform: translate(-6em,-0.5em) rotate(-360deg);
+  }
+   70% {
+      transform: translate(-2em, 0em) rotate(-360deg);
+  }
+   80% {
+      transform: translate(-1em, 0em) rotate(-360deg);
+  }
+   90% {
+      transform: translate(0em, 0em) rotate(-360deg);
+  }
+  100% {
+     transform: translate(0em, 0em) rotate(-360deg);
+  }
+}
 
 
 
