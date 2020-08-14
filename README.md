@@ -185,7 +185,10 @@ Specifically:<br>
 ### **[jQuery Documentation](https://api.jquery.com/)**
 
 ### **[Autoprefixer - CSS](https://autoprefixer.github.io/)**
-Amazing tool that adds all the browser prefixs automatically. 
+Amazing tool that adds all the browser prefixs automatically.
+
+### **[Can I Use?](https://caniuse.com/)**
+Checks web development features for browser compatibility. 
 
 ---
 
