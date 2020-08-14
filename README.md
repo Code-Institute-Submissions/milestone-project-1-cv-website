@@ -131,8 +131,8 @@ Which I personally find annoying, but the consensus is that this way is more use
 
 * There can be a slight flickering effect, when the work history timeline is viewed on very small Desktop / non-touch screens. It has something to do with moving the mouse when hovering over the icon. One fix is to make the 
 hover area even larger, but the issue with that is that it becomes difficult for the user to leave the timeline information "modal" (it's not really a modal). I am ok with this situation persisting for the time being, because it does not 
-break anything and it is very unlikely that users will view the timeline on a desktop with such a small screen, given the resolution of most laptops, the user would have to resize the browser to be as small as it needs to be for this issue to occur.
-As hover is not available on mobile, this bug does not occur on devices. 
+break anything and it is very unlikely that users will view the timeline on a desktop with such a small screen, given the resolution of most laptops. The user would have to resize the browser to be very small for this issue to occur. That behaviour
+is unlikely. Finally, as hover is not available on mobile, this bug does not occur on devices. 
 
 ## Tools & Other Resources Used & Perused
 Here are the additional tools and resources I used during all stages of this project: 
@@ -218,6 +218,9 @@ text remains until you actually type.
 
 #### [Mitra's Code from Stack Overflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4)
 I used this user's answer (2nd from top) to change the colour of my bootstrap hamburger icon when active or focus states were triggered. 
+
+### [Pete TNT's Code from Stack Overflow](https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working)
+I used and altered this code to make my Bootstrap navbar work the way it should regarding the active class.
 
 
 ## Acknowledgements

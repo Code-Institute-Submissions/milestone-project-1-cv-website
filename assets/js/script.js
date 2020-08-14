@@ -98,3 +98,10 @@ function removeBlurDarken() {
     $(".arrow-down-history-to-skills").removeClass("blur-and-darken");  
 }
 
+/* Code to add and remove "active" class to NavBar as a user browses the page.
+Taken from Pete TNT's Stack Overflow Solution at: https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working */
+
+$(".navbar-nav a").on("click", function(){
+   $(".navbar-nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
