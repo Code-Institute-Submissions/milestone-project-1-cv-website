@@ -86,7 +86,14 @@ I wanted to use only sans-serif fonts to enhance the minimalist bold style I've 
 
 * Work History
 
+    An interactive timeline of my work history to date. To make hovering over the items easier for the user, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled
+     me to increase the hover zone without affecting the size of the icon itself. I had to adjust this for smaller screens because it was too difficult then to click away from the "modal" timeline information.
+
 * Skills
+
+    This page features a list of skills that enhance and add to my employability as a professional web developer. As the page is heavy on content, I have made it more accessible by demarcating the various skills into categories and 
+    further subdividing them into boxes which I think enables the design to flow smoothly and displays the information in a way that is easy to read. I've incorporated a more graphical visual in the form of the progress bar graph which 
+    currently displays more aspirational than factual progress results, but I will update these to reflect my actual progress before I send this website to potential employers. 
 
 * Selected Projects
 
@@ -96,9 +103,9 @@ I wanted to use only sans-serif fonts to enhance the minimalist bold style I've 
 
     * I made the choice to include both my social navigation and my main navigation in the footer as well as via the main nav-bar. 
     I am aware that this might be considered somewhat redundant given that my main navbar is fixed and easily accessible from the footer area, however 
-    I chose to include them in the footer, because on small screens and medium screens up to 992px, the main navigation is hidden behind the hamburger icon and the upper social media links are 
-    small icons, which I think are easily ignored. Ultimately I didn't think the downside of potential redundancy outweighed the positives of potentially reminding a user to connect with me on social media, or have another look at part of my website.
-    Both CTAs which I included as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px. 
+    I persisted with this decision, because on small screens and medium screens up to 992px, the main navigation is hidden behind the hamburger icon and the upper social media links are 
+    quite small, thus easily ignored. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ultimately I didn't think the downside of redundancy outweighed the positives of potentially reminding a user to connect with me on social media, or have another look at part of my website.
+    I included both of these CTAs as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px as at this size the navbar is completely visible.
 
 ## Accessibility
 
@@ -122,9 +129,10 @@ Which I personally find annoying, but the consensus is that this way is more use
 
 ## Issues / Bugs
 
-* There is a flickering effect, when the work history timeline is viewed on very small Desktop / non-touch screens. It has something to do with moving the mouse when hovering over the icon. One fix is to make the 
-hover area even larger, but the issue with that is that it becomes difficult for the user to leave the timeline information "modal" (it's not really a modal). I am ok with this bug persisting for the time being, because it does not 
-break anything and it is very unlikely that users will view the timeline on a desktop with a small screen. Furthermore as hover is not available on mobile, this bug does not occur on devices. 
+* There can be a slight flickering effect, when the work history timeline is viewed on very small Desktop / non-touch screens. It has something to do with moving the mouse when hovering over the icon. One fix is to make the 
+hover area even larger, but the issue with that is that it becomes difficult for the user to leave the timeline information "modal" (it's not really a modal). I am ok with this situation persisting for the time being, because it does not 
+break anything and it is very unlikely that users will view the timeline on a desktop with such a small screen, given the resolution of most laptops, the user would have to resize the browser to be as small as it needs to be for this issue to occur.
+As hover is not available on mobile, this bug does not occur on devices. 
 
 ## Tools & Other Resources Used & Perused
 Here are the additional tools and resources I used during all stages of this project: 
@@ -206,6 +214,9 @@ I used and altered the first line from this user's question on CSS Tricks.
 #### [MatuDuke's Code from Stack Overflow](https://stackoverflow.com/questions/9707021/how-do-i-auto-hide-placeholder-text-upon-focus-using-css-or-jquery/9707068#9707068)
 I used this user's answer (2nd from the top) to hide the placeholder text in my contact form when the user clicks to type something, as I think it's off-putting when the placeholder 
 text remains until you actually type.
+
+#### [Mitra's Code from Stack Overflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4)
+I used this user's answer (2nd from top) to change the colour of my bootstrap hamburger icon when active or focus states were triggered. 
 
 
 ## Acknowledgements

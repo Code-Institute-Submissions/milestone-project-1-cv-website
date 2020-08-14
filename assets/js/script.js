@@ -17,7 +17,8 @@ $(window).resize(function () {
     3. Hide the icon that was clicked.
     4. Hide the timeline line following that clicked icon.
 
-    The following is only applied to small screens and is included as a separate function: addBlurDarken
+    The following is only applied to small screens and is included as a separate function (addBlurDarken()) which adds the blur-and-darken class to the elements
+    that require it:
    
     5. Blur and darken all the other timeline icons.
     6. Blur and darken all the other timeline lines.
@@ -26,7 +27,7 @@ $(window).resize(function () {
     9. Blur and darken the paragraph at the end of the timeline.
     10. Blur and darken the scrolling arrow and text. 
 
-    Then all this is undone on mouseout. 
+    Then on mouseout the removeBlurDarken() function undoes all of the above.
 
 */
 

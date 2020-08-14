@@ -193,6 +193,12 @@ a:hover {
     color: var(--accent-1);
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: var(--accent-1) 2px solid;
+}
+
 /****************************************** Navigation: Social Media Styles */
 
 .social-media-icon {
