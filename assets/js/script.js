@@ -11,8 +11,8 @@ $(window).resize(function() {
 
 /* FUNCTION 1: Timeline toggle function
 
-    This code was modified from Will Chow's original at: https://jsfiddle.net/wilchow/4hzenxkh/
-    I also used the first line of @dynamyc-2's code from CSS Tricks: https://css-tricks.com/forums/topic/jquery-window-width-condition/
+    This code was modified from Will Chow's original at: https://jsfiddle.net/wilchow/4hzenxkh/ (also linked in README)
+    I also used the first line of @dynamyc-2's code from CSS Tricks: https://css-tricks.com/forums/topic/jquery-window-width-condition/ (also linked in README)
 
     1. This function starts by dividing the logic into two sections small screens and large screens.
     2. Then on mouse over (click or hover): show the timeline information.
