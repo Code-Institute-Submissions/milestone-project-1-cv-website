@@ -355,13 +355,13 @@ p.personal-info  {
 
 .end-of-timeline a {
     color: var(--accent-1);
-    text-decoration-style: wavy;
     text-decoration: underline;
-
+    transition: 0.5s ease-in all;
 }
 
+
 .end-of-timeline a:hover {
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .arrow-down-history-to-skills {
@@ -373,6 +373,32 @@ p.personal-info  {
 .blur-and-darken {
     filter: blur(3px) brightness(40%);
 }
+
+/* Sun Animation */
+
+#timeline-sun {
+    animation: rotatingsun 3s infinite;
+}
+
+@keyframes rotatingsun {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(90deg);
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  75% {
+      transform: rotate(270deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
 
 /****************************************** Skills Section */
 
