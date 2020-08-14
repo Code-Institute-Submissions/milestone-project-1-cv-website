@@ -75,7 +75,6 @@ The colour palette chosen for this project was primarily dark toned with an almo
 I wanted to use only sans-serif fonts to enhance the minimalist bold style I've gone with. 
 
 
-
 ## Features
 
 * Navigation Bar - Fixed Bootstrap Navbar.
@@ -126,6 +125,8 @@ Which I personally find annoying, but the consensus is that this way is more use
 * I plan to turn this website into a dynamic site, whereby specific project pages are generated dynamically after inputting certain key variables. Title, goal, colour palette, images etc... (Example in wireframe).
 
 * I plan to implement the sequential loading of elements on scroll. So as the user scrolls down elements pop into view.
+
+* I plan to password protect my downloadable traditional CV, as I don't want all my personal details to be readily available online. Once I've instituted that feature I will upload my actual CV as opposed to the dummy one that is currently there.
 
 ## Issues / Bugs
 
@@ -222,6 +223,10 @@ I used this user's answer (2nd from top) to change the colour of my bootstrap ha
 ### [Pete TNT's Code from Stack Overflow](https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working)
 I used and altered this code to make my Bootstrap navbar work the way it should regarding the active class.
 
+### [Nozzleman's Code from Stack Overflow](https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen)
+I used and altered this code to make the navbar close when a user clicks away from it on mobile devices. The Bootstrap default is that you have to click on the hamburger icon to 
+close the navigation, and I would questions how user-friendly this is. In addition, the Bootstrap default behaviour is that even when a user clicks on a navigation link, the navigation
+stays open and they have to click the icon to close it. I think this code improves upon the default behaviour. 
 
 ## Acknowledgements
 

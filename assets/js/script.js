@@ -1,5 +1,5 @@
-// Code modified from Will Chow's original at: https://jsfiddle.net/wilchow/4hzenxkh/
-// Also used the first line of @dynamyc-2's code from CSS Tricks: https://css-tricks.com/forums/topic/jquery-window-width-condition/
+
+/* Here I apply the toggleTimeline function univerally when the page has loaded */
 
 $(document).ready(function () {
     toggleTimeline()
@@ -10,7 +10,10 @@ $(window).resize(function () {
 });
 
 
-/* Timeline toggle function
+/* FUNCTION 1: Timeline toggle function
+
+    This code was modified from Will Chow's original at: https://jsfiddle.net/wilchow/4hzenxkh/
+    I also used the first line of @dynamyc-2's code from CSS Tricks: https://css-tricks.com/forums/topic/jquery-window-width-condition/
 
     1. This function starts by dividing the logic into two sections small screens and large screens.
     2. Then on mouse over (click or hover): show the timeline information.
@@ -76,7 +79,8 @@ function toggleTimeline() {
         }
 }
 
-// I was repeating a lot of this code so I separated it out into two functions: 
+/* I was repeating a lot of this code so I separated it out into two functions: 
+    FUNCTION 2: Add Blur and Darken Background of Timeline. */
 
 function addBlurDarken() {
     workHistorySection.find(".timeline-icon").addClass("blur-and-darken"); 
@@ -88,6 +92,8 @@ function addBlurDarken() {
     $(".arrow-down-history-to-skills").addClass("blur-and-darken");
 }
 
+/* FUNCTION 3: Remove the blur and darkenening effect on the background of the timeline.  */
+
 function removeBlurDarken() {
     workHistorySection.find(".timeline-icon").removeClass("blur-and-darken");
     workHistorySection.find(".timeline-line").removeClass("blur-and-darken");
@@ -98,10 +104,24 @@ function removeBlurDarken() {
     $(".arrow-down-history-to-skills").removeClass("blur-and-darken");  
 }
 
-/* Code to add and remove "active" class to NavBar as a user browses the page.
-Taken from Pete TNT's Stack Overflow Solution at: https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working */
+/* FUNCTION 4: Add and remove the "active" class to NavBar as a user browses the page.
+   Taken from Pete TNT's Stack Overflow Solution at: https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working */
 
 $(".navbar-nav a").on("click", function(){
    $(".navbar-nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
+});
+
+
+/* FUNCTION 5: Code to close the navbar on mobile devices when a user clicks outside of the navigation & when they click on a navigation link.
+   Taken from nozzlemans's Stack Overflow Solution at: https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen */
+
+ $(document).ready(function () {
+    $(document).click(function (event) {
+        var clickedArea = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickedArea.hasClass("navbar")) {
+            $("button.navbar-toggler").click();
+        }
+    });
 });
