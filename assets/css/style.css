@@ -253,6 +253,7 @@ p.personal-info  {
     padding-bottom: 2em;
     margin-bottom: 0;
     padding: 1em;
+    font-weight: 300;
 }
 
 #karina-photo {
@@ -406,6 +407,7 @@ p.personal-info  {
 .skills-intro > p {
     font-size: 1.2em;
     color: var(--light-grey);
+    font-weight: 300;
 }
 
 .skills-h4,
@@ -478,7 +480,9 @@ p.personal-info  {
     font-size: 1.3em;
     padding-top: 2.3em;
     color: var(--light-grey);
+    font-weight: 300;
 }
+
 
 #code-institute-link {
     color: var(--accent-1);
@@ -509,6 +513,7 @@ p.personal-info  {
 
 .portfolio-intro > p {
     color: var(--light-grey);
+    font-weight: 300;
 }
 
 /* Project Box Font Styles */
@@ -958,6 +963,8 @@ form button:active {
 
     p.personal-info  {
         font-size: 1.2em;
+        letter-spacing: 0.2px;
+        font-weight: 300;
     }
 
     .profile-pic {
@@ -985,11 +992,12 @@ form button:active {
 
 /****************************************** Small Screens - Portfolio Section */
 
-    h3.in-development-a,
-    h3.in-development-b {
-        width: 50%;
-        font-size: 1.3em;
-    }
+
+h3.in-development-a,
+h3.in-development-b {
+    width: 50%;
+    font-size: 1.3em;
+}
 
 /* Grid definitions and styles for left-heading project boxes */
 
@@ -1191,6 +1199,10 @@ form button:active {
     }
 
 /****************************************** Medium Screens - Portfolio Section */
+
+.portfolio-intro > p {
+    font-size: 1.3em;
+}
 
 /* Project Box Font Styles */
 
