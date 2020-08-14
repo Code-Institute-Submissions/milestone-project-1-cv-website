@@ -3,6 +3,7 @@
 
 $(document).ready(function () {
     toggleTimeline()
+    animateUpArrow()
 });
 
 $(window).resize(function () {
@@ -125,3 +126,16 @@ $(".navbar-nav a").on("click", function(){
         }
     });
 });
+
+
+/* FUNCTION 6: Code to animate the up arrow when a user hovers over the entire "Back to Top" div.
+I had this originally as a hover effect over the icon, but I felt the icon was too small a target.  */
+
+function animateUpArrow() {
+    $(".back-to-top").mouseover(function () {
+        $(".fa-long-arrow-alt-up").css("animation", "arrow-up 1s ease-in-out infinite");
+    });
+    $(".back-to-top").mouseout(function () {
+        $(".fa-long-arrow-alt-up").css("animation", "none");
+    });
+}

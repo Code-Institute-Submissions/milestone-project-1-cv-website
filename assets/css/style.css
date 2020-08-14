@@ -911,11 +911,6 @@ form button:active {
   }
 }
 
-.fa-long-arrow-alt-up:hover {
-    animation: arrow-up 1s ease-in-out;
-    animation-iteration-count: infinite;
-}
-
 @keyframes arrow-up {
   0% {
     transform: translate(0,0);
