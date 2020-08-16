@@ -192,12 +192,17 @@ a:hover {
   transition: 0.2s ease-in all;
 }
 
-.navbar .navbar-ul .nav-link:hover {
+.navbar .navbar-ul .nav-link:hover,
+.navbar .navbar-ul .nav-link:focus {
   color: var(--light-grey);
   border-bottom: solid var(--accent-1) 2px;
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.navbar .navbar-ul .nav-link:focus {
+    outline-color: var(--accent-1);
 }
 
 .navbar .navbar-ul .active>.nav-link {
@@ -217,8 +222,13 @@ a:hover {
   color: var(--light-grey);
 }
 
-.social-media-icon:hover {
+.social-media-icon:hover,
+.social-media-icon:focus {
   color: var(--accent-1);
+}
+
+.social-media-icon:focus {
+    outline-color: var(--accent-1);
 }
 
 .social-media-link {
@@ -1136,10 +1146,10 @@ form button:active {
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   /****************************************** Small Screens - Home Section */
   .arrow-down-home-to-bio {
-    margin-top: 5%;
+    margin-top: 1%;
   }
   .landing-page-heading,
   .section-heading {
@@ -1230,7 +1240,7 @@ form button:active {
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   /****************************************** Medium Screens - Universal Style Changes */
   .section-heading {
     font-size: 3.8em;
@@ -1240,7 +1250,7 @@ form button:active {
     font-size: 2.7em;
   }
   .arrow-down-home-to-bio {
-    margin-top: 9%;
+    margin-top: 1%;
   }
   /****************************************** Medium Screens - Personal Bio Section */
   .profile-pic {
@@ -1453,10 +1463,10 @@ form button:active {
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   /****************************************** Large Screens - Home Section */
   .arrow-down-home-to-bio {
-    margin-top: 11%;
+    margin-top: 3%;
   }
   /****************************************** Large Screens - Font-Sizing */
   .landing-page-heading,
@@ -1494,6 +1504,11 @@ form button:active {
   .timeline-icon {
     font-size: 3em;
   }
+
+  .timeline-info {
+    width: 320px;
+  }
+
   .timeline-info-left {
     left: 15%;
     top: 55%;
@@ -1615,7 +1630,7 @@ form button:active {
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   /****************************************** Extra-Large Screens - Personal Bio Section */
   .home-scroll-down {
     left: 43%;
@@ -1658,7 +1673,7 @@ form button:active {
   }
 }
 
-@media (min-width: 1330px) {
+@media screen and (min-width: 1330px) {
   #skills-section {
     max-width: 88%;
   }
@@ -1691,3 +1706,29 @@ form button:active {
     display: block;
   }
 }
+
+/* Media Queries for Accessibility Zoom */
+
+/* @media (max-width: 350px) {
+  .landing-page-heading {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 450px) {
+  .landing-page-heading {
+      font-size: 1.7em;
+  }
+}
+
+@media (max-width: 550px) {
+  .landing-page-heading {
+      font-size: 1.9em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .landing-page-heading {
+      font-size: 1.7em;
+  }
+} */
