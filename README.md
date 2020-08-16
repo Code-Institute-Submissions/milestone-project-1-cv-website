@@ -118,6 +118,7 @@ in terms of usability. So I changed it back to the following: <br>
 <input type="text" placeholder="Name:" required><br><br>
 Which I personally find annoying, but the consensus is that this way is more user-friendly, especially when not including form labels, which I have chosen to omit for design reasons.
 
+* After running my site through web.dev I found that I need to add aria-labels to my form inputs and button, for SEO, screen-readers & accessibility. 
 
 
 ## Future Features to Implement
@@ -221,7 +222,17 @@ Useful for testing various site performance and user experience markers.
 
 * Git 
 
----
+
+## Testing 
+
+1. web.dev Measure was amazing for checking a range of different measures of page performance, accessibility, vulnerabilities and best practices. 
+    * I went through the list a few times and changed/altered elements on my page to try and improve those markers of performance that I could.
+
+    * I altered my code so that my headings descended sequentially. Initially I had skipped from h1s to h4s in a number of sections. 
+    * I added rel="noopener" to my target="_blank"'s as per their recommendation.
+    * I used Chrome's development tools' "Coverage" tab to see how much unused CSS I had, but then chose to leave it for the time being as it does not impact substantially 
+    on page load time, although for larger projects it is definitely something worth considering re: external libraries. 
+    * I added a meta description. 
 
 ## Attribution
 
