@@ -154,6 +154,10 @@ Editing and colour correction for the images was done using Adobe Photoshop.
 
 Used a LOT for testing CSS and shaping the jQuery code to work for my project.
 
+### **[Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools)**
+
+Amazing for checking a number of site performance indicators. 
+
 ### **[Google Fonts](https://fonts.google.com/)**
 
 Both the fonts I've included are Google Fonts: Lato & Roboto.
@@ -198,11 +202,14 @@ Checks web development features for browser compatibility.
 ### **[dirtyMarkup by 10 Best Design](https://www.10bestdesign.com/dirtymarkup/)**
 HTML, CSS, JS & API code formatter. Super useful resource thanks to Richard Read (Readri205 @ Code Institute) for the link. 
 
-### **[Google's Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+### **[Google's Style Guide](https://google.github.io/styleguide/htmlcssguide.html)**
 Useful reference for formatting/style information.
 
-### **[Google's Web.Dev Measure](https://web.dev/measure/?gclid=EAIaIQobChMIk-icrKKb6wIVQeztCh2zaAQFEAAYASAAEgKVJfD_BwE)
+### **[Google's Web.Dev Measure](https://web.dev/measure/?gclid=EAIaIQobChMIk-icrKKb6wIVQeztCh2zaAQFEAAYASAAEgKVJfD_BwE)**
 Useful for testing various site performance and user experience markers.  
+
+### **[Image Optim](https://imageoptim.com/mac)**
+Great little program to compress images for use online. 
 
 ---
 
@@ -249,17 +256,19 @@ text remains until you actually type.
 #### [Mitra's Code from Stack Overflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4)
 I used this user's answer (2nd from top) to change the colour of my bootstrap hamburger icon when active or focus states were triggered. 
 
-### [Pete TNT's Code from Stack Overflow](https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working)
+#### [Pete TNT's Code from Stack Overflow](https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working)
 I used and altered this code to make my Bootstrap navbar work the way it should regarding the active class.
 
-### [Nozzleman's Code from Stack Overflow](https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen)
+#### [Nozzleman's Code from Stack Overflow](https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen)
 I used and altered this code to make the navbar close when a user clicks away from it on mobile devices. The Bootstrap default is that you have to click on the hamburger icon to 
 close the navigation, and I would questions how user-friendly this is. In addition, the Bootstrap default behaviour is that even when a user clicks on a navigation link, the navigation
 stays open and they have to click the icon to close it. I think this code improves upon the default behaviour. 
 
 ## Acknowledgements
 
-Thank you to my Code Institute mentor Oluwafemi Medale. 
+Thanks to the Code Institute Slack Community for their resources and information.
+Thank you to my Code Institute mentor Oluwafemi Medale for his invaluable insight and instruction. 
+
 
 
 
