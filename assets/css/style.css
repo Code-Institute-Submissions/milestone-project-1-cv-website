@@ -126,14 +126,16 @@ body {
   font-size: 2em;
 }
 
-.h2-heading {
+.h2-tools,
+.h2-project-name {
   font-family: "Roboto", sans-serif;
   font-size: 1.8em;
   color: var(--light-grey);
   text-transform: uppercase;
 }
 
-.h4-heading {
+.h2-skills,
+.h2-footer {
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   color: var(--light-grey);
@@ -450,8 +452,8 @@ p.personal-info {
   font-weight: 300;
 }
 
-.skills-h4,
-.skills-h4-boxes-1 {
+.skills-h2,
+.skills-h2-boxes-1 {
   text-transform: uppercase;
   text-align: center;
 }
@@ -1316,7 +1318,7 @@ form button:active {
     right: 6%;
     font-size: 1.1em;
   }
-  .skills-h4-boxes-1 {
+  .skills-h2-boxes-1 {
     position: absolute;
     bottom: 69%;
     left: 6%;
@@ -1332,7 +1334,7 @@ form button:active {
     bottom: 2%;
     left: 15%;
   }
-  .skills-h4-boxes-2 {
+  .skills-h2-boxes-2 {
     position: absolute;
     bottom: 43%;
     left: 15%;
@@ -1511,7 +1513,7 @@ form button:active {
     right: 6%;
     font-size: 1em;
   }
-  .skills-h4-boxes-1 {
+  .skills-h2-boxes-1 {
     top: 23%;
     left: 6%;
   }
@@ -1522,7 +1524,7 @@ form button:active {
   .skill-tools-boxy-box>p {
     margin-top: 25px;
   }
-  .skills-h4-boxes-2,
+  .skills-h2-boxes-2,
   .languages-wrapper>p {
     left: 25%;
   }
@@ -1643,7 +1645,7 @@ form button:active {
     bottom: 6%;
     font-size: 1.1em;
   }
-  .skills-h4-boxes-2 {
+  .skills-h2-boxes-2 {
     left: 35%;
     bottom: 55%;
   }

@@ -128,12 +128,15 @@ Which I personally find annoying, but the consensus is that this way is more use
 
 * I plan to password protect my downloadable traditional CV, as I don't want all my personal details to be readily available online. Once I've instituted that feature I will upload my actual CV as opposed to the dummy one that is currently there.
 
-## Issues / Bugs
+## Issues / Room for Improvement
 
-* There can be a slight flickering effect, when the work history timeline is viewed on very small Desktop / non-touch screens. It has something to do with moving the mouse when hovering over the icon. One fix is to make the 
+* *Flickering Effect*: There can be a slight flickering effect, when the work history timeline is viewed on very small Desktop / non-touch screens. It has something to do with moving the mouse when hovering over the icon. One fix is to make the 
 hover area even larger, but the issue with that is that it becomes difficult for the user to leave the timeline information "modal" (it's not really a modal). I am ok with this situation persisting for the time being, because it does not 
 break anything and it is very unlikely that users will view the timeline on a desktop with such a small screen, given the resolution of most laptops. The user would have to resize the browser to be very small for this issue to occur. That behaviour
 is unlikely. Finally, as hover is not available on mobile, this bug does not occur on devices. 
+
+* *Unused CSS*: As per web-dev Measure results I tested my CSS via Chrome dev tools' "Coverage" tool and found that there was a substantial amount of unused CSS.
+For this particular site, the load time is quite fast, so I don't think this is a massive issue, but there is definitely scope for reducing the size of the Bootstrap and Font Awesome libraries.
 
 ## Tools & Other Resources Used & Perused
 Here are the additional tools and resources I used during all stages of this project: 
@@ -170,6 +173,7 @@ Specifically their pages on:
 * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [TextArea](https://css-tricks.com/textarea-tricks/)
+* [Unused CSS](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/)
 
 ### **[freeCodeCamp](https://www.freecodecamp.org/)**
 Specifically [This article](https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/) about all the ways to create responsive images. 
@@ -195,6 +199,9 @@ HTML, CSS, JS & API code formatter. Super useful resource thanks to Richard Read
 
 ### **[Google's Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
 Useful reference for formatting/style information.
+
+### **[Google's Web.Dev Measure](https://web.dev/measure/?gclid=EAIaIQobChMIk-icrKKb6wIVQeztCh2zaAQFEAAYASAAEgKVJfD_BwE)
+Useful for testing various site performance and user experience markers.  
 
 ---
 
