@@ -139,6 +139,8 @@ is unlikely. Finally, as hover is not available on mobile, this bug does not occ
 * *Unused CSS*: As per web-dev Measure results I tested my CSS via Chrome dev tools' "Coverage" tool and found that there was a substantial amount of unused CSS.
 For this particular site, the load time is quite fast, so I don't think this is a massive issue, but there is definitely scope for reducing the size of the Bootstrap and Font Awesome libraries.
 
+* *Cache Policy*: As per Chrome Dev Tools: Lighthouse - I need to "serve my static assets with an efficient cache policy" but as this is beyond the scope of this project I will implement this at a later date, when I know more server-side programming.
+
 ## Tools & Other Resources Used & Perused
 Here are the additional tools and resources I used during all stages of this project: 
 
@@ -210,6 +212,9 @@ Useful for testing various site performance and user experience markers.
 
 ### **[Image Optim](https://imageoptim.com/mac)**
 Great little program to compress images for use online. 
+
+### **[Access & Use](https://accessuse.eu/en/Content-hover-focus.html)
+Information on hover/focus based accessibility.
 
 ---
 

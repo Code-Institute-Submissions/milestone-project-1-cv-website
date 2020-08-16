@@ -304,11 +304,13 @@ p.personal-info {
   width: 50px;
 }
 
-.timeline-icon:hover {
+.timeline-icon:hover,
+.timeline-icon:focus {
   color: var(--accent-1);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+  outline: none;
 }
 
 .timeline-info {

@@ -2,11 +2,13 @@
 
 $(document).ready(function() {
   toggleTimeline()
+  toggleTimelineAccessible()
   animateUpArrow()
 });
 
 $(window).resize(function() {
   toggleTimeline()
+  toggleTimelineAccessible()
 });
 
 /* FUNCTION 1: Timeline toggle function
@@ -33,6 +35,7 @@ $(window).resize(function() {
 
 const workHistorySection = $("#work-history-section");
 
+
 function toggleTimeline() {
   if ($(window).width() < 768) {
     console.log("window went under 768")
@@ -45,7 +48,7 @@ function toggleTimeline() {
         $(this).css("visibility", "visible"); //if the icon clicked is the sun - continue to show it and remove the blur darken filters that were just applied. 
         removeBlurDarken();
       }
-    })
+    })   
     $(".timeline-icon").mouseout(function() {
       $(".timeline-info").css("display", "none"); //hide timeline info
       $(this).css("visibility", "visible"); //show icon clicked
@@ -65,8 +68,41 @@ function toggleTimeline() {
   }
 }
 
+/* FUNCTION 2: Timeline toggle function for keyboard accessibility */
+
+function toggleTimelineAccessible() {
+  if ($(window).width() < 768) {
+    $(".timeline-icon").focus(function() {
+      $(this).parent().parent().find(".timeline-info").css("display", "block"); //show timeline info
+      $(this).css("visibility", "hidden"); //hide icon clicked
+      $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //hide line following icon clicked
+      addBlurDarken()
+      if ($(this).hasClass("fa-sun")) {
+        $(this).css("visibility", "visible"); //if the icon clicked is the sun - continue to show it and remove the blur darken filters that were just applied. 
+        removeBlurDarken();
+      }
+    })   
+    $(".timeline-icon").blur(function() {
+      $(".timeline-info").css("display", "none"); //hide timeline info
+      $(this).css("visibility", "visible"); //show icon clicked
+      $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); //show line following icon clicked    
+      removeBlurDarken();
+    })
+  } else if ($(window).width() >= 768) {
+    $(".timeline-icon").focus(function() {
+      $(this).css("visibility", "visible");
+      $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
+      $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible");
+      removeBlurDarken()
+    })
+    $(".timeline-icon").blur(function() {
+      $(".timeline-info").css("display", "none"); // hide timeline info
+    })
+  }
+}
+
 /* I was repeating a lot of this code so I separated it out into two functions: 
-    FUNCTION 2: Add Blur and Darken Background of Timeline. */
+    FUNCTION 3: Add Blur and Darken Background of Timeline. */
 function addBlurDarken() {
   workHistorySection.find(".timeline-icon").addClass("blur-and-darken");
   workHistorySection.find(".timeline-line").addClass("blur-and-darken");
@@ -77,7 +113,7 @@ function addBlurDarken() {
   $(".arrow-down-history-to-skills").addClass("blur-and-darken");
 }
 
-/* FUNCTION 3: Remove the blur and darkenening effect on the background of the timeline.  */
+/* FUNCTION 4: Remove the blur and darkenening effect on the background of the timeline.  */
 function removeBlurDarken() {
   workHistorySection.find(".timeline-icon").removeClass("blur-and-darken");
   workHistorySection.find(".timeline-line").removeClass("blur-and-darken");
@@ -88,14 +124,14 @@ function removeBlurDarken() {
   $(".arrow-down-history-to-skills").removeClass("blur-and-darken");
 }
 
-/* FUNCTION 4: Add and remove the "active" class to NavBar as a user browses the page.
+/* FUNCTION 5: Add and remove the "active" class to NavBar as a user browses the page.
    Taken from Pete TNT's Stack Overflow Solution at: https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working */
 $(".navbar-nav a").on("click", function() {
   $(".navbar-nav").find(".active").removeClass("active");
   $(this).parent().addClass("active");
 });
 
-/* FUNCTION 5: Code to close the navbar on mobile devices when a user clicks outside of the navigation & when they click on a navigation link.
+/* FUNCTION 6: Code to close the navbar on mobile devices when a user clicks outside of the navigation & when they click on a navigation link.
    Taken from nozzlemans's Stack Overflow Solution at: https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen */
 $(document).ready(function() {
   $(document).click(function(event) {
@@ -107,7 +143,7 @@ $(document).ready(function() {
   });
 });
 
-/* FUNCTION 6: Code to animate the up arrow when a user hovers over the entire "Back to Top" div.
+/* FUNCTION 7: Code to animate the up arrow when a user hovers over the entire "Back to Top" div.
 I had this originally as a hover effect over the icon, but I felt the icon was too small a target.  */
 function animateUpArrow() {
   $(".back-to-top").mouseover(function() {
