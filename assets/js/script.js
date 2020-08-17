@@ -1,13 +1,13 @@
 /* Here I apply the toggleTimeline function univerally when the page has loaded */
 
 $(document).ready(function() {
-  toggleTimeline()
+//   toggleTimeline()
   toggleTimelineAccessible()
   animateUpArrow()
 });
 
 $(window).resize(function() {
-  toggleTimeline()
+//   toggleTimeline()
   toggleTimelineAccessible()
 });
 
@@ -33,13 +33,13 @@ $(window).resize(function() {
 
     Then on mouseout the removeBlurDarken() function undoes all of the above. */
 
-const workHistorySection = $("#work-history-section");
-
+   const workHistorySection = $("#work-history-section"); 
 
 function toggleTimeline() {
   if ($(window).width() < 768) {
     console.log("window went under 768")
     $(".timeline-icon").mouseover(function() {
+        console.log("hover is activated");
       $(this).parent().parent().find(".timeline-info").css("display", "block"); //show timeline info
       $(this).css("visibility", "hidden"); //hide icon clicked
       $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //hide line following icon clicked
@@ -70,11 +70,14 @@ function toggleTimeline() {
 
 /* FUNCTION 2: Timeline toggle function for keyboard accessibility */
 
+
+
 function toggleTimelineAccessible() {
   if ($(window).width() < 768) {
     $(".timeline-icon").focus(function() {
+        console.log("focus is activated");
       $(this).parent().parent().find(".timeline-info").css("display", "block"); //show timeline info
-      $(this).css("visibility", "hidden"); //hide icon clicked
+      $(this).css("transform", "translate( -1000px,0)"); //hide the icon that was clicked
       $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //hide line following icon clicked
       addBlurDarken()
       if ($(this).hasClass("fa-sun")) {
@@ -82,9 +85,9 @@ function toggleTimelineAccessible() {
         removeBlurDarken();
       }
     })   
-    $(".timeline-icon").blur(function() {
+    $(".timeline-icon").focusout(function() {
       $(".timeline-info").css("display", "none"); //hide timeline info
-      $(this).css("visibility", "visible"); //show icon clicked
+      $(this).css("transform", "translate( 0,0)"); //show icon clicked
       $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); //show line following icon clicked    
       removeBlurDarken();
     })
@@ -103,6 +106,7 @@ function toggleTimelineAccessible() {
 
 /* I was repeating a lot of this code so I separated it out into two functions: 
     FUNCTION 3: Add Blur and Darken Background of Timeline. */
+
 function addBlurDarken() {
   workHistorySection.find(".timeline-icon").addClass("blur-and-darken");
   workHistorySection.find(".timeline-line").addClass("blur-and-darken");
@@ -126,7 +130,7 @@ function removeBlurDarken() {
 
 /* FUNCTION 5: Add and remove the "active" class to NavBar as a user browses the page.
    Taken from Pete TNT's Stack Overflow Solution at: https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working */
-$(".navbar-nav a").on("click", function() {
+  $(".navbar-nav a").on("click", function() {
   $(".navbar-nav").find(".active").removeClass("active");
   $(this).parent().addClass("active");
 });
