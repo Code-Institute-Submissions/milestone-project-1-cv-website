@@ -6,8 +6,16 @@ $(document).ready(function() {
   animateUpArrow()
 });
 
+
+let lastWidth = $(window).width();
+
 $(window).resize(function() {
-  location.reload();
+   
+//Code taken from https://stackoverflow.com/questions/10750603/detect-a-window-width-change-but-not-a-height-change
+   if($(window).width()!=lastWidth){
+      location.reload();
+      lastWidth = $(window).width();
+   }       
   toggleTimeline()
   toggleTimelineAccessible()
 });

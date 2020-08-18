@@ -362,6 +362,9 @@ I used and altered the first line from this user's question on CSS Tricks.
 I used this user's answer (2nd from the top) to hide the placeholder text in my contact form when the user clicks to type something, as I think it's off-putting when the placeholder 
 text remains until you actually type.
 
+#### [Taha Paksu's Code from Stack Overflow](https://stackoverflow.com/questions/10750603/detect-a-window-width-change-but-not-a-height-change)
+I used this code to stop the browser reloading on mobile devices when a user scrolls vertically. 
+
 #### [Mitra's Code from Stack Overflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4)
 I used this user's answer (2nd from top) to change the colour of my bootstrap hamburger icon when active or focus states were triggered. 
 
