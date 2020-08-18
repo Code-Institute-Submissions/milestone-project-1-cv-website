@@ -326,7 +326,6 @@ p.personal-info {
 .timeline-container {
   position: relative;
   height: 100px;
-  /* width: 100%; */
 }
 
 .timeline-line::after {
@@ -355,10 +354,6 @@ p.personal-info {
   outline: none;
 }
 
-.timeline-info {
-  position: absolute;
-  z-index: -1000;
-}
 
 .timeline-info {
   background-color: var(--light-black);
@@ -366,6 +361,8 @@ p.personal-info {
   border-radius: 7px;
   width: 80vw;
   height: 180px;
+  position: absolute;
+  z-index: -1000;
 }
 
 .timeline-info .date {
@@ -393,6 +390,7 @@ p.personal-info {
   top: 55%;
   left: 10%;
 }
+
 
 .close-button {
     color: var(--light-grey);
@@ -1231,6 +1229,7 @@ form button:active {
     width: 280px;
     border: solid 2px var(--accent-1);
   }
+
   .timeline-info-left {
     left: 60%;
     top: 55%;
@@ -1242,7 +1241,6 @@ form button:active {
   .timeline-icon {
     width: 300px;
   }
-
   .close-button {
       display: none;
   }
@@ -1433,7 +1431,7 @@ form button:active {
 
 /* Large devices (desktops, 992px and up) */
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   /****************************************** Large Screens - Home Section */
   .arrow-down-home-to-bio {
     margin-top: 11%;
@@ -1486,6 +1484,7 @@ form button:active {
   .timeline-info-right {
     right: 15%;
     top: 55%;
+    left: auto;
   }
   /****************************************** Large Screens - Skills Section */
   .skill-col-boxes {
