@@ -35,6 +35,9 @@ $(window).resize(function() {
 
    const workHistorySection = $("#work-history-section"); 
 
+// the issue now is that because the z-index effectively removes the icon from view - the code immediately goes to mouseout and 
+// does z-index = -1000
+
 function toggleTimeline() {
   if ($(window).width() < 768) {
     $(".timeline-icon").mouseover(function() {
@@ -44,8 +47,9 @@ function toggleTimeline() {
         removeBlurDarken();
       }
     })   
-    $(".timeline-icon").mouseout(function() {
-      $(".timeline-info").css("z-index", "-1000"); //hide timeline info   
+    $(".close-button").click(function() {
+        console.log("clicked")
+      $(".timeline-info").css("z-index", "-1000"); //hide timeline info  
       removeBlurDarken();
     })
   } else if ($(window).width() >= 768) {

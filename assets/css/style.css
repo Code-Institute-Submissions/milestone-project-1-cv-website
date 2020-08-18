@@ -357,7 +357,6 @@ p.personal-info {
 
 .timeline-info {
   position: absolute;
-  /* display: none; */
   z-index: -1000;
 }
 
@@ -365,7 +364,7 @@ p.personal-info {
   background-color: var(--light-black);
   padding: 1em;
   border-radius: 7px;
-  width: 100vw;
+  width: 80vw;
   height: 180px;
 }
 
@@ -387,10 +386,23 @@ p.personal-info {
 
 .timeline-info-left {
   top: 55%;
+  left: 10%
 }
 
 .timeline-info-right {
   top: 55%;
+  left: 10%;
+}
+
+.close-button {
+    color: var(--light-grey);
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 
 #timeline-tcd,
@@ -1229,6 +1241,10 @@ form button:active {
   }
   .timeline-icon {
     width: 300px;
+  }
+
+  .close-button {
+      display: none;
   }
   /****************************************** Medium Screens - Skills Section */
   .divider-short {
