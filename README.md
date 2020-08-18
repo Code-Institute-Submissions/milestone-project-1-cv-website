@@ -2,22 +2,36 @@
 
 ## Code Institute - First Milestone Project: *User Centric Frontend Development.*
 
-This static website is being developed to showcase *Karina Finegan's* resume in an efficient and appealing online format.
+This website was developed to showcase my professional resume in an efficient and appealing online format. The key idea is for the website to act as a dual purpose calling card. 
+Firstly it provides a lot of the information that would be contained in a traditional CV, and secondly it in itself works as testament to my ability to design and create static websites. 
+The feeling and tone of the website is intended to be a blend of professionalism and creativity. I wanted to build a clean dark-toned site that displayed the required information in a pleasing and 
+interesting way with a strong emphasis on excellent UX and accessibility.  
+
+## [View the Live Website Here](https://kairosity.github.io/milestone-project-1-cv-website)
 
 ---
 ## UX
 
-- Target users are two-fold: Employers & Recruiters.
-- Targeted much the same way. Except perhaps recruiters are less interested in site content and more interested in having a CV to download and take-away.
-- Employers are more likely to want to browse the online resume and connected accounts.
+- There are two target users: Employers & Recruiters.
+- They are mostly targeted the same way. Except perhaps most recruiters will be less interested in site content technical details and perhaps more interested in having a CV to download, take-away and pass on.
+- Employers are more likely to want to browse the online resume and particularly the connected social accounts.
 
 ### User Stories
 
+#### Project Developer 
+
+As the sole developer and contributor to this project, my goal for this website is that it helps me futher my goal of securing employment in web development. My vested interest in creating an excellent user experience is 
+thus rather deep. 
+
 #### Tech Recruiters
+
+* I am a recruiter for a large firm and am always looking for new talent to send my clients. 
 
 * I have many clients who are looking for developers. I'd like to be able to quickly browse an online resume to get a sense of whether or not this particular developer might be a good fit for any of my clients.
 
-* As a tech recruiter I'm not 100% sure what languages or tools my client requires, so I would like the ability to download a detailed CV that clearly stipulates all skills. 
+* As a tech recruiter I'm not always 100% certain what languages or tools my client requires, so I would like the ability to download a detailed CV that clearly stipulates all skills clearly.
+
+* An online cv is a useful first contact for me to get a sense of a candidate's suitability. I can also send my clients a link easily to confirm.
 
 #### Employers
 
@@ -25,7 +39,11 @@ This static website is being developed to showcase *Karina Finegan's* resume in 
 
 * I might then download a more detailed CV before deciding whether to call that candidate for interview.
 
-* As an employer looking for a new front end developer, I am heartened to see the online resumes of potential candidates because it is an instant assurance that they know how to design and build a website. 
+* As an employer looking for a new front end developer, I am heartened to see the online CVs of potential candidates because it is an instant assurance that they know how to design and build a website. 
+
+* I like how easy it is to send the CV to other members of my organization as a way of fielding potential candidates. 
+
+* I would also be interested in seeing the code behind this candidate's other projects.
 
 #### Applicable to both target users
 
@@ -36,57 +54,144 @@ This static website is being developed to showcase *Karina Finegan's* resume in 
 * As a user I would like to see other projects this candidate has developed.
 
 
+
 ### Strategy
-The focus for this project was to create a professional and slick online CV for Karina Finegan, that was carefully balanced between usability and design. The pull towards style over structure is strong in anyone with a design background and because this website is geared towards a number of differnt kinds of employers (not just front end) it is important to reign in any gallop towards flamboyant untethered design. 
+As aforementioned the focus for this project was to create a professional and slick online CV for Karina, that was both user-friendly and creatively designed. I am targeting anyone who is interested in employing a front-end, back-end or full-stack developer. Additionally, 
+and because they are so active in the field of development, the website also targets recruiters. <br><br> In the planning stages I researched other online portfolios and spoke to both employers and a recruiter to gauge what kind of site was best suited to fulfil my primary goals. 
+I was acutely aware of the designer's pull towards style over structure and because the website is aimed at employers from a wide range of industries it was of the utmost importance to me, not to gallop down the road of flamboyant untethered design. 
+The diversity of my target audience dictated that I maintain a strong element of professionalism, but I was also determined to inject a certain level of boldness and creativity.<br><br>
+I wanted to demonstate good design principles and use of colour, but my primary goal was to *communicate* information about Karina (myself) to potential employers. In order for that communication to be effective, the site needed to be structured well and easily accessible. The content must be relevant to the user stories and in particular 
+after speaking with a recruiter friend about the website, I was particularly cognizant of the importance of steering clear of too much unrelated personal information. Recruiters and employers want to take in the important information quickly and without "fluff" as she put it.
 
-Essentially the website must demonstate good design principles and use of colour, but its primary goal is to *communicate* information about Karina to potential employers. In order for that communication to be effective, the site needs to be structured well and easily accessible.
+To summarise my UXD strategy here in a few key points:
 
-The content must be relevant to the user stories and in particular it should steer clear of too much non-essential personal information. 
+* The website casts a wide net for its target audience and thus must maintain a certain decorum of design and content. At the same time it must demonstrate my ability for expressing both professionalism and creativity through well-thought out design, sound UX principles and efficient, well structured coding.
+* I also wanted to demonstrate an ability with a wide variety of web-development technologies. My reasoning is that employers considering me as a canditate might glance at the code. It was a considered strategy from the beginning to use Bootstrap as a base and custom CSS on top of it.
+* Finally I conducted qualitative research into my target audience by discussing the website with a recruiter. She gave me invaluable information about how to structure the site and what content to include. 
 
 ### Scope
-The project had a clearly defined scope from its inception, as there is a clearly defined framework for CVs and the goal was to place that online: 
+The project had a clearly defined scope from its inception, as there is a well worn framework for CVs and the goal was to place that framework in an online context.
 
-Information about Karina, her education and employment history, her skillset, projects she has worked on and a way to contact her. 
+I chose to include:
+* Minimal personal information and a good deal of professional/employment information.
+* Any personal information included is in the context of development.
+* An interactive work history timeline. I wanted to make this interesting to use, and I think it manages to combine utility and design quite well.
+* My skillsets and how they converge into strengths for development. 
+* Projects I have worked on, and am working on. 
+* A way to contact me. 
+
+I worked my way through creating the themes for these pages in a linear fashion employing a sprint methodology. I also approached the development of the 
+website with a similar method. I coded the site from the top down and if I got stuck on a particular feature I moved on and came back to it once the 
+foundations were finished.
+
+I didn't over or under scope this project, I think all the elements included have their place, and there are no glaring ommissions. 
 
 ### Structure
-As the site is not overly complicated, it will feature a fixed navigation that connects the user to each of the sections on one long scrolling page. 
+The CV framework itself is not overly complicated so I thought it lent itself nicely to a single long scrolling page design.
+It features a fixed top navigation that connects the user to each of the sections from anywhere on the page.  
 
 The sections are as follows:
 
-* Home/Index (landing page)
-* Work History
-* Skills   
-* Selected Projects 
-* Contact 
+1. Home / Introduction landing page.
+2. A brief paragraph of semi-personal information in the context of development alongside a photograph of myself.
+3. My work and education history displayed as an interactive timeline. 
+4. My Skillset - divided into boxes and with some information about new skills and languages I am learning with Code Institute.    
+5. My portfolio, consisting of past and present selected projects - some with links to live sites and some with links to download project specification sheets.
+6. A contact page featuring a contact form. 
+7. A footer with social-media navigation and the option to download my traditional CV. 
 
-In addition to these main pages, there is the ability to download a tradition CV in .pdf format.
+There is also the option of downloading particular project design specifications.
 
-There is also the option of downloading particular project design files.
+The flow of the site is simple and makes the logical linear progression from:<br>
+Introduction to Karina --> Work History --> Skillset --> Some examples of Skillset --> Contact.<br>
+The user might choose their own path and skip ahead, but the site has been designed to try and maintain their interest 
+focused throughout the journey towards the end goal of sending me an email, or downloading my traditional CV. 
+
+Interaction design was foremost in my mind when outlining the way the site would work. As the website is selling my ability to 
+create websites, every aspect of the user's interaction is of the highest importance. My colours, typography and layout structure 
+have all been chosen and designed with an eye to clarity and consistency. Whenever possible a user's interaction is given feedback. Specifically:
+
+- Interactive elements are given a state change of colour or underline or both when they are hovered over or focused on.
+- I've included animated down arrows at choice positions throughout the page flow to encourage and indicate that the user should continue to 
+scroll. 
+- I've encouraged easy navigation by including both top and footer hierarchical navigation on mobile and medium screens.
+- The design has been conceived to offer the user reassurance at every stage of their progression through the website.
 
 
 ### Skeleton
 
+As already mentioned, the website is designed with a simple tree structure and hierarchical flow from top to page bottom. It is designed to be clear
+and simple, browsing it should be all about information collection and the user should not need to pay attention to the fact that they are "using"
+anything. 
+
+The content was structured in the particular order to lead up to my call to action, which is for an employer or a recruiter to get in touch to learn more. 
+Furthermore I've employed conventions that the user will be accustomed to, my navigation is conventional: a fixed navbar on medium and large screens, reducing to a hamburger on 
+smaller ones. The only somewhat left of center design choice was the interactive timeline, which I thought added a nice amount of flair and creativity, without detracting from usability.
+I spent a good deal of time ensuring that the timeline was user-friendly and accessible to keyboard users as well. 
+
+I've also made generous use of Font Awesome icons to encourage metaphorical thinking to further reassure the user and emphasise the information on display. 
+
+#### Wireframes
+
+My wireframes enabled me to get a sense of how this structure would look on the page, and they provided the foundation for more detailed design choices later in the process. 
+
+- [Mobile Sized Wireframes]()<br>
+- [iPad Sized Wireframes]()<br>
+- [Desktop Sized Wireframes]()<br>
+
+I ended up changing aspects of the design somewhat once I moved on to more detailed wireframing, but the essential structure stayed the same.
+
 ### Surface
 
+Once the structure, information architecture and wireframing was completed, the choice of design elements, colours, typography and creative flourishes, were actually very simple to add. I knew I 
+wanted a dark-toned website, but I still created a few alternative mock-ups to see how they felt. The alternatives cemented my initial instinct for how I wanted the site to look and feel. 
+
+[Detailed Design Mockups]()<br>
+[Final Design Mockup]()
+
 #### Colour Palette
-The colour palette chosen for this project was primarily dark toned with an almost fluorescent green/yellow accent colour. 
+My initial strategy was intimately linked to surface design as I went with a weighty dark-toned colour palette to add gravitas to my content and I then lightened this with a playful creative throw-pillow of colour. I was also very conscious of maintaining colour contrast for accessibility reasons, and my choice of a bright
+yellow/green fit the brief well. I was also aware of not using pure black, I've seen many websites that make this mistake to the detriment of the user. A dark grey that passes for a matte black is always a better base colour, as the contrast
+doesn't hurt your user's eyes. For the same reasons I didn't overuse bright white, most of my light tones are actually a very light grey. I also chose a dark grey base with softer brown undertones as it is a warming and comforting colour.   
 
 #### Typography
-I wanted to use only sans-serif fonts to enhance the minimalist bold style I've gone with. 
+I focused on using two of my favourite Google fonts: Lato and Roboto. They are clean, elegant, no-nonsense fonts, easy to read, without being boring. I think my font pairing works well for the professional-creative look I was aiming for. Obviously
+they are both sans-serif, as are their fallbacks. I couldn't imagine adding serifs to this website.   
 
 
 ## Features
 
-* Navigation Bar - Fixed Bootstrap Navbar.
+### 1. Navigation Bar - Fixed Bootstrap Navbar.
 
-* Home / Index Page
+The navigation is a fixed top Bootstrap navbar with some key alterations to its default behaviour: 
 
-* Short Bio
+- It has been altered via jQuery so that the active class switches from tab to tab as the site is browsed. I found code that achieved this online and I altered it to work on this website. (Attribution below).
 
-* Work History
+- From a UX perspective I found it irksome that a mobile user had to click directly on the hamburger icon to close the navigation, even after tapping on where they wanted to navigate to. Again I found code online which I altered 
+to work for this website. (Attribution below.) Now, once a user clicks on a navigation tab, the user is brought there and the navigation options close, so they can see the page. Also, if they click anywhere outside the nav drop-down,
+it also closes. I think this is far preferable to Bootstrap's default behaviour.  
 
-    An interactive timeline of my work history to date. To make hovering over the items easier for the user, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled
-     me to increase the hover zone without affecting the size of the icon itself. I had to adjust this for smaller screens because it was too difficult then to click away from the "modal" timeline information.
+### 2. Landing Page / Home
+
+This was designed to be very minimal, with a strong, bold introduction to myself and the site's purpose. I think it achieves that.
+
+### 3. Short personal biography & photo of Karina
+
+I wasn't sure about including this page, but I was convinced by both a recruiter and an employer that a basic introduction and photograph would be beneficial, as people like to be able to place a face to go with information. I concede that the 
+CV is made more solid when there is a real person attached to it. 
+
+The page is fully responsive and I ensured that I compressed the image, so as not to impact load times unnecessarily.
+
+### 4. Work History
+
+This section comprises of an interactive timeline of my education and work history to date. I find employment histories in their usual format to be a little bit tedious, and since I'm also offering a traditional CV for download, I thought it would be
+nice to have a little fun with this section. I had (perhaps naively) imagined that I would be able to implement this easily with CSS, but I found that JavaScript was required to get the behaviour I needed. Thankfully the internet is replete with developers 
+doing pretty much everything conceivable in JavaScript and I found code that enable me to acheive the desired effect. This section also had the added benefit of getting me started with learning jQuery and JavaScript.
+
+This section has had many permutations in order to work out how to create an interactivity that was both interesting and different, but also accessible. I was especially aware of the inherent dangers of using hover effects for keyboard users. 
+
+ To make hovering over the items easier for the user, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled
+me to increase the hover zone without affecting the size of the icon itself. I had to adjust this for smaller screens because it was too difficult then to click away from the "modal" timeline information.
 
 * Skills
 
@@ -213,7 +318,7 @@ Useful for testing various site performance and user experience markers.
 ### **[Image Optim](https://imageoptim.com/mac)**
 Great little program to compress images for use online. 
 
-### **[Access & Use](https://accessuse.eu/en/Content-hover-focus.html)
+### **[Access & Use](https://accessuse.eu/en/Content-hover-focus.html)**
 Information on hover/focus based accessibility.
 
 ---
@@ -269,9 +374,23 @@ I used and altered this code to make the navbar close when a user clicks away fr
 close the navigation, and I would questions how user-friendly this is. In addition, the Bootstrap default behaviour is that even when a user clicks on a navigation link, the navigation
 stays open and they have to click the icon to close it. I think this code improves upon the default behaviour. 
 
+## Deployment
+
+This site is currently hosted on GitHub pages. 
+
+### 1. To view the live site: [Follow this link](https://kairosity.github.io/milestone-project-1-cv-website)
+
+### 2. To open this project locally:
+
+### 3. To clone this project:
+
+
+
+
 ## Acknowledgements
 
-Thanks to the Code Institute Slack Community for their resources and information.
+Thank you to my friends and family for doing usability testing for me on various devices, and for giving me feedback. <br>
+Thanks to the Code Institute Slack Community for their resources and information. <br>
 Thank you to my Code Institute mentor Oluwafemi Medale for his invaluable insight and instruction. 
 
 

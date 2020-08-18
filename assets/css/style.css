@@ -323,6 +323,13 @@ p.personal-info {
 
 /****************************************** Work History Section */
 
+.timeline-instruction-tap-click {
+    display: block;
+}
+.timeline-instruction-hover-focus {
+    display: none;
+}
+
 .timeline-container {
   position: relative;
   height: 100px;
@@ -1222,6 +1229,13 @@ form button:active {
     padding-top: 0;
   }
   /****************************************** Medium Screens - Work History Section */
+  .timeline-instruction-tap-click {
+    display: none;
+}
+.timeline-instruction-hover-focus {
+    display: block;
+}
+  
   .timeline-icon {
     font-size: 3em;
   }
@@ -1237,6 +1251,7 @@ form button:active {
   .timeline-info-right {
     right: 60%;
     top: 55%;
+    left: auto;
   }
   .timeline-icon {
     width: 300px;
@@ -1656,25 +1671,25 @@ form button:active {
 
 /* Devices where users CANNOT hover over elements e.g. phones, tablets, touch-screens etc... Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
 
-@media (hover:none) {
-  .timeline-instruction-device {
+/* @media (hover:none) {
+  .timeline-instruction-tap-click {
     display: block;
   }
-  .timeline-instruction-non-device {
+  .timeline-instruction-hover-focus {
     display: none;
   }
-}
+} */
 
 /* Devices where users CAN hover over elements e.g. desktops. Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
 
-@media (hover:hover) {
-  .timeline-instruction-device {
+/* @media (hover:hover) {
+  .timeline-instruction-tap-click {
     display: none;
   }
-  .timeline-instruction-non-device {
+  .timeline-instruction-hover-focus {
     display: block;
   }
-}
+} */
 
 /* Media Queries for Accessibility Zoom */
 
