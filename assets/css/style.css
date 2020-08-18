@@ -323,13 +323,6 @@ p.personal-info {
 
 /****************************************** Work History Section */
 
-.timeline-instruction-tap-click {
-    display: block;
-}
-.timeline-instruction-hover-focus {
-    display: none;
-}
-
 .timeline-container {
   position: relative;
   height: 100px;
@@ -1229,12 +1222,6 @@ form button:active {
     padding-top: 0;
   }
   /****************************************** Medium Screens - Work History Section */
-  .timeline-instruction-tap-click {
-    display: none;
-}
-.timeline-instruction-hover-focus {
-    display: block;
-}
   
   .timeline-icon {
     font-size: 3em;
@@ -1671,48 +1658,32 @@ form button:active {
 
 /* Devices where users CANNOT hover over elements e.g. phones, tablets, touch-screens etc... Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
 
-/* @media (hover:none) {
+@media (hover:none) {
   .timeline-instruction-tap-click {
     display: block;
   }
   .timeline-instruction-hover-focus {
     display: none;
   }
-} */
+}
 
 /* Devices where users CAN hover over elements e.g. desktops. Info sourced from: (https://drafts.csswg.org/mediaqueries-4/#hover)  */
 
-/* @media (hover:hover) {
+@media (hover:hover) and (max-width: 767px)  {
+  .timeline-instruction-tap-click {
+    display: block;
+  }
+  .timeline-instruction-hover-focus {
+    display: none;
+  }
+} 
+
+@media (hover:hover) and (min-width: 768px)  {
   .timeline-instruction-tap-click {
     display: none;
   }
   .timeline-instruction-hover-focus {
     display: block;
   }
-} */
+} 
 
-/* Media Queries for Accessibility Zoom */
-
-/* @media (max-width: 350px) {
-  .landing-page-heading {
-      font-size: 1.5em;
-  }
-}
-
-@media (max-width: 450px) {
-  .landing-page-heading {
-      font-size: 1.7em;
-  }
-}
-
-@media (max-width: 550px) {
-  .landing-page-heading {
-      font-size: 1.9em;
-  }
-}
-
-@media (max-width: 1100px) {
-  .landing-page-heading {
-      font-size: 1.7em;
-  }
-} */

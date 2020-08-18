@@ -7,7 +7,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    console.log("window is resizing")
+  location.reload();
   toggleTimeline()
   toggleTimelineAccessible()
 });
@@ -49,6 +49,7 @@ function toggleTimeline() {
     })
     //It's bringing this functionality down to the smaller window size and trying to do both. Need to cancel this somehow when window resizes to under 768px.
   } else if ($(window).width() >= 768) {
+
     $(".timeline-icon").mouseover(function() {
       $(this).parent().parent().find(".timeline-info").css("z-index", "1000"); // show current timeline info
       removeBlurDarken()

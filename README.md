@@ -186,9 +186,8 @@ The page is fully responsive and I ensured that I compressed the image, so as no
 
 This section comprises of an interactive timeline of my education and work history to date. I find employment histories in their usual format to be a little bit tedious, and since I'm also offering a traditional CV for download, I thought it would be
 nice to have a little fun with this section. I had (perhaps naively) imagined that I would be able to implement this easily with CSS, but I found that JavaScript was required to get the behaviour I needed. Thankfully the internet is replete with developers 
-doing pretty much everything conceivable in JavaScript and I found code that enable me to acheive the desired effect. This section also had the added benefit of getting me started with learning jQuery and JavaScript.
-
-This section has had many permutations in order to work out how to create an interactivity that was both interesting and different, but also accessible. I was especially aware of the inherent dangers of using hover effects for keyboard users. 
+doing pretty much everything conceivable in JavaScript and I found code that helped me to begin to acheive the desired effect. I had to modify this code quite a lot. This section went through many permutations in order to create an interactivity that was both 
+interesting and different, but also accessible. I was especially aware of the inherent dangers of using hover effects for keyboard users. 
 
  To make hovering over the items easier for the user, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled
 me to increase the hover zone without affecting the size of the icon itself. I had to adjust this for smaller screens because it was too difficult then to click away from the "modal" timeline information.
