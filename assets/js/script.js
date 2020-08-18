@@ -1,13 +1,13 @@
 /* Here I apply the toggleTimeline function univerally when the page has loaded */
 
 $(document).ready(function() {
-//   toggleTimeline()
+  toggleTimeline()
   toggleTimelineAccessible()
   animateUpArrow()
 });
 
 $(window).resize(function() {
-//   toggleTimeline()
+  toggleTimeline()
   toggleTimelineAccessible()
 });
 
@@ -37,69 +37,51 @@ $(window).resize(function() {
 
 function toggleTimeline() {
   if ($(window).width() < 768) {
-    console.log("window went under 768")
     $(".timeline-icon").mouseover(function() {
-        console.log("hover is activated");
-      $(this).parent().parent().find(".timeline-info").css("display", "block"); //show timeline info
-      $(this).css("visibility", "hidden"); //hide icon clicked
-      $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //hide line following icon clicked
+      $(this).parent().parent().find(".timeline-info").css("z-index", "1000"); //show timeline info
       addBlurDarken()
       if ($(this).hasClass("fa-sun")) {
-        $(this).css("visibility", "visible"); //if the icon clicked is the sun - continue to show it and remove the blur darken filters that were just applied. 
         removeBlurDarken();
       }
     })   
     $(".timeline-icon").mouseout(function() {
-      $(".timeline-info").css("display", "none"); //hide timeline info
-      $(this).css("visibility", "visible"); //show icon clicked
-      $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); //show line following icon clicked    
+      $(".timeline-info").css("z-index", "-1000"); //hide timeline info   
       removeBlurDarken();
     })
   } else if ($(window).width() >= 768) {
     $(".timeline-icon").mouseover(function() {
-      $(this).css("visibility", "visible");
-      $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
-      $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible");
+      $(this).parent().parent().find(".timeline-info").css("z-index", "1000"); // show current timeline info
       removeBlurDarken()
     })
     $(".timeline-icon").mouseout(function() {
-      $(".timeline-info").css("display", "none"); // hide timeline info
+      $(".timeline-info").css("z-index", "-1000"); // hide timeline info
     })
   }
 }
 
 /* FUNCTION 2: Timeline toggle function for keyboard accessibility */
 
-
-
 function toggleTimelineAccessible() {
   if ($(window).width() < 768) {
     $(".timeline-icon").focus(function() {
-        console.log("focus is activated");
-      $(this).parent().parent().find(".timeline-info").css("display", "block"); //show timeline info
-      $(this).css("transform", "translate( -1000px,0)"); //hide the icon that was clicked
-      $(this).parent().parent().next().find(".timeline-line").css("visibility", "hidden"); //hide line following icon clicked
+      $(this).parent().parent().find(".timeline-info").css("z-index", "1000"); //show timeline info
       addBlurDarken()
       if ($(this).hasClass("fa-sun")) {
         $(this).css("visibility", "visible"); //if the icon clicked is the sun - continue to show it and remove the blur darken filters that were just applied. 
         removeBlurDarken();
       }
     })   
-    $(".timeline-icon").focusout(function() {
-      $(".timeline-info").css("display", "none"); //hide timeline info
-      $(this).css("transform", "translate( 0,0)"); //show icon clicked
-      $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible"); //show line following icon clicked    
+    $(".timeline-icon").blur(function() {
+      $(".timeline-info").css("z-index", "-1000"); //hide timeline info  
       removeBlurDarken();
     })
   } else if ($(window).width() >= 768) {
     $(".timeline-icon").focus(function() {
-      $(this).css("visibility", "visible");
-      $(this).parent().parent().find(".timeline-info").css("display", "block"); // show current timeline info
-      $(this).parent().parent().next().find(".timeline-line").css("visibility", "visible");
+      $(this).parent().parent().find(".timeline-info").css("z-index", "1000"); // show current timeline info
       removeBlurDarken()
     })
     $(".timeline-icon").blur(function() {
-      $(".timeline-info").css("display", "none"); // hide timeline info
+      $(".timeline-info").css("z-index", "-1000"); // hide timeline info
     })
   }
 }

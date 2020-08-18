@@ -357,7 +357,8 @@ p.personal-info {
 
 .timeline-info {
   position: absolute;
-  display: none;
+  /* display: none; */
+  z-index: -1000;
 }
 
 .timeline-info {
