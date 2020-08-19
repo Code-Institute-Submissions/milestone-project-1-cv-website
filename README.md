@@ -174,32 +174,49 @@ or what the user's role is.
 
 My wireframes enabled me to get a sense of how this structure would look on the page, and they provided the foundation for more detailed design choices later in the process.
 
-My full Figma workspace can be viewed here: (link to figma workspace)
+[My full Figma workspace can be viewed here.](https://www.figma.com/file/R1rKGdgD34jz9jH3s9oMJd/Personal-CV?node-id=115%3A0)
 
-Alternatively here are the individual wireframes: 
+#### *Alternatively here are the individual wireframes in pdf format:* 
 
-- [XS (Default mobile-first) Wireframe]()<br>
-- [iPad Sized Wireframes]()<br>
-- [Desktop Sized Wireframes]()<br>
+- [xs Wireframe (Default mobile-first) ](wireframes-et-al/xs-wireframe-default.pdf)<br>
+- [sm Wireframe](wireframes-et-al/sm-wireframe.pdf)
+- [md Wireframe](wireframes-et-al/md-wireframe.pdf)
+- [lg Wireframe](wireframes-et-al/lg-wireframe.pdf)
+- [xl Wireframe](wireframes-et-al/xl-wireframe.pdf)
 
-I ended up changing aspects of the design somewhat once I moved on to more detailed wireframing, but the essential structure stayed the same.
+
 
 ### Surface
 
 Once the structure, information architecture and wireframing was completed, the choice of design elements, colours, typography and creative flourishes, were actually very simple to add. I knew I 
 wanted a dark-toned website, but I still created a few alternative mock-ups to see how they felt. The alternatives cemented my initial instinct for how I wanted the site to look and feel. 
 
-[Detailed Design Mockups]()<br>
-[Final Design Mockup]()
+#### *Palette & Typography Tests*
+
+- [Palette & Typography Mock-Ups](wireframes-et-al/palette-typography-tests.pdf)
+
 
 #### Colour Palette
-My initial strategy was intimately linked to surface design as I went with a weighty dark-toned colour palette to add gravitas to my content and I then lightened this with a playful creative throw-pillow of colour. I was also very conscious of maintaining colour contrast for accessibility reasons, and my choice of a bright
-yellow/green fit the brief well. I was also aware of not using pure black, I've seen many websites that make this mistake to the detriment of the user. A dark grey that passes for a matte black is always a better base colour, as the contrast
-doesn't hurt your user's eyes. For the same reasons I didn't overuse bright white, most of my light tones are actually a very light grey. I also chose a dark grey base with softer brown undertones as it is a warming and comforting colour.   
+My initial strategy was intimately linked to surface design as I went with a weighty dark-toned colour palette to add gravitas to my content and I then lightened this with a playful creative throw-pillow of colour. I was also very conscious 
+of maintaining colour contrast for accessibility reasons, and my choice of a bright yellow/green fit the brief well. In my initial mock-ups I had planned to use black writing on a dark grey, because I love the rich velvety tone and feel of that 
+combination, but I realised early on that the contrast was not user-friendly, so I changed most of my black text to either light-grey or the green/yellow accent colour.
+
+I was also aware of not using pure black as a background colour, I've seen many websites that make this mistake to the detriment of the user. A dark grey that passes for a matte black is always a better base colour, as the contrast
+doesn't hurt your user's eyes. For the same reasons I didn't overuse bright white, most of my light tones are actually a very light grey. I also chose a dark grey base with softer brown undertones as it is a warming and comforting colour.
+
+I did detailed colour mock-ups before starting development, but as you can from the links below I did go on to change some of the pairings.
+
+#### *Mock-ups*
+
+- [Mobile Mock-up](wireframes-et-al/mock-up-for-mobile.pdf)
+- [Desktop Mock-up](wireframes-et-al/mock-up-for-desktop.pdf)
+
+I ended up refining the Portfolio section of the project quite a bit during development but the remaining sections stayed mostly true to my 
+wireframing and mock-ups.
 
 #### Typography
 I focused on using two of my favourite Google fonts: Lato and Roboto. They are clean, elegant, no-nonsense fonts, easy to read, without being boring. I think my font pairing works well for the professional-creative look I was aiming for. Obviously
-they are both sans-serif, as are their fallbacks. I couldn't imagine adding serifs to this website.   
+they are both sans-serif, as are their fallbacks. I experimented briefly with serif fonts during the typography tests, but decided they were not the right fit.   
 
 #### Use of Language 
 - My landing page language is bold and somewhat brazen, but the idea behind it is to grasp user attention. 
@@ -228,7 +245,8 @@ it also closes. I think this is far preferable to Bootstrap's default behaviour.
 
 ### 2. Landing Page / Home
 
-This was designed to be very minimal, with a strong, bold introduction to myself and the site's purpose. I think it achieves that.
+This was designed to be very minimal, with a strong, bold introduction to myself and the site's purpose. I think it achieves that. Initially I had toyed with adding my profile photo to the landing page, but I much prefer the minimalism of just 
+bold text.
 
 ### 3. Short personal biography & photo of Karina
 
@@ -452,10 +470,6 @@ stays open and they have to click the icon to close it. I think this code improv
 1. Write up how I got the site deployed on GitHub Pages:
 https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
-2. Write out how to run my code locally. How would someone pull the code from my GitHub repo to clone the code to work on their own machine. 
-https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
-
-3. 
 
 This site is currently hosted on GitHub pages. 
 
@@ -463,7 +477,39 @@ This site is currently hosted on GitHub pages.
 
 ### 2. To open this project locally:
 
-### 3. To clone this project:
+You have to clone the project on GitHub, you can do this via the Command Line or using GitHub Desktop.
+
+#### Using the Command Line
+
+1. Go to the main page of [this project's repository on GitHub.](https://github.com/kairosity/milestone-project-1-cv-website) The page with the full list of files and the README doc underneath.
+
+2. Click on the button that says "Code" with a down arrow before the text.
+
+3. To clone using HTTPS click the clipboard icon pictured next to the repository link.
+
+![Image of cloning using https](wireframes-et-al/other-readme-misc/clone-with-https.png)
+
+4. To clone using SSH click the blue link on the upper right hand side that says "Use SSH" and then click the clipboard icon to copy. 
+
+![Image of cloning using https](wireframes-et-al/other-readme-misc/clone-with-ssh.png)
+
+5. Here is some more information on [which remote URL to use](https://docs.github.com/en/github/using-git/which-remote-url-should-i-use) if you're not sure.
+
+6. In your IDE or directly in your terminal navigate to the directory that you would like the cloned project to live in.
+
+7. Type git clone and paste in the URL you copied in step 3 or 4.
+
+8. Press enter to create a local clone. Done!
+
+#### Using GitHub Desktop
+
+1. Go to the main page of [this project's repository on GitHub.](https://github.com/kairosity/milestone-project-1-cv-website) The page with the full list of files and the README doc underneath.
+
+2. Click on the button that says "Code" with a down arrow before the text.
+
+3. Click on "Open with GitHub Desktop".
+
+4. Follow the prompts provided by GitHub Desktop.
 
 
 
