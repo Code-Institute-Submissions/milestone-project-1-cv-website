@@ -188,6 +188,23 @@ a:hover {
 
 /****************************************** Navigation */
 
+/* Skip To Main Link: Accessibility for keyboard users. */
+
+#skip-to-main {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: -5000;
+    font-family: "Roboto";
+    font-size: 30px;
+    color: var(--accent-1);
+    text-transform: uppercase;
+}
+
+#skip-to-main:focus {
+    z-index: 5000;
+}
+
 /* Overriding Bootstrap Navbar Styles */
 
 /* Note for future use: To change BS hamburger icon colour: Type in the rgba value you want in the 'stroke' svg path. */
@@ -1111,6 +1128,12 @@ form button:active {
 /* Small devices (landscape phones, 576px and up) */
 
 @media screen and (min-width: 576px) {
+
+#skip-to-main {
+    top: 10%;
+    left: 25%;
+}
+
   /****************************************** Small Screens - Home Section */
     .arrow-down-home-to-bio {
         margin-top: 5%;
@@ -1205,10 +1228,18 @@ form button:active {
 /* Medium devices (tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
+
+
   /****************************************** Medium Screens - Universal Style Changes */
   .section-heading {
     font-size: 3.8em;
   }
+
+    #skip-to-main {
+    top: 5%;
+    left: 30%;
+    }
+
   /****************************************** Medium Screens - Landing Page Section */
   .landing-page-heading {
     font-size: 2.7em;
@@ -1434,6 +1465,12 @@ form button:active {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+
+    #skip-to-main {
+    top: 15%;
+    left: auto;
+    right: 5%;
+}
   /****************************************** Large Screens - Home Section */
   .arrow-down-home-to-bio {
     margin-top: 11%;

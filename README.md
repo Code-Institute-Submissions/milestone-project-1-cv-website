@@ -1,29 +1,29 @@
-# Karina Finegan Online CV/Portfolio
+# **Karina Finegan Online CV/Portfolio**
 
 ## Code Institute - First Milestone Project: *User Centric Frontend Development.*
 
 This website was developed to showcase my professional resume in an efficient and appealing online format. The key idea is for the website to act as a dual purpose calling card. 
 Firstly it provides a lot of the information that would be contained in a traditional CV, and secondly it in itself works as testament to my ability to design and create static websites. 
 The feeling and tone of the website is intended to be a blend of professionalism and creativity. I wanted to build a clean dark-toned site that displayed the required information in a pleasing and 
-interesting way with a strong emphasis on excellent UX and accessibility. The website's primary goal is to help secure employment in web development for its primary stakeholder (me).  
+interesting way with a strong emphasis on excellent UX and accessibility. The website's primary goal is to help secure employment in web development for its primary stakeholder (myself).  
 
 ## [View the Live Website Here](https://kairosity.github.io/milestone-project-1-cv-website)
 
 ---
-## UX
+# UX
 
 - There are two target users: Employers & Recruiters.
-- They are mostly targeted the same way. Except most recruiters will be less interested in site content and technical details and perhaps more interested in having a CV to download, take-away and pass on.
+- They targeted much the same way. Except that most recruiters will be less interested in site content and technical details and perhaps more interested in having a CV to download, take-away and pass on.
 - Employers are more likely to want to browse the online resume and particularly the connected social accounts.
 
-### User Stories
+## User Stories
 
-#### Project Developer 
+#### *Project Developer* 
 
 As the sole developer and contributor to this project, my goal for this website is that it helps me futher my aim of securing employment in web development. My vested interest in creating an excellent user experience is 
 thus rather deep. 
 
-#### Tech Recruiters
+#### *Tech Recruiters*
 
 * As a recruiter for a large firm, I am always looking for new talent to send my clients. 
 
@@ -33,7 +33,9 @@ thus rather deep.
 
 * As a tech recruiter I want to be able to look at a potential employee's online cv because it is a useful first contact for me to get a sense of a candidate's suitability. It also enables me to send my clients a link to confirm if this candidate might be a good fit.
 
-#### Employers
+* As a tech recruiter I want to know about the specific skills a candidate has and whether they apply to SMEs or large corporations. 
+
+#### *Employers*
 
 * As an employer looking for a new full stack developer to join my team, I find online resumes incredibly useful to get a broad sense of someone's capabilities. 
 
@@ -45,7 +47,9 @@ thus rather deep.
 
 * I would also be interested in seeing the code behind this candidate's other projects. A link to the associated GitHub accounts is very useful to me.
 
-#### Applicable to both target users
+* As an employer who runs an SME I would like an online portfolio to tell me what experience a candidate has specific to my type of business.
+
+#### *Applicable to both target users*
 
 * As a user I would like to view this candidate's work history.
 
@@ -57,31 +61,38 @@ thus rather deep.
 
 
 
-### Strategy
-#### Project Goals
+## Strategy
+#### *Project Goals*
 As aforementioned the focus for this project was to create a professional and slick online CV for Karina (me), that was both user-friendly and creatively designed.
 I wanted the project to demonstate good design principles and use of colour, but my primary goal was to *communicate* information about myself to potential employers. 
 In order for that communication to be effective, the site needed to be structured well and easily accessible. The content also needed to be relevant to the user stories. 
 I was particularly cognizant of the importance of steering clear of too much unrelated personal information. 
 A recruiter I spoke to said that when she's looking at candidate profiles she wants to take in the important information quickly and without "fluff".
 
-#### Target Users
+#### *Target Users*
 The target users are twofold: employers and recruiters. Essentially anyone who is looking to employ a front-end, back-end or full-stack developer. 
 
-#### Research
+#### *Research*
 In the planning stages I researched other online portfolios and spoke to a selection of employers as well as a recruiter to gauge what kind of site was best suited to fulfil my primary goals. 
+
+Speaking to a recruiter was particularly useful, specifically with regards to the type of biography to write:
+
+> "You have done a lot of work for SMEs and you have run an SME yourself. I would want to know that you have that experience and are looking for projects where that can be beneficial. So as an agency I would know why 
+I'm introducing you to my SME clients. As an SME employer I would feel reassured that you understand my needs." 
+
+
 While browsing other online CVs and portfolio sites online, I became acutely aware of the designer's pull towards style over structure and because the website is aimed at employers from a wide range of industries
 I felt that it was of the utmost importance not to gallop down the road of flamboyant untethered design. 
 The diversity of my target audience dictated that I maintain a strong element of professionalism, but I was also determined to inject a certain level of boldness and creativity.
 
 
-#### In Summary
+#### *In Summary*
 
 * The website casts a wide net for its target audience and thus must maintain a certain decorum of design and content. At the same time it must demonstrate my ability for expressing both professionalism and creativity through well-thought out design, sound UX principles and efficient, well structured coding.
 * I also wanted to demonstrate an ability with a wide variety of web-development technologies. My reasoning is that employers considering me as a candidate might look at the code. It was a considered strategy from the beginning to use Bootstrap as a base and custom CSS on top of it.
 * Finally I conducted qualitative research into my target audience by discussing the website in detail with a recruiter as well as a handful of other employers in less detail. The recruiter in particular gave me invaluable information about how to structure the site and what content to include. 
 
-### Scope
+## Scope
 The project had a somewhat clearly defined scope from its inception, as there is a well worn framework for CVs and the goal was to place that framework in an online context. I had originally intended on including some "quirky" personal information, but after
 discussing the website with a recruiter, I was satisfied that such information would be out of step with the overall tone of the website. I decided to remain faithful to the accepted standard of content that one might find in a traditional CV.
 
@@ -103,14 +114,15 @@ I didn't over or under scope this project, I think all the elements included hav
 In the future I would like to implement separate project pages as part of the main website. So where I included the project specification sheets as downloads, these would now be pages that open
 via the main long scroll page. These will be dynamically generated from a central CMS, as per my mentor's recommendations. However that was well past the scope of this project, but it is something 
 I will get working on when I have a better grasp of the tech needed to achieve it. 
-### Structure
+
+## Structure
 
 The traditional CV framework itself is not overly complicated so I thought it lent itself nicely to a single long scrolling page design.
 My structure features a fixed top navigation that connects the user to each of the sections from anywhere on the page. The narrative is linear as the website tells a story
 with a natural flow.
 
 
-#### Website Sections:
+#### *Website Sections:*
 
 1. **Home / Landing page.**
 2. **Personal Bio.** - A brief paragraph of semi-personal information in the context of development alongside a photograph of myself.
@@ -122,13 +134,13 @@ with a natural flow.
 to encourage further browsing.  
 
 
-#### Website Flow
+#### *Website Flow*
 The flow of the site is simple and makes the logical linear progression from:<br>
 Introduction to Karina --> Work History --> Skillset --> Some examples of Skillset --> Contact.<br>
 The user might choose their own path and skip ahead, but the site has been designed to try and maintain their focused interest 
 throughout the journey towards the end goal of sending me an email, or downloading my traditional CV. 
 
-#### Interaction Design
+#### *Interaction Design*
 
 Interaction design was foremost in my mind when outlining the way the site would work. As the website is selling my ability to 
 create websites, every aspect of the user's interaction is of the highest importance. My colours, typography and layout structure 
@@ -143,22 +155,22 @@ scroll.
 - I spent an inordinate amount of time ensuring that my "departure from the norm timeline" would work regardless of what the user decided to do, 
 or how they decided or needed to interact with it. These details are explored further in Testing. (link here).
 
-#### Information Architecture
+#### *Information Architecture*
 
 A standard linear tree structure worked perfectly for this project, and I saw no need to add needless complexity in the form of off-page linkage. When I do implement the dynamic 
 project pages, the website will likely develop into more of a hub and spoke style system, but a simple one at that.
 
 
-### Skeleton
+## Skeleton
 
 As already mentioned, the website is designed with a simple tree structure and hierarchical flow from top to page bottom. It is designed to be clear
 and simple, browsing the site is all about information collection and the user should not need to pay attention to the fact that they are "using"
 anything. I think this project has achieved those aims.
 
-#### Designed to lead the user to my CTA
+#### *Designed to lead the user to my CTA*
 The content was structured in the particular order to lead up to my call to action, which is for an employer or a recruiter to get in touch to learn more. 
 
-#### Reassuring Conventions
+#### *Reassuring Conventions*
 
 I've employed conventions that my target users will already be accustomed to:
 - My navigation is conventional: a fixed navbar on medium and large screens, reducing to a hamburger on smaller ones. 
@@ -170,13 +182,14 @@ or what the user's role is.
  - To ensure good UX I also added instructions to the user explaining exactly how to interact with the timeline. These instructions change depending on device and screen size.
  - I've sprinkled Font Awesome icons liberally throughout the site to encourage metaphorical thinking and to further reassure the user and reinforce the information on display. 
 
-#### Wireframes
+#### *Wireframes*
 
 My wireframes enabled me to get a sense of how this structure would look on the page, and they provided the foundation for more detailed design choices later in the process.
 
 [My full Figma workspace can be viewed here.](https://www.figma.com/file/R1rKGdgD34jz9jH3s9oMJd/Personal-CV?node-id=115%3A0)
 
 #### *Alternatively here are the individual wireframes in pdf format:* 
+If you choose to view them this way, please click download as the GitHub viewer expands the smaller wireframes too much.
 
 - [xs Wireframe (Default mobile-first) ](wireframes-et-al/xs-wireframe-default.pdf)<br>
 - [sm Wireframe](wireframes-et-al/sm-wireframe.pdf)
@@ -186,7 +199,7 @@ My wireframes enabled me to get a sense of how this structure would look on the 
 
 
 
-### Surface
+## Surface
 
 Once the structure, information architecture and wireframing was completed, the choice of design elements, colours, typography and creative flourishes, were actually very simple to add. I knew I 
 wanted a dark-toned website, but I still created a few alternative mock-ups to see how they felt. The alternatives cemented my initial instinct for how I wanted the site to look and feel. 
@@ -196,7 +209,7 @@ wanted a dark-toned website, but I still created a few alternative mock-ups to s
 - [Palette & Typography Mock-Ups](wireframes-et-al/palette-typography-tests.pdf)
 
 
-#### Colour Palette
+#### *Colour Palette*
 My initial strategy was intimately linked to surface design as I went with a weighty dark-toned colour palette to add gravitas to my content and I then lightened this with a playful creative throw-pillow of colour. I was also very conscious 
 of maintaining colour contrast for accessibility reasons, and my choice of a bright yellow/green fit the brief well. In my initial mock-ups I had planned to use black writing on a dark grey, because I love the rich velvety tone and feel of that 
 combination, but I realised early on that the contrast was not user-friendly, so I changed most of my black text to either light-grey or the green/yellow accent colour.
@@ -214,11 +227,11 @@ I did detailed colour mock-ups before starting development, but as you can from 
 I ended up refining the Portfolio section of the project quite a bit during development but the remaining sections stayed mostly true to my 
 wireframing and mock-ups.
 
-#### Typography
+#### *Typography*
 I focused on using two of my favourite Google fonts: Lato and Roboto. They are clean, elegant, no-nonsense fonts, easy to read, without being boring. I think my font pairing works well for the professional-creative look I was aiming for. Obviously
 they are both sans-serif, as are their fallbacks. I experimented briefly with serif fonts during the typography tests, but decided they were not the right fit.   
 
-#### Use of Language 
+#### *Use of Language* 
 - My landing page language is bold and somewhat brazen, but the idea behind it is to grasp user attention. 
 - Throughout the site I use language to reinforce my main goal of securing employment in development:
     - On the landing page. 
@@ -231,82 +244,181 @@ they are both sans-serif, as are their fallbacks. I experimented briefly with se
     positive responses. 
 - I've kept the language in the main body of the site professional and to the point.
 
-## Features
+# Features
 
-### 1. Navigation Bar - Fixed Bootstrap Navbar.
+## 1. Navigation
 
-The navigation is a fixed top Bootstrap navbar with some key alterations to its default behaviour: 
+### Design
+The navigation bar is a fixed top horizontal Bootstrap navbar with some key alterations to its default behaviour. 
 
-- It has been altered via jQuery so that the active class switches from tab to tab as the site is browsed. I found code that achieved this online and I altered it to work on this website. (Attribution below).
+I used the same colour as my darker background colour so it would blend in nicely with my landing page. I wanted it present, but without detracting from the rest of the pages.
+
+I changed the colour of the Bootstrap hamburger icon to match my site design. 
+
+When the navigation bar items are hovered over they scale up in size and a yellow/green bar underlines them.
+
+I also added content hinting down arrows at key points throughout the site, where I felt they were needed. These are animated for extra emphasis.
+
+### Responsiveness
+
+It is a full-width navbar on screens larger than 992px and then it compresses to a hamburger navigation on smaller screens.
+
+### Elements to Note
+
+- The navbar has been altered via jQuery so that the active class switches from tab to tab as the site is browsed. I found 
+code that achieved this online and I altered it to work on this website. [Details here](##-Attribution). I was surprised this functionality was not
+default with Bootstrap.
 
 - From a UX perspective I found it irksome that a mobile user had to click directly on the hamburger icon to close the navigation, even after tapping on where they wanted to navigate to. Again I found code online which I altered 
-to work for this website. (Attribution below.) Now, once a user clicks on a navigation tab, the user is brought there and the navigation options close, so they can see the page. Also, if they click anywhere outside the nav drop-down,
-it also closes. I think this is far preferable to Bootstrap's default behaviour.  
+to work for this website. [Details Here](##-Attribution). Now, when a user clicks on a navigation tab, the user is brought to the chosen section and the navigation options close, so they can see the page. 
 
-### 2. Landing Page / Home
+- Additionally if they click anywhere outside the nav drop-down, it also closes. I think this is far preferable to Bootstrap's default behaviour.  
 
-This was designed to be very minimal, with a strong, bold introduction to myself and the site's purpose. I think it achieves that. Initially I had toyed with adding my profile photo to the landing page, but I much prefer the minimalism of just 
-bold text.
+## 2. Landing Page / Home
 
-### 3. Short personal biography & photo of Karina
+### Design 
+This was designed to be minimalistic with a strong, bold introduction to myself and the site's purpose. Initially I had toyed with adding my profile photo to the landing page, but I much prefer the minimalism of just 
+text.
 
-I wasn't sure about including this page, but I was convinced by both a recruiter and an employer that a basic introduction and photograph would be beneficial, as people like to be able to place a face to go with information. I concede that the 
-CV is made more solid when there is a real person attached to it. 
+The down arrow and concurrent instructions to scroll were added as the landing page takes up the full height of the screen.
+
+## 3. Short personal biography & photo of Karina
+
+I wasn't sure about including this page, but I was convinced by both a recruiter and an employer that a basic introduction and photograph would be beneficial, as people like to be able to place a face to go with information.
+I was also made aware that this was a good opportunity to expand on my experience in business and wealth of knowledge about SMEs in particular. 
 
 The page is fully responsive and I ensured that I compressed the image, so as not to impact load times unnecessarily.
 
-### 4. Work History
+## 4. Work History
+
+### Design & Concept
 
 This section comprises of an interactive timeline of my education and work history to date. I find employment histories in their usual format to be a little bit tedious, and since I'm also offering a traditional CV for download, I thought it would be
 nice to have a little fun with this section. I had (perhaps naively) imagined that I would be able to implement this easily with CSS, but I found that JavaScript was required to get the behaviour I needed. Thankfully the internet is replete with developers 
 doing pretty much everything conceivable in JavaScript and I found code that helped me to begin to acheive the desired effect. I had to modify and add to this code quite a lot and I drew from multiple sources online (all attributed). This section went through 
-many permutations in order to create an interactivity that was both interesting and different, but also accessible. I was especially aware of the inherent dangers of using hover effects for keyboard users. I have documented the JavaScript in the script.js file, 
+many permutations in order to create an interactivity that was both interesting and different, but also accessible. 
+
+### Accessibility
+
+I was especially aware of the inherent dangers of using hover effects for keyboard users. I have documented the JavaScript in the script.js file, 
 so I won't go into the details here. 
 
 To make hovering over the items easier for the user, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled me to increase the hover zone without affecting the size of the icon itself. I had to adjust 
 this for smaller screens because it was too difficult then to click away from the "modal" timeline information.
 
 As this section is slightly unconventional I have included an instruction to the user at the beginning of the timeline, to either tap & click or hover & focus (the instruction varies by device used, and screen width). I've also ensured that the icons scale up and 
-change colour when they are hovered over, as extra confirmation for the user. 
+change colour when they are hovered over, as extra confirmation for the user.
+
+Displaying the timeline information to satisfy all potential device and accessibility categories was complicated. Here were my categories:
+
+- Mouse-using users on desktop screens (above 768px wide). 
+- Mouse-using users on desktop screens (below 768px wide) (rare but possible). 
+- Device-using users on touch screens. 
+- Keyboard-using users on desktop screens above (768px). 
+- Keyboard-using users on desktop screens below 768px. 
+
+In addition I needed to account for screen resizing which I discovered introduced more bugs. 
+
+1. __*Instruction to hover & focus or tap & click.*__
+
+- PROBLEM: As the work history timeline is not a well-known interaction I felt it was important to instruct the user as to how to interact with it. This was complicated by the fact that on a mobile device one has to tap and on desktops (generally) one has to hover. I needed
+a way to deliver both sets of instructions dependent on the type of interaction the user would have.
+
+- SOLUTION: The ```@media (hover:none) {}``` and ```@media (hover:hover) {}``` queries enabled me to display and hide two separate classes that displayed the two separate sets of instructions. 
+
+2. __*Making the information keyboard accessible.*__
+
+- PROBLEM: Because the icons are not links they were not tabable by default. 
+- SOLUTION: For keyboard users I added ```tabindex="0"``` to each of the icons to make the information accessible.
+
+3. __*Making the X close button keyboard accessible.*__
+- PROBLEM: The Close button did not seem to respond to ```tabindex="0"```.
+- SOLUTION: ??? Unknown as of yet.
+
+4. __*Hiding the icon and timeline line on mobile screens.*__
+- PROBLEM: Because the timeline information is positioned absolutely, z-index didn't work for hiding the icons and timeline line when the information was displayed. 
+
+- SOLUTION 1:  My initial jQuery code used a set of rules to make the icon and timeline line visible and hidden when the corresponding icon was tapped on small screens.
+- SOLUTION 2:  I then realised that instead of applying the z-index rule to the icon and timeline line, I could apply it to the information itself and that did away with the need to 
+hide and show the icon and line. 
 
 
-### 5. Skills
 
+## 5. Skills
+
+### Design & Concept
 This page features a list of skills that enhance and add to my employability as a professional web developer. As the page is heavy on content, I have made it more accessible by demarcating the various skills into categories and 
-further subdividing them into boxes which I think enables the design to flow smoothly and displays the information in a way that is easy to read. I've incorporated a more graphical visual in the form of the progress bar graph which 
+further subdividing them into boxes which I think enables the design to flow smoothly and displays the information in a way that is easy to read. I've incorporated a graphical visual in the form of the progress bar graph which 
 currently displays more aspirational than factual progress results, but I will update these to reflect my actual progress before I send this website to potential employers. 
 
+### UX
 I've included a number of elements intended to retain the user's attention: 
 - I chose to animate the UX/UI box in a way that both entertains and reinforces the design implication that those particular boxes are "tacked" on to the background.
 - I've broken up the content into a lot of smaller more manageable pieces that are easier to consume. 
 - I've sliced through the boxyness of the page with a bright border on the TOOLS section. 
 - I've added the rather arbitrary progress bars at the bottom to reinforce the idea that I am making headway with a number of languages and technologies. 
 
-* Selected Projects
+## 6. Portfolio
 
-* Contact Page
+### Design & Concept
 
-* Footer
+This section's design was inspired by the look and feel of cards in an old rolodex. Just the salient points included, with links to find more detailed information elsewhere.
+The goal behind this page is to show my target users what I can do. I have included two extra elements: 
+- A link to the live site, if the project has one.
+- A link to download the project design specifications to demonstrate the design planning that goes into my work.
 
-    * I made the choice to include both my social navigation and my main navigation in the footer as well as via the main nav-bar. 
-    I am aware that this might be considered somewhat redundant given that my main navbar is fixed and easily accessible from the footer area, however 
-    I persisted with this decision, because on small screens and medium screens up to 992px, the main navigation is hidden behind the hamburger icon and the upper social media links are 
-    quite small, thus easily ignored. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ultimately I didn't think the downside of redundancy outweighed the positives of potentially reminding a user to connect with me on social media, or have another look at part of my website.
-    I included both of these CTAs as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px as at this size the navbar is completely visible.
+Where a project is as yet uncompleted I included an indication bordered in a dashed yellow line of the project's stage.
 
-## Accessibility
+### Responsiveness & Images
+The section is fully responsive and flips between three different designs:
 
-* My original design had far more dark on dark toned elements, which I love the look of, but after having checked the site and colour themes using the Web Disability Simulator,
-I realised my colour choices were problematic for a subsection of potential users. So I chose to use more of the light grey and yellow tones for text elements.
+1. The elements stacked on top of each other on small screens. 
+2. The elements stacked but diagonally opposed on medium and screens up to 992px.
+3. The elements in a single horizontal card. 
 
-* I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear, as below: <br>
+I used CSS Grid to get the advanced level of flexibility I required for this page, and I set my images to ```width:100%``` with ```height:auto``` to ensure full responsiveness across 
+screen sizes. I also sized my images very specifically to suit the design without being too large, and then I gave them a ```max-width:450px``` to keep them from pixelating. 
+
+
+## 7. Contact Page / Get in Touch
+
+The aim for this page was for it to be eye-catching and simple. The form itself takes up most of the page and the heading is somewhat colloquial to encourage use.  
+
+I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear, as below: <br>
 <input type="text" placeholder="Name:" required onfocus="this.placeholder=''" onblur="this.placeholder='Name:'"><br><br>
 I wrote it like this because I personally find it off-putting to type over something already written. However, I then researched placeholder functionality online and found that this was not acceptable HTML standard. 
 in terms of usability. So I changed it back to the following: <br>
 <input type="text" placeholder="Name:" required><br><br>
-Which I personally find annoying, but the consensus is that this way is more user-friendly, especially when not including form labels, which I have chosen to omit for design reasons.
+The consensus is that this way is more user-friendly, especially when not including form labels, which I have chosen to omit for design reasons.
+I was however careful to include the aria-label for each element of the form. 
 
-* After running my site through web.dev I found that I need to add aria-labels to my form inputs and button, for SEO, screen-readers & accessibility. 
+I also included a content hinting down arrow to lead users to the footer.
+
+## 8. Footer
+
+My footer is designed using CSS Grid to help it change layout on small, medium and large screens. 
+
+I made the choice to include both my social navigation and my main navigation in the footer as well as via the main nav-bar. 
+I am aware that this might be considered somewhat redundant given that my main navbar is fixed and easily accessible from the footer area, however 
+I persisted with this decision, because on small screens and medium screens up to 992px, the main navigation is hidden behind the hamburger icon and the upper social media links are 
+quite small, thus easily ignored. 
+
+Ultimately I didn't think the downside of redundancy outweighed the positives of potentially reminding a user to connect with me on social media, or have another look at part of my website.
+I included both of these CTAs as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px as at this size the navbar is completely visible. 
+
+# Accessibility
+
+In addition to the elements I've already discussed in previous sections of this README, I did the following to ensure accesibility across the board:
+* My original design ([see mockups](####Mock-ups)) had far more dark on dark toned elements, which I love the look of, but after having checked the site and colour themes using the Web Disability Simulator,
+I realised my colour choices were problematic for a subsection of potential users. So I chose to use more of the light grey and yellow tones for text elements.
+
+* After running my site through web.dev I found that I need to add aria-labels to a multitude of elements to ensure good accessibility. 
+
+* I added descriptive alt text to all my images. 
+
+* I added a "Skip to Main" link before my nav bar that was absolutely positioned off screen until tabbed and then it appears and is very obvious.
+
+[Dreamhost Blog Article: 10 ways to make your website more accessible. ](https://www.dreamhost.com/blog/make-your-website-accessible/)
 
 
 ## Future Features to Implement
@@ -316,6 +428,8 @@ Which I personally find annoying, but the consensus is that this way is more use
 * I plan to implement the sequential loading of elements on scroll. So as the user scrolls down elements pop into view.
 
 * I plan to password protect my downloadable traditional CV, as I don't want all my personal details to be readily available online. Once I've instituted that feature I will upload my actual CV as opposed to the dummy one that is currently there.
+
+* I plan to make the contact form functional. 
 
 ## Issues / Room for Improvement
 
@@ -430,6 +544,20 @@ Information on hover/focus based accessibility.
 
 5. List any bugs I came across while creating and testing the site, including fixes I came up with. 
 
+## Bugs & Fixes
+
+### Landing Page
+1. Accessibility Bug on Page Zoom:
+- BUG: As I began testing the site on different devices, zoomed in to 200% as stipulated by HTML official standards, I found that on certain screen sizes both the landing page and the contact page were not working as expected. The writing on the landing page 
+was disappearing above the page, so that the user would not be able to read the first line. The contact form itself was seeping into the footer, obscuring most of it. 
+
+- FIX: I had set the heights of both sections to height: 100vh. Changing them to min-height: 100vh fixed the issue.  
+
+### Work History
+
+1. Resizing the Page 
+
+3. BUG: Finding the code required to display the 
 1. web.dev Measure was amazing for checking a range of different measures of page performance, accessibility, vulnerabilities and best practices. 
     * I went through the list a few times and changed/altered elements on my page to try and improve those markers of performance that I could.
 
@@ -467,17 +595,20 @@ stays open and they have to click the icon to close it. I think this code improv
 
 ## Deployment
 
-1. Write up how I got the site deployed on GitHub Pages:
-https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-
-
+This website was developed using GitPod in a Chrome browser and commits were pushed to a GitHub repository.
 This site is currently hosted on GitHub pages. 
+### How I Published to GitHub Pages:
 
-### 1. To view the live site: [Follow this link](https://kairosity.github.io/milestone-project-1-cv-website)
+1. I went to the main page of my [GitHub repository.](https://github.com/kairosity/milestone-project-1-cv-website) 
+2. I clicked on the "Settings" tab on the main horizontal tab bar.
+3. I scrolled down to "GitHub Pages".
+4. I selected "Branch: Master" and the "Root" Directory and then clicked "Save".
+5. Site Published. 
 
-### 2. To open this project locally:
 
-You have to clone the project on GitHub, you can do this via the Command Line or using GitHub Desktop.
+### To open this project locally:
+
+You open this project locally you have to clone the project on GitHub, you can do this via the Command Line or using GitHub Desktop.
 
 #### Using the Command Line
 
