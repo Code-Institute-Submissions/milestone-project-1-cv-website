@@ -14,7 +14,7 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
 
 - There are two target users: Employers & Recruiters.
 - They targeted much the same way. Except that most recruiters will be less interested in site content and technical details and perhaps more interested in having a CV to download, take-away and pass on.
-- Employers are more likely to want to browse the online resume and particularly the connected social accounts.
+- Employers are more likely to want to browse the online resume and particularly the connected GitHub account.
 
 ## User Stories
 
@@ -384,12 +384,12 @@ screen sizes. I also sized my images very specifically to suit the design withou
 
 The aim for this page was for it to be eye-catching and simple. The form itself takes up most of the page and the heading is somewhat colloquial to encourage use.  
 
-I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear, as below: <br>
-<input type="text" placeholder="Name:" required onfocus="this.placeholder=''" onblur="this.placeholder='Name:'"><br><br>
-I wrote it like this because I personally find it off-putting to type over something already written. However, I then researched placeholder functionality online and found that this was not acceptable HTML standard. 
-in terms of usability. So I changed it back to the following: <br>
-<input type="text" placeholder="Name:" required><br><br>
-The consensus is that this way is more user-friendly, especially when not including form labels, which I have chosen to omit for design reasons.
+### Accessibility
+I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear.
+I wrote it like this because I personally find it off-putting to type over something already written. However, I then researched placeholder 
+functionality online and found that this was not acceptable HTML standard in terms of usability, so I changed it back to the default behaviour.
+
+It is important to see the placeholder text right up until a user types, especially when not including form labels, which I have chosen to omit for design reasons.
 I was however careful to include the aria-label for each element of the form. 
 
 I also included a content hinting down arrow to lead users to the footer.
@@ -409,7 +409,7 @@ I included both of these CTAs as titles over the footer navigation. I did howeve
 # Accessibility
 
 In addition to the elements I've already discussed in previous sections of this README, I did the following to ensure accesibility across the board:
-* My original design ([see mockups](####Mock-ups)) had far more dark on dark toned elements, which I love the look of, but after having checked the site and colour themes using the Web Disability Simulator,
+* My original design had far more dark on dark toned elements, which I love the look of, but after having checked the site and colour themes using the Web Disability Simulator,
 I realised my colour choices were problematic for a subsection of potential users. So I chose to use more of the light grey and yellow tones for text elements.
 
 * After running my site through web.dev I found that I need to add aria-labels to a multitude of elements to ensure good accessibility. 
@@ -418,10 +418,10 @@ I realised my colour choices were problematic for a subsection of potential user
 
 * I added a "Skip to Main" link before my nav bar that was absolutely positioned off screen until tabbed and then it appears and is very obvious.
 
-[Dreamhost Blog Article: 10 ways to make your website more accessible. ](https://www.dreamhost.com/blog/make-your-website-accessible/)
+* I ensured readability for those hard of vision, by ensuring that the entire site was readable up to 200% zoom. 
 
 
-## Future Features to Implement
+# Future Features to Implement
 
 * I plan to turn this website into a dynamic site, whereby specific project pages are generated dynamically after inputting certain key variables. Title, goal, colour palette, images etc... (Example in wireframe).
 
@@ -431,91 +431,108 @@ I realised my colour choices were problematic for a subsection of potential user
 
 * I plan to make the contact form functional. 
 
-## Issues / Room for Improvement
+# Issues / Room for Improvement
 
 * *Unused CSS*: As per web-dev Measure results I tested my CSS via Chrome dev tools' "Coverage" tool and found that there was a substantial amount of unused CSS.
 For this particular site, the load time is quite fast, so I don't think this is a massive issue, but there is definitely scope for reducing the size of the Bootstrap and Font Awesome libraries.
 
 * *Cache Policy*: As per Chrome Dev Tools: Lighthouse - I need to "serve my static assets with an efficient cache policy" but as this is beyond the scope of this project I will implement this at a later date, when I know more server-side programming.
 
-## Tools & Other Resources Used & Perused
+# Tools & Other Resources Used & Perused
 Here are the additional tools and resources I used during all stages of this project: 
 
-### **[Figma](https://www.figma.com/)**
+## 1. Design
 
-My project planning, wireframes initial colour palette & typography testing were all done using Figma.
+- ### **[Awwwards](https://www.awwwards.com/)**
+    Browsed for design inspiration. 
 
-### **[Adobe Photoshop](https://www.adobe.com/ie/products/photoshopfamily.html)**
+- ###  **[Figma](https://www.figma.com/)**
+    My project planning, wireframes initial colour palette & typography testing were all done using Figma.
 
-Editing and colour correction for the images was done using Adobe Photoshop.
+- ### **[Adobe Photoshop](https://www.adobe.com/ie/products/photoshopfamily.html)**
+    Editing and colour correction for the images was done using Adobe Photoshop.
 
-### **[Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)**
+- ### **[Adobe Colour](https://color.adobe.com/create/color-wheel)**
+    Used this resource for colour inspiration and testing colour combinations. 
 
-Used a LOT for testing CSS and shaping the jQuery code to work for my project.
+- ### **[Unsplash](https://unsplash.com/)**
+    Specifically:<br>
+    * <span>Photo by <a href="https://unsplash.com/@bekirdonmeez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bekir Dönmez</a> on <a href="https://unsplash.com/s/photos/acupuncture?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    * <span>Photo by <a href="https://unsplash.com/@lougoetzmann?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Lou Goetzmann</a> on <a href="https://unsplash.com/s/photos/ireland-history?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
-### **[Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools)**
+- ### **[Google Fonts](https://fonts.google.com/)**
 
-Amazing for checking a number of site performance indicators. 
+  Both the fonts I've included are Google Fonts: Lato & Roboto.
 
-### **[Google Fonts](https://fonts.google.com/)**
+- ### **[Font Awesome](https://fontawesome.com/)** 
 
-Both the fonts I've included are Google Fonts: Lato & Roboto.
+  All the awesome icons used are from Font Awesome.
 
-### **[Font Awesome](https://fontawesome.com/)** 
+- ### **[Image Optim](https://imageoptim.com/mac)**
+    Great little program to compress images for use online. 
 
-All the awesome icons used are from Font Awesome.
+## 2. HTML & CSS Code
+- ### **[Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)**
 
-### **[W3 CSS Validator](https://jigsaw.w3.org/css-validator/)** & **[ W3 HTML Validator](https://validator.w3.org/)**
+    Used a LOT for testing CSS and shaping the jQuery code to work for my project.
 
-### **[W3C Editor's Draft](https://drafts.csswg.org/mediaqueries-4/#hover)** 
-Great information on using :hover media queries.
+- ### **[W3 CSS Validator](https://jigsaw.w3.org/css-validator/)** & **[ W3 HTML Validator](https://validator.w3.org/)**
+    I ran my code through these validators to check it.
 
-### **[CSS Tricks](https://css-tricks.com/)**
-Specifically their pages on:
+- ### **[W3C Editor's Draft](https://drafts.csswg.org/mediaqueries-4/#hover)** 
+    Great information on using :hover media queries.
 
-* [Box Shadows](https://css-tricks.com/almanac/properties/b/box-shadow/https://css-tricks.com/almanac/properties/b/box-shadow/)
-* [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-* [TextArea](https://css-tricks.com/textarea-tricks/)
-* [Unused CSS](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/)
+- ### **[Autoprefixer - CSS](https://autoprefixer.github.io/)**
+    Amazing tool that adds all the browser prefixs automatically.
 
-### **[freeCodeCamp](https://www.freecodecamp.org/)**
-Specifically [This article](https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/) about all the ways to create responsive images. 
+- ### **[CSS Tricks](https://css-tricks.com/)**
+    Specifically their pages on:
 
-### **[Web Disability Simulator - Chrome Extension](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla?hl=en)**
-Used this to check my design and page layout for accesibility concerns. 
+    * [Box Shadows](https://css-tricks.com/almanac/properties/b/box-shadow/https://css-tricks.com/almanac/properties/b/box-shadow/)
+    * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+    * [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+    * [TextArea](https://css-tricks.com/textarea-tricks/)
+    * [Unused CSS](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/)
 
-### **[Unsplash](https://unsplash.com/)**
-Specifically:<br>
-* <span>Photo by <a href="https://unsplash.com/@bekirdonmeez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bekir Dönmez</a> on <a href="https://unsplash.com/s/photos/acupuncture?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-* <span>Photo by <a href="https://unsplash.com/@lougoetzmann?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Lou Goetzmann</a> on <a href="https://unsplash.com/s/photos/ireland-history?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+- ### **[freeCodeCamp](https://www.freecodecamp.org/)**
+    Specifically [This article](https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/) about all the ways to create responsive images. 
 
-### **[jQuery Documentation](https://api.jquery.com/)**
+- ### **[dirtyMarkup by 10 Best Design](https://www.10bestdesign.com/dirtymarkup/)**
+    HTML, CSS, JS & API code formatter. Super useful resource thanks to Richard Read (Readri205 @ Code Institute) for the link. 
 
-### **[Autoprefixer - CSS](https://autoprefixer.github.io/)**
-Amazing tool that adds all the browser prefixs automatically.
+- ### **[Google's Style Guide](https://google.github.io/styleguide/htmlcssguide.html)**
+    Useful reference for formatting/style information.
 
-### **[Can I Use?](https://caniuse.com/)**
-Checks web development features for browser compatibility. 
+## 3. jQuery Code
+- ### **[jQuery Documentation](https://api.jquery.com/)**
+    Helped me get started using jQuery.
 
-### **[dirtyMarkup by 10 Best Design](https://www.10bestdesign.com/dirtymarkup/)**
-HTML, CSS, JS & API code formatter. Super useful resource thanks to Richard Read (Readri205 @ Code Institute) for the link. 
+## 4. Accessibility & Performance
+- ### **[Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools)**
 
-### **[Google's Style Guide](https://google.github.io/styleguide/htmlcssguide.html)**
-Useful reference for formatting/style information.
+    Amazing for checking a number of site performance indicators. 
 
-### **[Google's Web.Dev Measure](https://web.dev/measure/?gclid=EAIaIQobChMIk-icrKKb6wIVQeztCh2zaAQFEAAYASAAEgKVJfD_BwE)**
-Useful for testing various site performance and user experience markers.  
+- ### **[Web Disability Simulator - Chrome Extension](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla?hl=en)**
+    Used this to check my design and page layout for accesibility concerns. 
 
-### **[Image Optim](https://imageoptim.com/mac)**
-Great little program to compress images for use online. 
+- ### **[Can I Use?](https://caniuse.com/)**
+    Checks web development features for browser compatibility. 
 
-### **[Access & Use](https://accessuse.eu/en/Content-hover-focus.html)**
-Information on hover/focus based accessibility.
+- ### **[Google's Web.Dev Measure](https://web.dev/measure/?gclid=EAIaIQobChMIk-icrKKb6wIVQeztCh2zaAQFEAAYASAAEgKVJfD_BwE)**
+    Useful for testing various site performance and user experience markers.  
+
+- ### **[Access & Use](https://accessuse.eu/en/Content-hover-focus.html)**
+    Information on hover/focus based accessibility.
+
+- ### **[Dreamhost Blog Article](https://www.dreamhost.com/blog/make-your-website-accessible/)**
+    10 ways to make your website more accessible.
+
+- ### **[Aria-Labels](https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html#:~:text=The%20purpose%20of%20this%20technique,will%20know%20what%20it%20is.)**
+
 
 ---
 
-## Technology Used
+# Technology Used
 
 * HTML5
 
@@ -532,21 +549,121 @@ Information on hover/focus based accessibility.
 * Git 
 
 
-## Testing 
+# Testing 
 
-1. List websites used to validate my code
+
+## Code Validators
+
+I used a number of code validators to check my code:
+
+ [W3 HTML Validator](https://validator.w3.org/)
+
+- Threw an issue with the fact that I gave my timeline icons aria-labels: 
+
+    But since "[The purpose of this technique is to provide a label for objects that can be read by assistive technology. The aria-label attribute provides the text label for an object, such as a button. When a screen reader encounters the object, the aria-label text is read so that the user will know what it is.](https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html#:~:text=The%20purpose%20of%20this%20technique,will%20know%20what%20it%20is.)"
+    
+
+    It was important to include them on the icons as they are integral to understanding the work history timeline. 
+
+- Threw an issue with my use of h1 tags. 
+
+    "Consider using the h1 element as a top-level heading only"<br>
+    
+    But as this site is a long scroll page, each section does represent a different page, and since the explanation for limiting h1 use is that
+    screen readers use them to direct users, the best thing to do for screen reader is to leave them in place. 
+
+ [W3 CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+ - Threw a number of "Parse Errors" in relation to my colour variables but following research I discovered that the W3 Validator seems to be somewhat
+ out of touch with CSS3 [Stack Overflow Discussion](https://stackoverflow.com/questions/57661659/w3c-css-validation-parse-error-on-variables) - So I've ignored these and
+ the rest of the code was valid.
+
+ - It also threw warnings about unknown vendor extensions, but again as with the above I have read that this is a non-issue. 
+
+ - The rest of the code validated. 
+
+ [W3 Link Checker](https://validator.w3.org/checklink)
+    - Found a few broken links and fixed typos.
+ 
+ 
+
 
 2. Go through User Stories and explain how website meets those needs. 
 
-3. Write about how each part of responsive website behaves on different screen sizes. 
+## Mobile-first Responsivity
 
-4. Manually go through each part of website and write out how I confirmed that each link, hover effect and other interactive bits worked as expected. 
+I designed and wrote this site using a mobile-first approach. 
 
-5. List any bugs I came across while creating and testing the site, including fixes I came up with. 
+### Mobile/xs & sm breakpoints 
+- Most elements are stacked vertically on top of each other. 
+
+- On xs and sm screens the work history timeline information is designed as kind of modal pop-ups that obscure the background beneath them using z-index.
+
+- The Work History timeline must be tapped or clicked for functionality and has X close buttons, although clicking
+or tapping anywhere on the page will close the information boxes. 
+
+- As per my mentor's advice, when the information is displayed on small screens I used jQuery to create a blurred background effect to focus the user solely on the 
+timeline information.
+
+- The Skills page is simplified by removing the dark grey boxes from around the skills and languages information.
+As they are not all visible on the page together, those boxes were not needed. 
+
+- I also removed the progress bars xs and sm breakpoints. The languages represented by the bars are mentioned in the paragraph before them and 
+the effect of the progress bars works better when there is space to view them. 
+
+- On xs screens my portfolio page stacks the elements vertically and then on sm screens it begins to separate the images from the 
+text horizontally/diagonally while retaining a vertical alignment. 
+
+- Each element of my contact form takes up their own horizontal space and this does not change as the screen widens, it just gets proportionately wider.
+
+- My footer stacks vertically, starting with the most important element which is my cv download, followed by my social media links and then my navigation links. 
+
+### Md breakpoint
+
+- The navigation is still toggled by the hamburger icon at this size. 
+
+- The first major shift here is my work history timeline goes from a modal design to more of a tool-tips design. The information is displayed on hover or focus (for desktops) and the boxes 
+now sit on either side of the timeline and are bordered with my accent colour and no longer contain an X close function. 
+
+- The skills section is also redesigned at this breakpoint. The individual skills are now two to a line, and they get a dark grey box effect and the UX/UI box is animated for extra fun and attention. The layout inside the boxes
+is also changed from being centered to being absolutely positioned. I also applied a box-shadow to the grey skill boxes to add to the effect.
+
+- The dividers I included to delineate the skills sections are also unnecessay and thus removed at this breakpoint.
+
+- The progress bars appear at this breakpoint, because the page is now wide enough to accomodate them happily and without confusion. 
+
+- The Portfolio section continues to stack vertically, but the staggered opposing alignment of the text and images becomes pleasingly obvious. 
+
+- The Footer is now horizontally aligned with dividers and both sets of navigation are included, as the main navigation is still hidden behind the hamburger icon. 
+
+### Lg breakpoint
+
+- The main navigation becomes a full horizontal fixed top nav-bar. 
+
+- The first four skills boxes now sit next to each other sharing a single line of layout. 
+
+- The individual projects are now laid out in a more horizontal way and the image sits next to the text.
+
+- In the footer, I remove the main-navigation footer links as the top navigation is abundantly clear to see and use.
+
+### Xl breakpoint
+
+- No major layout changes, just minor spacing adjustments. 
+
+## Testing each part of the page
+
+I manually tested every page myself using: Chrome, Safari, Opera, Firefox, Firefox Nightly & IE. 
+
+I tested the page on my iphone6, and my partner's ancient and tiny iphoneSE as well as my ipad mini. 
+
+I then sent the page to friends and family, who used a range of different devices both android and apple, alongside a range of 
+different desktops and operating systems. 
+
+There were some design tweaks made as a result of this, mostly increasing and decreasing font sizes until I reached a happy compromise. 
 
 ## Bugs & Fixes
 
-### Landing Page
+### Landing Page & Contact Page
 1. Accessibility Bug on Page Zoom:
 - BUG: As I began testing the site on different devices, zoomed in to 200% as stipulated by HTML official standards, I found that on certain screen sizes both the landing page and the contact page were not working as expected. The writing on the landing page 
 was disappearing above the page, so that the user would not be able to read the first line. The contact form itself was seeping into the footer, obscuring most of it. 
@@ -555,17 +672,49 @@ was disappearing above the page, so that the user would not be able to read the 
 
 ### Work History
 
-1. Resizing the Page 
+1.  **_Timeline Information Flickering_**
 
-3. BUG: Finding the code required to display the 
-1. web.dev Measure was amazing for checking a range of different measures of page performance, accessibility, vulnerabilities and best practices. 
-    * I went through the list a few times and changed/altered elements on my page to try and improve those markers of performance that I could.
+- BUG: My original code displayed and hid the timeline icon on hover, which worked fine where there was no overlap between the information and the icon as on larger screens. However on small screens the act of hiding the icon was telling the
+code that the icon had been "moused off" or unhovered and thus was hiding the timeline info and showing the icon again, but then immediately showing the information and hiding the icon again and this loop resulted in an annoying flickering effect. 
 
-    * I altered my code so that my headings descended sequentially. Initially I had skipped from h1s to h4s in a number of sections. 
-    * I added rel="noopener" to my target="_blank"'s as per their recommendation.
-    * I used Chrome's development tools' "Coverage" tab to see how much unused CSS I had, but then chose to leave it for the time being as it does not impact substantially 
-    on page load time, although for larger projects it is definitely something worth considering re: external libraries. 
-    * I added a meta description. 
+- FIX: Instead of allowing hover on smaller screens I switched the functionality to a click and I changed how I coded the icons, instead of hiding and showing them, I used z-index to hide and show the timeline information itself which avoided the 
+flickering issue completely. 
+
+2. **_Resizing the Page_**
+
+- BUG: Once I had my jQuery code working, I had divided the logic between small and large screens, but when the screen was resized the original screen size code was carrying over and causing the info to appear incorrectly.
+- FIX: I used ```$(window).resize``` and wrapped the info function inside it.
+
+- BUG: While this worked for resizing from small screens to large screens, the reverse was not true. When a user would resize to a small screen the large screen code would still carry over.
+- FIX: I added code to reload the page on resize, which forced the specific screen size jQuery code and all seemed good...
+
+- BUG: ...Except then I noticed that on mobile devices it was registering page scroll as a vertical window resize, and reloading and jumping back to the top every time a user tried to scroll. Not ideal.
+- FIX: I used code found online and altered the resize function to include a width property. So if the window width was different to the last window width, then it would reload and this fixed the vertical scroll issue. 
+
+3.  **_The animated sun icon._**
+
+- BUG: The sun has no timeline information attached, its function is aesthetic, yet because my code targeted the ```".timeline-icon"``` class, it was included in the blur and darken function.
+
+- FIX: To stop this, I added a conditional statement removing the blur and darken function.
+
+## Other Testing
+
+
+### 1. web.dev Measure 
+This was amazing for checking a range of different measures of page performance, accessibility, vulnerabilities and best practices. 
+I went through the list a few times and changed/altered elements on my page to try and improve those markers of performance that I could.
+
+* I altered my code so that my headings descended sequentially. Initially I had skipped from h1s to h4s in a number of sections. 
+* I added rel="noopener" to my target="_blank"'s as per their recommendation.
+* I used Chrome's development tools' "Coverage" tab to see how much unused CSS I had, but then chose to leave it for the time being as it does not impact substantially 
+on page load time, although for larger projects it is definitely something worth considering re: external libraries. 
+* I added a meta description. 
+
+### 2. [Browser Stack](https://www.browserstack.com/)
+
+Amazing cross-browser testing tool. I used their free plan and tested my website on all major browsers and devices. 
+
+Using this tool I found that the website looks awful on Internet Explorer. As it does not support the use of CSS3 variables. So none of my colours register. 
 
 ## Attribution
 
