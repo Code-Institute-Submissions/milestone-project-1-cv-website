@@ -13,7 +13,7 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
 # UX
 
 - There are two target users: Employers & Recruiters.
-- They targeted much the same way. Except that most recruiters will be less interested in site content and technical details and perhaps more interested in having a CV to download, take-away and pass on.
+- They are targeted in much the same way. Except that most recruiters will be less interested in site content and technical details and perhaps more interested in having a CV to download, take-away and pass on.
 - Employers are more likely to want to browse the online resume and particularly the connected GitHub account.
 
 ## User Stories
@@ -27,19 +27,18 @@ thus rather deep.
 
 * As a recruiter for a large firm, I am always looking for new talent to send my clients. 
 
-* As a recruiter I have many clients who are looking for developers. I'd like to be able to quickly browse an online resume to get a sense of whether or not this particular developer might be a good fit for any of my clients.
+* As a recruiter I have many clients who are looking for developers. I'd like to be able to quickly browse an online resume to get a general sense of whether or not this particular developer might be a good fit for any of my clients.
 
 * As a tech recruiter I'm not always 100% certain what languages or tools my client requires, so I would like the ability to download a detailed CV that clearly stipulates all skills clearly.
 
-* As a tech recruiter I want to be able to look at a potential employee's online cv because it is a useful first contact for me to get a sense of a candidate's suitability. It also enables me to send my clients a link to confirm if this candidate might be a good fit.
-
 * As a tech recruiter I want to know about the specific skills a candidate has and whether they apply to SMEs or large corporations. 
+
 
 #### *Employers*
 
 * As an employer looking for a new full stack developer to join my team, I find online resumes incredibly useful to get a broad sense of someone's capabilities. 
 
-* As an employer I might then download a more detailed CV to further help me decide whether or not to call that candidate for interview.
+* As an employer I would like a more detailed CV to further help me decide whether or not to call that candidate for interview.
 
 * As an employer looking for a new front end developer, I am heartened to see an online CV built by that potential candidate because it is an instant assurance that they know how to design and build a website. 
 
@@ -51,7 +50,7 @@ thus rather deep.
 
 #### *Applicable to both target users*
 
-* As a user I would like to view this candidate's work history.
+* As a user I would like to view this candidate's work and education history.
 
 * As a user I would like to know what languages this candidate is able to work in.
 
@@ -67,7 +66,7 @@ As aforementioned the focus for this project was to create a professional and sl
 I wanted the project to demonstate good design principles and use of colour, but my primary goal was to *communicate* information about myself to potential employers. 
 In order for that communication to be effective, the site needed to be structured well and easily accessible. The content also needed to be relevant to the user stories. 
 I was particularly cognizant of the importance of steering clear of too much unrelated personal information. 
-A recruiter I spoke to said that when she's looking at candidate profiles she wants to take in the important information quickly and without "fluff".
+A recruiter I spoke to said that when she's looking at candidate profiles she wants to take in the important information quickly.
 
 #### *Target Users*
 The target users are twofold: employers and recruiters. Essentially anyone who is looking to employ a front-end, back-end or full-stack developer. 
@@ -99,14 +98,14 @@ discussing the website with a recruiter, I was satisfied that such information w
 
 I chose to include:
 * Minimal personal information and a good deal of professional/employment information.
-* Any personal information included is in the context of development.
-* An interactive work history timeline. I wanted to make this interesting to use, and I think it manages to combine utility and design quite well.
+* Any personal information included is in the context of development or past experience.
+* An interactive work history timeline. I wanted to make this interesting to use, and to combine utility and good design.
 * My skillsets and how they converge into strengths for development. 
 * Projects I have worked on, and am working on. 
 * A way to contact me. 
 
 I worked my way through creating the themes for these pages in a linear fashion employing a sprint methodology. I also approached the development of the 
-website with a similar method. I coded the site from the top down and if I got stuck on a particular feature I moved on and came back to it once the 
+website in a similar way. I coded the site from the top down and if I got stuck on a particular feature I moved on and came back to it once the 
 foundations were finished.
 
 I didn't over or under scope this project, I think all the elements included have their place, and there are no glaring ommissions. 
@@ -153,7 +152,7 @@ scroll.
 - The design has been conceived to offer the user reassurance at every stage of their progression through the website.
 - All buttons, navbars and forms work the way the user would expect. Of note is that I modified the mobile navigation to improve UX and I've detailed this further below.
 - I spent an inordinate amount of time ensuring that my "departure from the norm timeline" would work regardless of what the user decided to do, 
-or how they decided or needed to interact with it. These details are explored further in Testing. (link here).
+or how they decided or needed to interact with it. These details are explored further in the Testing section of this README.
 
 #### *Information Architecture*
 
@@ -165,7 +164,7 @@ project pages, the website will likely develop into more of a hub and spoke styl
 
 As already mentioned, the website is designed with a simple tree structure and hierarchical flow from top to page bottom. It is designed to be clear
 and simple, browsing the site is all about information collection and the user should not need to pay attention to the fact that they are "using"
-anything. I think this project has achieved those aims.
+anything.
 
 #### *Designed to lead the user to my CTA*
 The content was structured in the particular order to lead up to my call to action, which is for an employer or a recruiter to get in touch to learn more. 
@@ -266,11 +265,11 @@ It is a full-width navbar on screens larger than 992px and then it compresses to
 ### Elements to Note
 
 - The navbar has been altered via jQuery so that the active class switches from tab to tab as the site is browsed. I found 
-code that achieved this online and I altered it to work on this website. [Details here](##-Attribution). I was surprised this functionality was not
+[code](https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working) that achieved this online and I altered it to work on this website.  I was surprised this functionality was not
 default with Bootstrap.
 
-- From a UX perspective I found it irksome that a mobile user had to click directly on the hamburger icon to close the navigation, even after tapping on where they wanted to navigate to. Again I found code online which I altered 
-to work for this website. [Details Here](##-Attribution). Now, when a user clicks on a navigation tab, the user is brought to the chosen section and the navigation options close, so they can see the page. 
+- From a UX perspective I found it irksome that a mobile user had to click directly on the hamburger icon to close the navigation, even after tapping on where they wanted to navigate to. Again I found [code online](https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen) which I altered 
+to work for this website. Now, when a user clicks on a navigation tab, the user is brought to the chosen section and the navigation options close, so they can see the page. 
 
 - Additionally if they click anywhere outside the nav drop-down, it also closes. I think this is far preferable to Bootstrap's default behaviour.  
 
@@ -295,7 +294,7 @@ The page is fully responsive and I ensured that I compressed the image, so as no
 
 This section comprises of an interactive timeline of my education and work history to date. I find employment histories in their usual format to be a little bit tedious, and since I'm also offering a traditional CV for download, I thought it would be
 nice to have a little fun with this section. I had (perhaps naively) imagined that I would be able to implement this easily with CSS, but I found that JavaScript was required to get the behaviour I needed. Thankfully the internet is replete with developers 
-doing pretty much everything conceivable in JavaScript and I found code that helped me to begin to acheive the desired effect. I had to modify and add to this code quite a lot and I drew from multiple sources online (all attributed). This section went through 
+doing pretty much everything conceivable in JavaScript and I found code that helped me to begin to acheive the desired effect. I had to modify and add to this code quite a lot and I drew from multiple sources online (all [attributed]()). This section went through 
 many permutations in order to create an interactivity that was both interesting and different, but also accessible. 
 
 ### Accessibility
@@ -303,19 +302,18 @@ many permutations in order to create an interactivity that was both interesting 
 I was especially aware of the inherent dangers of using hover effects for keyboard users. I have documented the JavaScript in the script.js file, 
 so I won't go into the details here. 
 
-To make hovering over the items easier for the user, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled me to increase the hover zone without affecting the size of the icon itself. I had to adjust 
-this for smaller screens because it was too difficult then to click away from the "modal" timeline information.
+To make hovering over the items easier for the user, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled me to increase the hover zone without affecting the size of the icon itself.
 
 As this section is slightly unconventional I have included an instruction to the user at the beginning of the timeline, to either tap & click or hover & focus (the instruction varies by device used, and screen width). I've also ensured that the icons scale up and 
 change colour when they are hovered over, as extra confirmation for the user.
 
 Displaying the timeline information to satisfy all potential device and accessibility categories was complicated. Here were my categories:
 
-- Mouse-using users on desktop screens (above 768px wide). 
-- Mouse-using users on desktop screens (below 768px wide) (rare but possible). 
+- Mouse-using users on desktop screens above 768px wide. 
+- Mouse-using users on desktop screens below 768px wide. (Rare but possible). 
 - Device-using users on touch screens. 
-- Keyboard-using users on desktop screens above (768px). 
-- Keyboard-using users on desktop screens below 768px. 
+- Keyboard-using users on desktop screens above 768px wide. 
+- Keyboard-using users on desktop screens below 768px wide. 
 
 In addition I needed to account for screen resizing which I discovered introduced more bugs. 
 
@@ -332,8 +330,8 @@ a way to deliver both sets of instructions dependent on the type of interaction 
 - SOLUTION: For keyboard users I added ```tabindex="0"``` to each of the icons to make the information accessible.
 
 3. __*Making the X close button keyboard accessible.*__
-- PROBLEM: The Close button did not seem to respond to ```tabindex="0"```.
-- SOLUTION: ??? Unknown as of yet.
+- PROBLEM: Whether or not to make the timeline close buttons keyboard accessible.  
+- SOLUTION: I decided against implementing this, for the simple reason that were I to add the X buttons to the tabindex, if the keyboard user wanted to see all the timeline infos, they would have to tab twice as much to tab through the close buttons. 
 
 4. __*Hiding the icon and timeline line on mobile screens.*__
 - PROBLEM: Because the timeline information is positioned absolutely, z-index didn't work for hiding the icons and timeline line when the information was displayed. 
@@ -385,12 +383,6 @@ screen sizes. I also sized my images very specifically to suit the design withou
 The aim for this page was for it to be eye-catching and simple. The form itself takes up most of the page and the heading is somewhat colloquial to encourage use.  
 
 ### Accessibility
-I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear.
-I wrote it like this because I personally find it off-putting to type over something already written. However, I then researched placeholder 
-functionality online and found that this was not acceptable HTML standard in terms of usability, so I changed it back to the default behaviour.
-
-It is important to see the placeholder text right up until a user types, especially when not including form labels, which I have chosen to omit for design reasons.
-I was however careful to include the aria-label for each element of the form. 
 
 I also included a content hinting down arrow to lead users to the footer.
 
@@ -420,6 +412,12 @@ I realised my colour choices were problematic for a subsection of potential user
 
 * I ensured readability for those hard of vision, by ensuring that the entire site was readable up to 200% zoom. 
 
+* I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear.
+I wrote it like this because I personally find it off-putting to type over something already written. However, I then researched placeholder 
+functionality online and found that this was not acceptable HTML standard in terms of usability, so I changed it back to the default behaviour. 
+It is important to see the placeholder text right up until a user types, especially when not including form labels, which I have chosen to omit for design reasons.
+
+* Because I am not including form labels, I was careful to include the aria-label for each element of the form. 
 
 # Future Features to Implement
 
@@ -507,6 +505,9 @@ Here are the additional tools and resources I used during all stages of this pro
 - ### **[jQuery Documentation](https://api.jquery.com/)**
     Helped me get started using jQuery.
 
+- ### **[CSS Tricks: Learn jQuery from Scratch](https://css-tricks.com/lodge/learn-jquery/)**
+    Great starter guide.
+
 ## 4. Accessibility & Performance
 - ### **[Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools)**
 
@@ -528,6 +529,8 @@ Here are the additional tools and resources I used during all stages of this pro
     10 ways to make your website more accessible.
 
 - ### **[Aria-Labels](https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html#:~:text=The%20purpose%20of%20this%20technique,will%20know%20what%20it%20is.)**
+
+## 5. General Resources
 
 
 ---
@@ -575,7 +578,7 @@ I used a number of code validators to check my code:
  [W3 CSS Validator](https://jigsaw.w3.org/css-validator/)
 
  - Threw a number of "Parse Errors" in relation to my colour variables but following research I discovered that the W3 Validator seems to be somewhat
- out of touch with CSS3 [Stack Overflow Discussion](https://stackoverflow.com/questions/57661659/w3c-css-validation-parse-error-on-variables) - So I've ignored these and
+ out of touch with CSS3. Please see this [Stack Overflow Discussion](https://stackoverflow.com/questions/57661659/w3c-css-validation-parse-error-on-variables) for details. So I've ignored these and
  the rest of the code was valid.
 
  - It also threw warnings about unknown vendor extensions, but again as with the above I have read that this is a non-issue. 
@@ -587,8 +590,22 @@ I used a number of code validators to check my code:
  
  
 
+## UX Goal Testing 
 
-2. Go through User Stories and explain how website meets those needs. 
+My primary goal was to create a website that showcases and communicates my skills and employability in a modern and interesting way and I feel that the project has acheived that.
+
+All my user stories have been fulfilled:
+
+Recruiters can browse, see my work history and education, they can see a number of projects I have and am working on, and they can download project specifications for a greater insight into 
+how I work. I have also expounded on my experience working within and running an SME. A USP that makes me very qualified to work for other SMEs. Recruiters also have the ability to download an in-depth CV. 
+
+Employers can do all of the above, as well as access my GitHub account where they will be able to see detailed examples of my coding.
+
+Regarding the downloadble CV, my actual CV is not linked up yet, because I do not want that level of personal information online. When I password protect that function I will connect the real CV.
+
+Both kinds of target users can also get in touch with me using the contact form. 
+(Except they can't yet, because it doesn't send anywhere, but when I code the back-end they *will* be able to get in touch that way. )
+
 
 ## Mobile-first Responsivity
 
@@ -597,7 +614,7 @@ I designed and wrote this site using a mobile-first approach.
 ### Mobile/xs & sm breakpoints 
 - Most elements are stacked vertically on top of each other. 
 
-- On xs and sm screens the work history timeline information is designed as kind of modal pop-ups that obscure the background beneath them using z-index.
+- On xs and sm screens the work history timeline information is designed as a kind of modal pop-up that obscures the background beneath them using z-index.
 
 - The Work History timeline must be tapped or clicked for functionality and has X close buttons, although clicking
 or tapping anywhere on the page will close the information boxes. 
@@ -608,7 +625,7 @@ timeline information.
 - The Skills page is simplified by removing the dark grey boxes from around the skills and languages information.
 As they are not all visible on the page together, those boxes were not needed. 
 
-- I also removed the progress bars xs and sm breakpoints. The languages represented by the bars are mentioned in the paragraph before them and 
+- I also removed the progress bars from xs and sm breakpoints. The languages represented by the bars are mentioned in the paragraph before them and 
 the effect of the progress bars works better when there is space to view them. 
 
 - On xs screens my portfolio page stacks the elements vertically and then on sm screens it begins to separate the images from the 
@@ -650,21 +667,23 @@ is also changed from being centered to being absolutely positioned. I also appli
 
 - No major layout changes, just minor spacing adjustments. 
 
-## Testing each part of the page
+## Manual Testing
 
-I manually tested every page myself using: Chrome, Safari, Opera, Firefox, Firefox Nightly & IE. 
+I manually tested every section and link myself before sending it out to friends and family. I tested the website at different breakpoints using: Chrome, Safari, Opera, Firefox, Firefox Nightly, all of which I have installed on my local machine.
 
-I tested the page on my iphone6, and my partner's ancient and tiny iphoneSE as well as my ipad mini. 
+I then tested the website on my iphone6, and my partner's ancient and tiny iphoneSE as well as my ipad mini. 
 
 I then sent the page to friends and family, who used a range of different devices both android and apple, alongside a range of 
 different desktops and operating systems. 
 
-There were some design tweaks made as a result of this, mostly increasing and decreasing font sizes until I reached a happy compromise. 
+There were some design tweaks to be made as a result of this, mostly increasing and decreasing font sizes until I reached a happy compromise. 
 
 ## Bugs & Fixes
 
+As a result of manual testing on my local machine I came across a number of bugs (mostly jQuery related):
+
 ### Landing Page & Contact Page
-1. Accessibility Bug on Page Zoom:
+1. **_Accessibility Bug on Page Zoom._**
 - BUG: As I began testing the site on different devices, zoomed in to 200% as stipulated by HTML official standards, I found that on certain screen sizes both the landing page and the contact page were not working as expected. The writing on the landing page 
 was disappearing above the page, so that the user would not be able to read the first line. The contact form itself was seeping into the footer, obscuring most of it. 
 
@@ -672,7 +691,7 @@ was disappearing above the page, so that the user would not be able to read the 
 
 ### Work History
 
-1.  **_Timeline Information Flickering_**
+1.  **_Timeline Information Flickering._**
 
 - BUG: My original code displayed and hid the timeline icon on hover, which worked fine where there was no overlap between the information and the icon as on larger screens. However on small screens the act of hiding the icon was telling the
 code that the icon had been "moused off" or unhovered and thus was hiding the timeline info and showing the icon again, but then immediately showing the information and hiding the icon again and this loop resulted in an annoying flickering effect. 
@@ -680,7 +699,7 @@ code that the icon had been "moused off" or unhovered and thus was hiding the ti
 - FIX: Instead of allowing hover on smaller screens I switched the functionality to a click and I changed how I coded the icons, instead of hiding and showing them, I used z-index to hide and show the timeline information itself which avoided the 
 flickering issue completely. 
 
-2. **_Resizing the Page_**
+2. **_Resizing the Page._**
 
 - BUG: Once I had my jQuery code working, I had divided the logic between small and large screens, but when the screen was resized the original screen size code was carrying over and causing the info to appear incorrectly.
 - FIX: I used ```$(window).resize``` and wrapped the info function inside it.
@@ -695,12 +714,13 @@ flickering issue completely.
 
 - BUG: The sun has no timeline information attached, its function is aesthetic, yet because my code targeted the ```".timeline-icon"``` class, it was included in the blur and darken function.
 
-- FIX: To stop this, I added a conditional statement removing the blur and darken function.
+- FIX: To stop this, I added a conditional statement removing the blur and darken function from the sun specifically.
+
+
 
 ## Other Testing
 
-
-### 1. web.dev Measure 
+### 1. [web.dev Measure](https://web.dev/measure/)
 This was amazing for checking a range of different measures of page performance, accessibility, vulnerabilities and best practices. 
 I went through the list a few times and changed/altered elements on my page to try and improve those markers of performance that I could.
 
@@ -714,7 +734,16 @@ on page load time, although for larger projects it is definitely something worth
 
 Amazing cross-browser testing tool. I used their free plan and tested my website on all major browsers and devices. 
 
-Using this tool I found that the website looks awful on Internet Explorer. As it does not support the use of CSS3 variables. So none of my colours register. 
+Using this tool I found that the website looks awful on Internet Explorer. IE does not support the use of CSS3 variables. So none of my colours register.
+However, given that global usage of IE is < 1.6% *and* Microsoft just announced that they are retiring IE completely, I've chosen to ignore this, as I don't imagine any of my target audience 
+will be using IE.
+
+Safari v9 and before also doesn't support CSS3 variables, but again usage of these old browsers are low, and it is unlikely that web development employers are using such old software.
+
+### 3. [Can I use?](https://caniuse.com/usage-table)
+
+I used this during testing to work out why my website looked so bad on older versions of safari and IE. CSS3 variables were to blame.
+My website colour variables are supported by 94.75% of browsers globally, according to "Can I use?".
 
 ## Attribution
 
@@ -722,11 +751,8 @@ Using this tool I found that the website looks awful on Internet Explorer. As it
 The jQuery code I used and altered to display the Work History Timeline information on hover/click.  
 
 #### [@dynamyc-2's jQuery code](https://css-tricks.com/forums/topic/jquery-window-width-condition/)
-I used and altered the first line from this user's question on CSS Tricks.
+I used and altered the first line from this user's question on CSS Tricks, to make my work history timeline logic work.  
 
-#### [MatuDuke's Code from Stack Overflow](https://stackoverflow.com/questions/9707021/how-do-i-auto-hide-placeholder-text-upon-focus-using-css-or-jquery/9707068#9707068)
-I used this user's answer (2nd from the top) to hide the placeholder text in my contact form when the user clicks to type something, as I think it's off-putting when the placeholder 
-text remains until you actually type.
 
 #### [Taha Paksu's Code from Stack Overflow](https://stackoverflow.com/questions/10750603/detect-a-window-width-change-but-not-a-height-change)
 I used this code to stop the browser reloading on mobile devices when a user scrolls vertically. 

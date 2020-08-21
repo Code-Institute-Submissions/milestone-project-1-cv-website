@@ -83,6 +83,10 @@ function toggleTimelineAccessible() {
       if ($(this).hasClass("fa-sun")) {
         removeBlurDarken();
       }
+    })
+    $(".close-button").focus(function() {
+      $(".timeline-info").css("z-index", "-1000");  
+      removeBlurDarken();
     })   
     $(".timeline-icon").blur(function() {
       $(".timeline-info").css("z-index", "-1000"); 
