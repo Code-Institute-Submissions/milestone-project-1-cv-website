@@ -2,19 +2,100 @@
 
 ## Code Institute - First Milestone Project: *User Centric Frontend Development.*
 
-This website was developed to showcase my professional resume in an efficient and appealing online format. The key idea is for the website to act as a dual purpose calling card. 
-Firstly it provides a lot of the information that would be contained in a traditional CV, and secondly it in itself works as testament to my ability to design and create static websites. 
-The feeling and tone of the website is intended to be a blend of professionalism and creativity. I wanted to build a clean dark-toned site that displayed the required information in a pleasing and 
-interesting way with a strong emphasis on excellent UX and accessibility. The website's primary goal is to help secure employment in web development for its primary stakeholder (myself).  
+This project was developed to showcase my professional resume in an efficient and appealing online format. The website will act as a two-pronged calling card. 
+Firstly it provides a lot of the information that would be contained in a traditional CV, and secondly it is evidence of my ability to design and create static websites. 
+The design mood is intended to be a subtle blend of professionalism and creativity. I wanted to create a clean dark-toned site that displayed the required information in a pleasing and 
+interesting way with a strong emphasis on excellent UX and accessibility. The website's primary goal is to help illustrate my suitability for employment in web development.
 
 ## [View the Live Website Here](https://kairosity.github.io/milestone-project-1-cv-website)
 
 ---
+
+## Table of Contents
+
+- [UX](#ux)
+  * [User Stories](#user-stories)
+      - [*Project Developer*](#-project-developer-)
+      - [*Tech Recruiters*](#-tech-recruiters-)
+      - [*Employers*](#-employers-)
+      - [*Applicable to both target users*](#-applicable-to-both-target-users-)
+  * [Strategy](#strategy)
+      - [*Project Goals*](#-project-goals-)
+      - [*Target Users*](#-target-users-)
+      - [*Research*](#-research-)
+      - [*In Summary*](#-in-summary-)
+  * [Scope](#scope)
+  * [Structure](#structure)
+      - [*Website Sections:*](#-website-sections--)
+      - [*Website Flow*](#-website-flow-)
+      - [*Interaction Design*](#-interaction-design-)
+      - [*Information Architecture*](#-information-architecture-)
+  * [Skeleton](#skeleton)
+      - [*Designed to lead the user to my CTA*](#-designed-to-lead-the-user-to-my-cta-)
+      - [*Reassuring Conventions*](#-reassuring-conventions-)
+      - [*Wireframes*](#-wireframes-)
+      - [*Alternatively here are the individual wireframes in pdf format:*](#-alternatively-here-are-the-individual-wireframes-in-pdf-format--)
+  * [Surface](#surface)
+      - [*Palette & Typography Tests*](#-palette---typography-tests-)
+      - [*Colour Palette*](#-colour-palette-)
+      - [*Mock-ups*](#-mock-ups-)
+      - [*Typography*](#-typography-)
+      - [*Use of Language*](#-use-of-language-)
+- [Features](#features)
+  * [1. Navigation](#1-navigation)
+    + [Design](#design)
+    + [Responsiveness](#responsiveness)
+    + [Elements to Note](#elements-to-note)
+  * [2. Landing Page / Home](#2-landing-page---home)
+    + [Design](#design-1)
+  * [3. Short personal biography & photo of Karina](#3-short-personal-biography---photo-of-karina)
+  * [4. Work History](#4-work-history)
+    + [Design & Concept](#design---concept)
+    + [Accessibility](#accessibility)
+  * [5. Skills](#5-skills)
+    + [Design & Concept](#design---concept-1)
+    + [UX](#ux-1)
+  * [6. Portfolio](#6-portfolio)
+    + [Design & Concept](#design---concept-2)
+    + [Responsiveness & Images](#responsiveness---images)
+  * [7. Contact Page / Get in Touch](#7-contact-page---get-in-touch)
+  * [8. Footer](#8-footer)
+- [Accessibility](#accessibility-1)
+- [Future Features to Implement](#future-features-to-implement)
+- [Issues / Room for Improvement](#issues---room-for-improvement)
+- [Testing](#testing)
+  * [Code Validators](#code-validators)
+  * [UX Goal Testing](#ux-goal-testing)
+  * [Mobile-first Responsivity](#mobile-first-responsivity)
+    + [Mobile/xs & sm breakpoints](#mobile-xs---sm-breakpoints)
+    + [Md breakpoint](#md-breakpoint)
+    + [Lg breakpoint](#lg-breakpoint)
+    + [Xl breakpoint](#xl-breakpoint)
+  * [Manual Testing](#manual-testing)
+  * [Bugs & Fixes](#bugs---fixes)
+    + [Landing Page & Contact Page](#landing-page---contact-page)
+    + [Work History](#work-history)
+  * [Other Testing](#other-testing)
+- [Attribution](#attribution)
+- [Deployment](#deployment)
+  * [How I Published to GitHub Pages:](#how-i-published-to-github-pages-)
+  * [To open this project locally:](#to-open-this-project-locally-)
+    + [Using the Command Line](#using-the-command-line)
+    + [Using GitHub Desktop](#using-github-desktop)
+- [Tools & Other Resources Used & Perused](#tools---other-resources-used---perused)
+  * [1. Design](#1-design)
+  * [2. HTML & CSS Code](#2-html---css-code)
+  * [3. jQuery Code](#3-jquery-code)
+  * [4. Accessibility & Performance](#4-accessibility---performance)
+  * [5. General Resources](#5-general-resources)
+- [Technology Used](#technology-used)
+- [Acknowledgements](#acknowledgements)
+
 # UX
 
 - There are two target users: Employers & Recruiters.
-- They are targeted in much the same way. Except that most recruiters will be less interested in site content and technical details and perhaps more interested in having a CV to download, take-away and pass on.
-- Employers are more likely to want to browse the online resume and particularly the connected GitHub account.
+- They are targeted in much the same way. Except that recruiters may be slightly less interested in site content and technical details and slightly more inclined to download a traditional CV to take-away and pass on to other decision-makers.
+- Employers are more likely to want to browse the online resume and are more likely to be interested in the connected GitHub account.
 
 ## User Stories
 
@@ -44,7 +125,7 @@ thus rather deep.
 
 * As an employer who shares decision-making with others I like how easy it is to send that CV to other members of my organization as a way of fielding potential candidates. 
 
-* I would also be interested in seeing the code behind this candidate's other projects. A link to the associated GitHub accounts is very useful to me.
+* As an employer I would also be interested in seeing the code behind this candidate's other projects. A link to the associated GitHub accounts is very useful to me.
 
 * As an employer who runs an SME I would like an online portfolio to tell me what experience a candidate has specific to my type of business.
 
@@ -54,7 +135,7 @@ thus rather deep.
 
 * As a user I would like to know what languages this candidate is able to work in.
 
-* As a user I would like to see other projects this candidate has developed.
+* As a user I would like to see examples of projects this candidate has developed.
 
 * As a user I would like a way to contact this candidate.
 
@@ -105,14 +186,9 @@ I chose to include:
 * A way to contact me. 
 
 I worked my way through creating the themes for these pages in a linear fashion employing a sprint methodology. I also approached the development of the 
-website in a similar way. I coded the site from the top down and if I got stuck on a particular feature I moved on and came back to it once the 
-foundations were finished.
+website in a similar fashion.
 
 I didn't over or under scope this project, I think all the elements included have their place, and there are no glaring ommissions. 
-
-In the future I would like to implement separate project pages as part of the main website. So where I included the project specification sheets as downloads, these would now be pages that open
-via the main long scroll page. These will be dynamically generated from a central CMS, as per my mentor's recommendations. However that was well past the scope of this project, but it is something 
-I will get working on when I have a better grasp of the tech needed to achieve it. 
 
 ## Structure
 
@@ -156,18 +232,17 @@ or how they decided or needed to interact with it. These details are explored fu
 
 #### *Information Architecture*
 
-A standard linear tree structure worked perfectly for this project, and I saw no need to add needless complexity in the form of off-page linkage. When I do implement the dynamic 
-project pages, the website will likely develop into more of a hub and spoke style system, but a simple one at that.
-
+A standard linear tree structure worked perfectly for this project, and I saw no need to add the extra complexity of a multiple page site. When I do implement the dynamic 
+project pages that I mention in [future features to implement](#future-features-to-implement), the website will likely develop into more of a hub and spoke style system, but a simple one at that.
 
 ## Skeleton
 
-As already mentioned, the website is designed with a simple tree structure and hierarchical flow from top to page bottom. It is designed to be clear
-and simple, browsing the site is all about information collection and the user should not need to pay attention to the fact that they are "using"
+The website's simple tree structure flows hierarchically from top to page bottom. It is designed to be clear
+and simple. Browsing the site is all about information collection and the user should not need to pay attention to the fact that they are "using"
 anything.
 
 #### *Designed to lead the user to my CTA*
-The content was structured in the particular order to lead up to my call to action, which is for an employer or a recruiter to get in touch to learn more. 
+The content was structured specifically so as to lead organically towards my call to action, which is for an employer or a recruiter to get in touch to learn more. 
 
 #### *Reassuring Conventions*
 
@@ -176,7 +251,7 @@ I've employed conventions that my target users will already be accustomed to:
 - My landing page clearly and very simply explains to the user why they are here and what is expected of them.
 - My personal bio page immediately follows on from the landing page and it expounds on the initial message. Leaving no doubt as to what the point of the website is, 
 or what the user's role is.
-- The only somewhat left of center design choice is the interactive timeline that follows. I think it adds a nice amount of flair and creativity,
+- The only somewhat left of center design choice is the interactive timeline that follows. The aim with the timeline was to add a certain amount of flair and creativity,
  without detracting from usability. I spent a good deal of time ensuring that the timeline was user-friendly and accessible to keyboard users as well. 
  - To ensure good UX I also added instructions to the user explaining exactly how to interact with the timeline. These instructions change depending on device and screen size.
  - I've sprinkled Font Awesome icons liberally throughout the site to encourage metaphorical thinking and to further reassure the user and reinforce the information on display. 
@@ -196,8 +271,6 @@ If you choose to view them this way, please click download as the GitHub viewer 
 - [lg Wireframe](wireframes-et-al/lg-wireframe.pdf)
 - [xl Wireframe](wireframes-et-al/xl-wireframe.pdf)
 
-
-
 ## Surface
 
 Once the structure, information architecture and wireframing was completed, the choice of design elements, colours, typography and creative flourishes, were actually very simple to add. I knew I 
@@ -207,23 +280,22 @@ wanted a dark-toned website, but I still created a few alternative mock-ups to s
 
 - [Palette & Typography Mock-Ups](wireframes-et-al/palette-typography-tests.pdf)
 
-
 #### *Colour Palette*
-My initial strategy was intimately linked to surface design as I went with a weighty dark-toned colour palette to add gravitas to my content and I then lightened this with a playful creative throw-pillow of colour. I was also very conscious 
+My initial strategy was intimately linked to surface design as I went with a weighty dark-toned colour palette to add gravitas to my content and I then lightened this with a playful throw-pillow of colour. I was also very conscious 
 of maintaining colour contrast for accessibility reasons, and my choice of a bright yellow/green fit the brief well. In my initial mock-ups I had planned to use black writing on a dark grey, because I love the rich velvety tone and feel of that 
 combination, but I realised early on that the contrast was not user-friendly, so I changed most of my black text to either light-grey or the green/yellow accent colour.
 
 I was also aware of not using pure black as a background colour, I've seen many websites that make this mistake to the detriment of the user. A dark grey that passes for a matte black is always a better base colour, as the contrast
 doesn't hurt your user's eyes. For the same reasons I didn't overuse bright white, most of my light tones are actually a very light grey. I also chose a dark grey base with softer brown undertones as it is a warming and comforting colour.
 
-I did detailed colour mock-ups before starting development, but as you can from the links below I did go on to change some of the pairings.
+I did detailed colour mock-ups before starting development, but as you can see from the links below I ended up changing some of the pairings.
 
 #### *Mock-ups*
 
 - [Mobile Mock-up](wireframes-et-al/mock-up-for-mobile.pdf)
 - [Desktop Mock-up](wireframes-et-al/mock-up-for-desktop.pdf)
 
-I ended up refining the Portfolio section of the project quite a bit during development but the remaining sections stayed mostly true to my 
+I ended up refining the Portfolio section quite a bit during development but the remaining sections stayed mostly true to my 
 wireframing and mock-ups.
 
 #### *Typography*
@@ -237,10 +309,10 @@ they are both sans-serif, as are their fallbacks. I experimented briefly with se
     - In the personal bio. 
     - At the end of the work history timeline. 
     - At the beginning of the skills section with a call to download my CV.
-    - On the contact page I've used the more colloquial "Get in Touch" to encourage the latter.
+    - On the contact page I've used the more colloquial "Get in Touch" to make emailing me appear easy and welcoming.
     - In the footer I have "Connect with me" and links to other places to see my work.
-    - Also in the footer I've engaged differently with the user by asking them a question. "Prefer a more traditional CV?"  This is well-known sales technique to illicit a positive response which elicits other
-    positive responses. 
+    - Also in the footer I've engaged with the user by asking them a question. "Prefer a more traditional CV?"  This is a well-known sales technique that asks an easy question 
+    to illicit a positive response which in turn encourages more subconscious positive responses from the target audience.
 - I've kept the language in the main body of the site professional and to the point.
 
 # Features
@@ -294,7 +366,7 @@ The page is fully responsive and I ensured that I compressed the image, so as no
 
 This section comprises of an interactive timeline of my education and work history to date. I find employment histories in their usual format to be a little bit tedious, and since I'm also offering a traditional CV for download, I thought it would be
 nice to have a little fun with this section. I had (perhaps naively) imagined that I would be able to implement this easily with CSS, but I found that JavaScript was required to get the behaviour I needed. Thankfully the internet is replete with developers 
-doing pretty much everything conceivable in JavaScript and I found code that helped me to begin to acheive the desired effect. I had to modify and add to this code quite a lot and I drew from multiple sources online (all [attributed]()). This section went through 
+doing pretty much everything conceivable in JavaScript and I found code that helped me to begin to acheive the desired effect. I had to modify and add to this code to make it work for this website, and I drew from multiple sources online (attributed below and in my script.js file). This section went through 
 many permutations in order to create an interactivity that was both interesting and different, but also accessible. 
 
 ### Accessibility
@@ -302,9 +374,9 @@ many permutations in order to create an interactivity that was both interesting 
 I was especially aware of the inherent dangers of using hover effects for keyboard users. I have documented the JavaScript in the script.js file, 
 so I won't go into the details here. 
 
-To make hovering over the items easier for the user, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled me to increase the hover zone without affecting the size of the icon itself.
+To make hovering over the items easier for mouse users, I increased the width of the icon space and as the Font Awesome icons are fonts, the increase in width just enabled me to increase the hover zone without affecting the size of the icon itself.
 
-As this section is slightly unconventional I have included an instruction to the user at the beginning of the timeline, to either tap & click or hover & focus (the instruction varies by device used, and screen width). I've also ensured that the icons scale up and 
+As this section is slightly unconventional I included an instruction to the user at the beginning of the timeline, to either tap & click or hover & focus (the instruction varies by device used, and screen width). I also ensured that the icons scale up and 
 change colour when they are hovered over, as extra confirmation for the user.
 
 Displaying the timeline information to satisfy all potential device and accessibility categories was complicated. Here were my categories:
@@ -319,28 +391,26 @@ In addition I needed to account for screen resizing which I discovered introduce
 
 1. __*Instruction to hover & focus or tap & click.*__
 
-- PROBLEM: As the work history timeline is not a well-known interaction I felt it was important to instruct the user as to how to interact with it. This was complicated by the fact that on a mobile device one has to tap and on desktops (generally) one has to hover. I needed
+- **PROBLEM:** As the work history timeline is not a well-known interaction I felt it was important to instruct the user as to how to interact with it. This was complicated by the fact that on a mobile device one has to tap and on desktops (generally) one has to hover. I needed
 a way to deliver both sets of instructions dependent on the type of interaction the user would have.
 
-- SOLUTION: The ```@media (hover:none) {}``` and ```@media (hover:hover) {}``` queries enabled me to display and hide two separate classes that displayed the two separate sets of instructions. 
+- **SOLUTION:** The ```@media (hover:none) {}``` and ```@media (hover:hover) {}``` queries enabled me to display and hide two separate classes that displayed the two separate sets of instructions. 
 
 2. __*Making the information keyboard accessible.*__
 
-- PROBLEM: Because the icons are not links they were not tabable by default. 
-- SOLUTION: For keyboard users I added ```tabindex="0"``` to each of the icons to make the information accessible.
+- **PROBLEM:** Because the icons are not links they were not tabbable by default. 
+- **SOLUTION:** For keyboard users I added ```tabindex="0"``` to each of the icons to make the information accessible.
 
 3. __*Making the X close button keyboard accessible.*__
-- PROBLEM: Whether or not to make the timeline close buttons keyboard accessible.  
-- SOLUTION: I decided against implementing this, for the simple reason that were I to add the X buttons to the tabindex, if the keyboard user wanted to see all the timeline infos, they would have to tab twice as much to tab through the close buttons. 
+- **PROBLEM:** Whether or not to make the timeline close buttons keyboard accessible.  
+- **SOLUTION:** I decided against implementing this, for the simple reason that were I to add the X buttons to the tabindex, if the keyboard user wanted to read all the timeline information, they would have to tab twice as much to tab through the close buttons. 
 
 4. __*Hiding the icon and timeline line on mobile screens.*__
-- PROBLEM: Because the timeline information is positioned absolutely, z-index didn't work for hiding the icons and timeline line when the information was displayed. 
+- **PROBLEM:** Because the timeline information is positioned absolutely, z-index didn't work for hiding the icons and timeline line when the information was displayed. 
 
-- SOLUTION 1:  My initial jQuery code used a set of rules to make the icon and timeline line visible and hidden when the corresponding icon was tapped on small screens.
-- SOLUTION 2:  I then realised that instead of applying the z-index rule to the icon and timeline line, I could apply it to the information itself and that did away with the need to 
+- **SOLUTION 1:**  My initial jQuery code used a set of rules to make the icon and timeline line visible and hidden when the corresponding icon was tapped on small screens.
+- **SOLUTION 2:**  I then realised that instead of applying the z-index rule to the icon and timeline line, I could apply it to the information itself and that did away with the need to 
 hide and show the icon and line. 
-
-
 
 ## 5. Skills
 
@@ -382,8 +452,6 @@ screen sizes. I also sized my images very specifically to suit the design withou
 
 The aim for this page was for it to be eye-catching and simple. The form itself takes up most of the page and the heading is somewhat colloquial to encourage use.  
 
-### Accessibility
-
 I also included a content hinting down arrow to lead users to the footer.
 
 ## 8. Footer
@@ -417,11 +485,12 @@ I wrote it like this because I personally find it off-putting to type over somet
 functionality online and found that this was not acceptable HTML standard in terms of usability, so I changed it back to the default behaviour. 
 It is important to see the placeholder text right up until a user types, especially when not including form labels, which I have chosen to omit for design reasons.
 
-* Because I am not including form labels, I was careful to include the aria-label for each element of the form. 
+* Because I am not including form labels, I was careful to include the aria-label for each element of the form to make them available to screen-readers. 
 
 # Future Features to Implement
 
-* I plan to turn this website into a dynamic site, whereby specific project pages are generated dynamically after inputting certain key variables. Title, goal, colour palette, images etc... (Example in wireframe).
+* As per my mentor's suggestion I plan to turn this website into a dynamic site, whereby specific project pages are generated dynamically after inputting certain key variables. Title, goal, colour palette, typography images etc... 
+This will be controlled and organised from a central CMS.
 
 * I plan to implement the sequential loading of elements on scroll. So as the user scrolls down elements pop into view.
 
@@ -435,122 +504,6 @@ It is important to see the placeholder text right up until a user types, especia
 For this particular site, the load time is quite fast, so I don't think this is a massive issue, but there is definitely scope for reducing the size of the Bootstrap and Font Awesome libraries.
 
 * *Cache Policy*: As per Chrome Dev Tools: Lighthouse - I need to "serve my static assets with an efficient cache policy" but as this is beyond the scope of this project I will implement this at a later date, when I know more server-side programming.
-
-# Tools & Other Resources Used & Perused
-Here are the additional tools and resources I used during all stages of this project: 
-
-## 1. Design
-
-- ### **[Awwwards](https://www.awwwards.com/)**
-    Browsed for design inspiration. 
-
-- ###  **[Figma](https://www.figma.com/)**
-    My project planning, wireframes initial colour palette & typography testing were all done using Figma.
-
-- ### **[Adobe Photoshop](https://www.adobe.com/ie/products/photoshopfamily.html)**
-    Editing and colour correction for the images was done using Adobe Photoshop.
-
-- ### **[Adobe Colour](https://color.adobe.com/create/color-wheel)**
-    Used this resource for colour inspiration and testing colour combinations. 
-
-- ### **[Unsplash](https://unsplash.com/)**
-    Specifically:<br>
-    * <span>Photo by <a href="https://unsplash.com/@bekirdonmeez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bekir Dönmez</a> on <a href="https://unsplash.com/s/photos/acupuncture?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-    * <span>Photo by <a href="https://unsplash.com/@lougoetzmann?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Lou Goetzmann</a> on <a href="https://unsplash.com/s/photos/ireland-history?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-- ### **[Google Fonts](https://fonts.google.com/)**
-
-  Both the fonts I've included are Google Fonts: Lato & Roboto.
-
-- ### **[Font Awesome](https://fontawesome.com/)** 
-
-  All the awesome icons used are from Font Awesome.
-
-- ### **[Image Optim](https://imageoptim.com/mac)**
-    Great little program to compress images for use online. 
-
-## 2. HTML & CSS Code
-- ### **[Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)**
-
-    Used a LOT for testing CSS and shaping the jQuery code to work for my project.
-
-- ### **[W3 CSS Validator](https://jigsaw.w3.org/css-validator/)** & **[ W3 HTML Validator](https://validator.w3.org/)**
-    I ran my code through these validators to check it.
-
-- ### **[W3C Editor's Draft](https://drafts.csswg.org/mediaqueries-4/#hover)** 
-    Great information on using :hover media queries.
-
-- ### **[Autoprefixer - CSS](https://autoprefixer.github.io/)**
-    Amazing tool that adds all the browser prefixs automatically.
-
-- ### **[CSS Tricks](https://css-tricks.com/)**
-    Specifically their pages on:
-
-    * [Box Shadows](https://css-tricks.com/almanac/properties/b/box-shadow/https://css-tricks.com/almanac/properties/b/box-shadow/)
-    * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-    * [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-    * [TextArea](https://css-tricks.com/textarea-tricks/)
-    * [Unused CSS](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/)
-
-- ### **[freeCodeCamp](https://www.freecodecamp.org/)**
-    Specifically [This article](https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/) about all the ways to create responsive images. 
-
-- ### **[dirtyMarkup by 10 Best Design](https://www.10bestdesign.com/dirtymarkup/)**
-    HTML, CSS, JS & API code formatter. Super useful resource thanks to Richard Read (Readri205 @ Code Institute) for the link. 
-
-- ### **[Google's Style Guide](https://google.github.io/styleguide/htmlcssguide.html)**
-    Useful reference for formatting/style information.
-
-## 3. jQuery Code
-- ### **[jQuery Documentation](https://api.jquery.com/)**
-    Helped me get started using jQuery.
-
-- ### **[CSS Tricks: Learn jQuery from Scratch](https://css-tricks.com/lodge/learn-jquery/)**
-    Great starter guide.
-
-## 4. Accessibility & Performance
-- ### **[Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools)**
-
-    Amazing for checking a number of site performance indicators. 
-
-- ### **[Web Disability Simulator - Chrome Extension](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla?hl=en)**
-    Used this to check my design and page layout for accesibility concerns. 
-
-- ### **[Can I Use?](https://caniuse.com/)**
-    Checks web development features for browser compatibility. 
-
-- ### **[Google's Web.Dev Measure](https://web.dev/measure/?gclid=EAIaIQobChMIk-icrKKb6wIVQeztCh2zaAQFEAAYASAAEgKVJfD_BwE)**
-    Useful for testing various site performance and user experience markers.  
-
-- ### **[Access & Use](https://accessuse.eu/en/Content-hover-focus.html)**
-    Information on hover/focus based accessibility.
-
-- ### **[Dreamhost Blog Article](https://www.dreamhost.com/blog/make-your-website-accessible/)**
-    10 ways to make your website more accessible.
-
-- ### **[Aria-Labels](https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html#:~:text=The%20purpose%20of%20this%20technique,will%20know%20what%20it%20is.)**
-
-## 5. General Resources
-
-
----
-
-# Technology Used
-
-* HTML5
-
-* CSS3
-
-* Bootstrap
-
-* jQuery
-
-* GitHub
-
-* GitPod
-
-* Git 
-
 
 # Testing 
 
@@ -597,14 +550,14 @@ My primary goal was to create a website that showcases and communicates my skill
 All my user stories have been fulfilled:
 
 Recruiters can browse, see my work history and education, they can see a number of projects I have and am working on, and they can download project specifications for a greater insight into 
-how I work. I have also expounded on my experience working within and running an SME. A USP that makes me very qualified to work for other SMEs. Recruiters also have the ability to download an in-depth CV. 
+how I work. I have also expounded on my experience working within and running an SME. A USP that makes me especially qualified to work for other SMEs. Recruiters also have the ability to download an in-depth CV. 
 
 Employers can do all of the above, as well as access my GitHub account where they will be able to see detailed examples of my coding.
 
 Regarding the downloadble CV, my actual CV is not linked up yet, because I do not want that level of personal information online. When I password protect that function I will connect the real CV.
 
 Both kinds of target users can also get in touch with me using the contact form. 
-(Except they can't yet, because it doesn't send anywhere, but when I code the back-end they *will* be able to get in touch that way. )
+(Except they can't yet, because it doesn't send anywhere, but when I code the back-end they *will* be able to get in touch that way.)
 
 
 ## Mobile-first Responsivity
@@ -642,7 +595,7 @@ text horizontally/diagonally while retaining a vertical alignment.
 - The first major shift here is my work history timeline goes from a modal design to more of a tool-tips design. The information is displayed on hover or focus (for desktops) and the boxes 
 now sit on either side of the timeline and are bordered with my accent colour and no longer contain an X close function. 
 
-- The skills section is also redesigned at this breakpoint. The individual skills are now two to a line, and they get a dark grey box effect and the UX/UI box is animated for extra fun and attention. The layout inside the boxes
+- The skills section is also redesigned at this breakpoint. The individual skills are now two to a line, and they get a dark grey box effect and the UX/UI box is animated for extra pzazz. The layout inside the boxes
 is also changed from being centered to being absolutely positioned. I also applied a box-shadow to the grey skill boxes to add to the effect.
 
 - The dividers I included to delineate the skills sections are also unnecessay and thus removed at this breakpoint.
@@ -738,14 +691,14 @@ Using this tool I found that the website looks awful on Internet Explorer. IE do
 However, given that global usage of IE is < 1.6% *and* Microsoft just announced that they are retiring IE completely, I've chosen to ignore this, as I don't imagine any of my target audience 
 will be using IE.
 
-Safari v9 and before also doesn't support CSS3 variables, but again usage of these old browsers are low, and it is unlikely that web development employers are using such old software.
+Safari v9 and earlier also do not support CSS3 variables, but again usage of these old browsers is low, and it is unlikely that web development employers are using such old software.
 
 ### 3. [Can I use?](https://caniuse.com/usage-table)
 
 I used this during testing to work out why my website looked so bad on older versions of safari and IE. CSS3 variables were to blame.
 My website colour variables are supported by 94.75% of browsers globally, according to "Can I use?".
 
-## Attribution
+# Attribution
 
 #### [Will Chow's jQuery Code.](https://jsfiddle.net/wilchow/4hzenxkh/) 
 The jQuery code I used and altered to display the Work History Timeline information on hover/click.  
@@ -768,11 +721,11 @@ I used and altered this code to make the navbar close when a user clicks away fr
 close the navigation, and I would questions how user-friendly this is. In addition, the Bootstrap default behaviour is that even when a user clicks on a navigation link, the navigation
 stays open and they have to click the icon to close it. I think this code improves upon the default behaviour. 
 
-## Deployment
+# Deployment
 
 This website was developed using GitPod in a Chrome browser and commits were pushed to a GitHub repository.
 This site is currently hosted on GitHub pages. 
-### How I Published to GitHub Pages:
+## How I Published to GitHub Pages:
 
 1. I went to the main page of my [GitHub repository.](https://github.com/kairosity/milestone-project-1-cv-website) 
 2. I clicked on the "Settings" tab on the main horizontal tab bar.
@@ -781,11 +734,11 @@ This site is currently hosted on GitHub pages.
 5. Site Published. 
 
 
-### To open this project locally:
+## To open this project locally:
 
 You open this project locally you have to clone the project on GitHub, you can do this via the Command Line or using GitHub Desktop.
 
-#### Using the Command Line
+### Using the Command Line
 
 1. Go to the main page of [this project's repository on GitHub.](https://github.com/kairosity/milestone-project-1-cv-website) The page with the full list of files and the README doc underneath.
 
@@ -807,7 +760,7 @@ You open this project locally you have to clone the project on GitHub, you can d
 
 8. Press enter to create a local clone. Done!
 
-#### Using GitHub Desktop
+### Using GitHub Desktop
 
 1. Go to the main page of [this project's repository on GitHub.](https://github.com/kairosity/milestone-project-1-cv-website) The page with the full list of files and the README doc underneath.
 
@@ -817,10 +770,127 @@ You open this project locally you have to clone the project on GitHub, you can d
 
 4. Follow the prompts provided by GitHub Desktop.
 
+# Tools & Other Resources Used & Perused
+Here are the additional tools and resources I used during all stages of this project: 
+
+## 1. Design
+
+- ### **[Awwwards](https://www.awwwards.com/)**
+    Browsed for design inspiration. 
+
+- ###  **[Figma](https://www.figma.com/)**
+    My project planning, wireframes initial colour palette & typography testing were all done using Figma.
+
+- ### **[Adobe Photoshop](https://www.adobe.com/ie/products/photoshopfamily.html)**
+    Editing and colour correction for the images was done using Adobe Photoshop.
+
+- ### **[Adobe Colour](https://color.adobe.com/create/color-wheel)**
+    Used this resource for colour inspiration and testing colour combinations. 
+
+- ### **[Unsplash](https://unsplash.com/)**
+    Specifically:<br>
+    * <span>Photo by <a href="https://unsplash.com/@bekirdonmeez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bekir Dönmez</a> on <a href="https://unsplash.com/s/photos/acupuncture?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    * <span>Photo by <a href="https://unsplash.com/@lougoetzmann?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Lou Goetzmann</a> on <a href="https://unsplash.com/s/photos/ireland-history?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+- ### **[Google Fonts](https://fonts.google.com/)**
+
+  Both the fonts I've included are Google Fonts: Lato & Roboto.
+
+- ### **[Font Awesome](https://fontawesome.com/)** 
+
+  All the awesome icons used are from Font Awesome.
+
+- ### **[Image Optim](https://imageoptim.com/mac)**
+    Great little program to compress images for use online. 
+
+## 2. HTML & CSS Code
+- ### **[Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)**
+
+    Used a LOT for testing CSS and shaping the jQuery code to work for my project.
+
+- ### **[W3 CSS Validator](https://jigsaw.w3.org/css-validator/)** & **[ W3 HTML Validator](https://validator.w3.org/)**
+    I ran my code through these validators to check it.
+
+- ### **[W3C Editor's Draft](https://drafts.csswg.org/mediaqueries-4/#hover)** 
+    Great information on using :hover media queries.
+
+- ### **[Autoprefixer - CSS](https://autoprefixer.github.io/)**
+    Amazing tool that adds all the browser prefixs automatically.
+
+- ### **[CSS Tricks](https://css-tricks.com/)**
+    Specifically their pages on:
+
+    * [Box Shadows](https://css-tricks.com/almanac/properties/b/box-shadow/https://css-tricks.com/almanac/properties/b/box-shadow/)
+    * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+    * [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+    * [TextArea](https://css-tricks.com/textarea-tricks/)
+    * [Unused CSS](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/)
+
+- ### **[freeCodeCamp](https://www.freecodecamp.org/)**
+    Specifically [This article](https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/) about all the ways to create responsive images. 
+
+- ### **[dirtyMarkup by 10 Best Design](https://www.10bestdesign.com/dirtymarkup/)**
+    HTML, CSS, JS & API code formatter. Super useful resource thanks to Richard Read (Readri205 @ Code Institute) for the link. 
 
 
+## 3. jQuery Code
+- ### **[jQuery Documentation](https://api.jquery.com/)**
+    Helped me get started using jQuery.
 
-## Acknowledgements
+- ### **[CSS Tricks: Learn jQuery from Scratch](https://css-tricks.com/lodge/learn-jquery/)**
+    Great starter guide.
+
+## 4. Accessibility & Performance
+- ### **[Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools)**
+
+    Amazing for checking a number of site performance indicators. 
+
+- ### **[Web Disability Simulator - Chrome Extension](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla?hl=en)**
+    Used this to check my design and page layout for accesibility concerns. 
+
+- ### **[Can I Use?](https://caniuse.com/)**
+    Checks web development features for browser compatibility. 
+
+- ### **[Google's Web.Dev Measure](https://web.dev/measure/?gclid=EAIaIQobChMIk-icrKKb6wIVQeztCh2zaAQFEAAYASAAEgKVJfD_BwE)**
+    Useful for testing various site performance and user experience markers.  
+
+- ### **[Access & Use](https://accessuse.eu/en/Content-hover-focus.html)**
+    Information on hover/focus based accessibility.
+
+- ### **[Dreamhost Blog Article](https://www.dreamhost.com/blog/make-your-website-accessible/)**
+    10 ways to make your website more accessible.
+
+- ### **[Aria-Labels](https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html#:~:text=The%20purpose%20of%20this%20technique,will%20know%20what%20it%20is.)**
+    Used to understand how and when to use aria-labels.
+
+## 5. General Resources
+
+- ### **[Table of Contents Generator](http://ecotrust-canada.github.io/markdown-toc/)**
+    Used to generate this GitHub TOC.
+
+- ### **[Google's Style Guide](https://google.github.io/styleguide/htmlcssguide.html)**
+    Useful reference for formatting/style information.
+
+---
+
+# Technology Used
+
+* HTML5
+
+* CSS3
+
+* Bootstrap
+
+* jQuery
+
+* GitHub
+
+* GitPod
+
+* Git 
+
+
+# Acknowledgements
 
 Thank you to my friends and family for doing usability testing for me on various devices, and for giving me feedback. <br>
 Special thanks to Cristina Cista for her professional input.<br>
