@@ -207,8 +207,6 @@ a:hover {
 
 /* Overriding Bootstrap Navbar Styles */
 
-/* Note for future use: To change BS hamburger icon colour: Type in the rgba value you want in the 'stroke' svg path. */
-
 /* Hamburger Icon Styles */
 
 .navbar-light .navbar-toggler-icon {
@@ -371,7 +369,6 @@ p.personal-info {
   outline: none;
 }
 
-
 .timeline-info {
   background-color: var(--light-black);
   padding: 1em;
@@ -408,7 +405,6 @@ p.personal-info {
   left: 10%;
 }
 
-
 .close-button {
     color: var(--light-grey);
     position: absolute;
@@ -419,7 +415,6 @@ p.personal-info {
     width: 40px;
     height: 40px;
 }
-
 
 #timeline-tcd,
 #timeline-bmr,
@@ -740,8 +735,6 @@ a.live-site>h5 {
   grid-area: download;
 }
 
-/* ----AP until here */
-
 /* Styles for the download & live site links */
 
 .project-container-a>a,
@@ -795,7 +788,6 @@ h3.in-development-b {
 #contact-section h1 {
   padding: 0.5em;
 }
-
 
 form input,
 form textarea,
@@ -892,10 +884,22 @@ form button:hover {
   cursor: pointer;
 }
 
-form button:active {
+form button:active,
+form button:focus {
   background-color: var(--accent-1);
   color: var(--light-black);
-  outline: var(--accent-1) dotted 3px;
+  outline: var(--accent-1) dotted 5px;
+}
+
+form input:focus,
+form textarea:focus {
+    background-color: var(--light-grey);
+    color: var(--light-black);
+}
+
+form input:focus::placeholder,
+form textarea:focus::placeholder {
+    color: var(--light-black);
 }
 
 /****************************************** Footer Section */
