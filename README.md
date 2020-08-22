@@ -7,89 +7,91 @@ Firstly it provides a lot of the information that would be contained in a tradit
 The design mood is intended to be a subtle blend of professionalism and creativity. I wanted to create a clean dark-toned site that displayed the required information in a pleasing and 
 interesting way with a strong emphasis on excellent UX and accessibility. The website's primary goal is to help illustrate my suitability for employment in web development.
 
+<a href="https://kairosity.github.io/milestone-project-1-cv-website"><img src="wireframes-et-al/other-readme-misc/kf-cv-landing-page.png"></a>
+
 ## [View the Live Website Here](https://kairosity.github.io/milestone-project-1-cv-website)
 
 ---
 
 ## Table of Contents
 
-- [UX](#ux)
-  * [User Stories](#user-stories)
+- [1.UX](#ux)
+  * [1.1 User Stories](#user-stories)
       - [*Project Developer*](#-project-developer-)
       - [*Tech Recruiters*](#-tech-recruiters-)
       - [*Employers*](#-employers-)
       - [*Applicable to both target users*](#-applicable-to-both-target-users-)
-  * [Strategy](#strategy)
+  * [1.2 Strategy](#strategy)
       - [*Project Goals*](#-project-goals-)
       - [*Target Users*](#-target-users-)
       - [*Research*](#-research-)
       - [*In Summary*](#-in-summary-)
-  * [Scope](#scope)
-  * [Structure](#structure)
+  * [1.3 Scope](#scope)
+  * [1.4 Structure](#structure)
       - [*Website Sections:*](#-website-sections--)
       - [*Website Flow*](#-website-flow-)
       - [*Interaction Design*](#-interaction-design-)
       - [*Information Architecture*](#-information-architecture-)
-  * [Skeleton](#skeleton)
+  * [1.5 Skeleton](#skeleton)
       - [*Designed to lead the user to my CTA*](#-designed-to-lead-the-user-to-my-cta-)
       - [*Reassuring Conventions*](#-reassuring-conventions-)
       - [*Wireframes*](#-wireframes-)
       - [*Alternatively here are the individual wireframes in pdf format:*](#-alternatively-here-are-the-individual-wireframes-in-pdf-format--)
-  * [Surface](#surface)
+  * [1.6 Surface](#surface)
       - [*Palette & Typography Tests*](#-palette---typography-tests-)
       - [*Colour Palette*](#-colour-palette-)
       - [*Mock-ups*](#-mock-ups-)
       - [*Typography*](#-typography-)
       - [*Use of Language*](#-use-of-language-)
-- [Features](#features)
-  * [1. Navigation](#1-navigation)
+- [2. Features](#features)
+  * [2.1 Navigation](#1-navigation)
     + [Design](#design)
     + [Responsiveness](#responsiveness)
     + [Elements to Note](#elements-to-note)
-  * [2. Landing Page / Home](#2-landing-page---home)
+  * [2.2 Landing Page / Home](#2-landing-page---home)
     + [Design](#design-1)
-  * [3. Short personal biography & photo of Karina](#3-short-personal-biography---photo-of-karina)
-  * [4. Work History](#4-work-history)
+  * [2.3 Short personal biography & photo of Karina](#3-short-personal-biography---photo-of-karina)
+  * [2.4 Work History](#4-work-history)
     + [Design & Concept](#design---concept)
     + [Accessibility](#accessibility)
-  * [5. Skills](#5-skills)
+  * [2.5 Skills](#5-skills)
     + [Design & Concept](#design---concept-1)
     + [UX](#ux-1)
-  * [6. Portfolio](#6-portfolio)
+  * [2.6 Portfolio](#6-portfolio)
     + [Design & Concept](#design---concept-2)
     + [Responsiveness & Images](#responsiveness---images)
-  * [7. Contact Page / Get in Touch](#7-contact-page---get-in-touch)
-  * [8. Footer](#8-footer)
-- [Accessibility](#accessibility-1)
-- [Future Features to Implement](#future-features-to-implement)
-- [Issues / Room for Improvement](#issues---room-for-improvement)
-- [Testing](#testing)
-  * [Code Validators](#code-validators)
-  * [UX Goal Testing](#ux-goal-testing)
-  * [Mobile-first Responsivity](#mobile-first-responsivity)
+  * [2.7 Contact Page / Get in Touch](#7-contact-page---get-in-touch)
+  * [2.8 Footer](#8-footer)
+- [3. Accessibility](#accessibility-1)
+- [4. Future Features to Implement](#future-features-to-implement)
+- [5. Issues / Room for Improvement](#issues---room-for-improvement)
+- [6. Testing](#testing)
+  * [6.1 Code Validators](#code-validators)
+  * [6.2 UX Goal Testing](#ux-goal-testing)
+  * [6.3 Mobile-first Responsivity](#mobile-first-responsivity)
     + [Mobile/xs & sm breakpoints](#mobile-xs---sm-breakpoints)
     + [Md breakpoint](#md-breakpoint)
     + [Lg breakpoint](#lg-breakpoint)
     + [Xl breakpoint](#xl-breakpoint)
-  * [Manual Testing](#manual-testing)
-  * [Bugs & Fixes](#bugs---fixes)
+  * [6.4 Manual Testing](#manual-testing)
+  * [6.5 Bugs & Fixes](#bugs---fixes)
     + [Landing Page & Contact Page](#landing-page---contact-page)
     + [Work History](#work-history)
-  * [Other Testing](#other-testing)
-- [Attribution](#attribution)
-- [Deployment](#deployment)
-  * [How I Published to GitHub Pages:](#how-i-published-to-github-pages-)
-  * [To open this project locally:](#to-open-this-project-locally-)
+  * [6.6 Other Testing](#other-testing)
+- [7. Attribution](#attribution)
+- [8. Deployment](#deployment)
+  * [8.1 How I Published to GitHub Pages:](#how-i-published-to-github-pages-)
+  * [8.2 To open this project locally:](#to-open-this-project-locally-)
     + [Using the Command Line](#using-the-command-line)
     + [Using GitHub Desktop](#using-github-desktop)
-- [Tools & Other Resources Used & Perused](#tools---other-resources-used---perused)
-  * [1. Design](#1-design)
-  * [2. HTML & CSS Code](#2-html---css-code)
-  * [3. jQuery Code](#3-jquery-code)
-  * [4. Accessibility & Performance](#4-accessibility---performance)
-  * [5. General Resources](#5-general-resources)
-- [Technology Used](#technology-used)
-- [Acknowledgements](#acknowledgements)
+- [9 Tools & Other Resources Used & Perused](#tools---other-resources-used---perused)
+  * [9.1 Design](#1-design)
+  * [9.2 HTML & CSS Code](#2-html---css-code)
+  * [9.3 jQuery Code](#3-jquery-code)
+  * [9.4 Accessibility & Performance](#4-accessibility---performance)
+  * [9.5 General Resources](#5-general-resources)
+- [10. Technology Used](#technology-used)
+- [11. Acknowledgements](#acknowledgements)
 
 # UX
 
@@ -99,7 +101,7 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
 
 ## User Stories
 
-#### *Project Developer* 
+#### *Project-Developer* 
 
 As the sole developer and contributor to this project, my goal for this website is that it helps me futher my aim of securing employment in web development. My vested interest in creating an excellent user experience is 
 thus rather deep. 
@@ -259,7 +261,7 @@ or what the user's role is.
 #### *Wireframes*
 
 My wireframes enabled me to get a sense of how this structure would look on the page, and they provided the foundation for more detailed design choices later in the process.
-
+<a href="https://www.figma.com/file/R1rKGdgD34jz9jH3s9oMJd/Personal-CV?node-id=115%3A0"><img src="wireframes-et-al/other-readme-misc/wireframes.png"></a>
 [My full Figma workspace can be viewed here.](https://www.figma.com/file/R1rKGdgD34jz9jH3s9oMJd/Personal-CV?node-id=115%3A0)
 
 #### *Alternatively here are the individual wireframes in pdf format:* 
@@ -281,6 +283,9 @@ wanted a dark-toned website, but I still created a few alternative mock-ups to s
 - [Palette & Typography Mock-Ups](wireframes-et-al/palette-typography-tests.pdf)
 
 #### *Colour Palette*
+
+<img src="wireframes-et-al/other-readme-misc/project-palette.png">
+
 My initial strategy was intimately linked to surface design as I went with a weighty dark-toned colour palette to add gravitas to my content and I then lightened this with a playful throw-pillow of colour. I was also very conscious 
 of maintaining colour contrast for accessibility reasons, and my choice of a bright yellow/green fit the brief well. In my initial mock-ups I had planned to use black writing on a dark grey, because I love the rich velvety tone and feel of that 
 combination, but I realised early on that the contrast was not user-friendly, so I changed most of my black text to either light-grey or the green/yellow accent colour.
@@ -294,6 +299,8 @@ I did detailed colour mock-ups before starting development, but as you can see f
 
 - [Mobile Mock-up](wireframes-et-al/mock-up-for-mobile.pdf)
 - [Desktop Mock-up](wireframes-et-al/mock-up-for-desktop.pdf)
+
+<img src="wireframes-et-al/other-readme-misc/mock-ups.png">
 
 I ended up refining the Portfolio section quite a bit during development but the remaining sections stayed mostly true to my 
 wireframing and mock-ups.
