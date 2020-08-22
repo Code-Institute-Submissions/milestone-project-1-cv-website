@@ -15,7 +15,7 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
 
 ## Table of Contents
 
-- [1.UX](#ux)
+- [1. UX](#ux)
   * [1.1 User Stories](#user-stories)
       - [*Project Developer*](#-project-developer-)
       - [*Tech Recruiters*](#-tech-recruiters-)
