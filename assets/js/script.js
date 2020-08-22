@@ -1,24 +1,23 @@
-/* Here I apply the toggleTimeline function univerally when the page has loaded */
+/* Here I apply the toggleTimeline, the toggleTimelineAccessible and the animateUpArrow functions univerally when the page has loaded */
 
-$(document).ready(function() {
-  toggleTimeline()
-  toggleTimelineAccessible()
-  animateUpArrow()
+$(document).ready(function () {
+    toggleTimeline();
+    toggleTimelineAccessible();
+    animateUpArrow();
 });
 
-// This sets a variable to compare current screen widths to in order to determine whether or not the screen has been resized. 
+// This sets a variable to compare current screen widths to, in order to determine whether or not the screen has been resized.
 let lastWidth = $(window).width();
 
 //The resize code below that specifically targets screen width change, is taken from https://stackoverflow.com/questions/10750603/detect-a-window-width-change-but-not-a-height-change
 
-$(window).resize(function() {
-   
-   if($(window).width()!=lastWidth){
-      location.reload();
-      lastWidth = $(window).width();
-   }       
-  toggleTimeline()
-  toggleTimelineAccessible()
+$(window).resize(function () {
+    if ($(window).width() != lastWidth) {
+        location.reload();
+        lastWidth = $(window).width();
+    }
+    toggleTimeline();
+    toggleTimelineAccessible();
 });
 
 /* FUNCTION 1: Timeline toggle function
@@ -46,29 +45,29 @@ $(window).resize(function() {
     10. On mouse out it hides the timeline information using a z-index of -1000.
 */
 
-const workHistorySection = $("#work-history-section"); 
+const workHistorySection = $("#work-history-section");
 
 function toggleTimeline() {
-  if ($(window).width() < 768) {
-    $(".timeline-icon").click(function() {
-      $(this).parent().parent().find(".timeline-info").css("z-index", "1000"); 
-      addBlurDarken()
-      if ($(this).hasClass("fa-sun")) {
-        removeBlurDarken();
-      }
-    })   
-    $(".close-button").click(function() {
-      $(".timeline-info").css("z-index", "-1000");  
-      removeBlurDarken();
-    })
-  } else if ($(window).width() >= 768) {
-    $(".timeline-icon").mouseover(function() {
-      $(this).parent().parent().find(".timeline-info").css("z-index", "1000"); 
-    })
-    $(".timeline-icon").mouseout(function() {
-      $(".timeline-info").css("z-index", "-1000");
-    })
-  }
+    if ($(window).width() < 768) {
+        $(".timeline-icon").click(function () {
+            $(this).parent().parent().find(".timeline-info").css("z-index", "1000");
+            addBlurDarken();
+            if ($(this).hasClass("fa-sun")) {
+                removeBlurDarken();
+            }
+        });
+        $(".close-button").click(function () {
+            $(".timeline-info").css("z-index", "-1000");
+            removeBlurDarken();
+        });
+    } else if ($(window).width() >= 768) {
+        $(".timeline-icon").mouseover(function () {
+            $(this).parent().parent().find(".timeline-info").css("z-index", "1000");
+        });
+        $(".timeline-icon").mouseout(function () {
+            $(".timeline-info").css("z-index", "-1000");
+        });
+    }
 }
 
 /* FUNCTION 2: Timeline toggle function for keyboard accessibility
@@ -76,30 +75,30 @@ function toggleTimeline() {
 */
 
 function toggleTimelineAccessible() {
-  if ($(window).width() < 768) {
-    $(".timeline-icon").focus(function() {
-      $(this).parent().parent().find(".timeline-info").css("z-index", "1000"); 
-      addBlurDarken()
-      if ($(this).hasClass("fa-sun")) {
-        removeBlurDarken();
-      }
-    })
-    $(".close-button").focus(function() {
-      $(".timeline-info").css("z-index", "-1000");  
-      removeBlurDarken();
-    })   
-    $(".timeline-icon").blur(function() {
-      $(".timeline-info").css("z-index", "-1000"); 
-      removeBlurDarken();
-    })
-  } else if ($(window).width() >= 768) {
-    $(".timeline-icon").focus(function() {
-      $(this).parent().parent().find(".timeline-info").css("z-index", "1000");
-    })
-    $(".timeline-icon").blur(function() {
-      $(".timeline-info").css("z-index", "-1000"); 
-    })
-  }
+    if ($(window).width() < 768) {
+        $(".timeline-icon").focus(function () {
+            $(this).parent().parent().find(".timeline-info").css("z-index", "1000");
+            addBlurDarken();
+            if ($(this).hasClass("fa-sun")) {
+                removeBlurDarken();
+            }
+        });
+        $(".close-button").focus(function () {
+            $(".timeline-info").css("z-index", "-1000");
+            removeBlurDarken();
+        });
+        $(".timeline-icon").blur(function () {
+            $(".timeline-info").css("z-index", "-1000");
+            removeBlurDarken();
+        });
+    } else if ($(window).width() >= 768) {
+        $(".timeline-icon").focus(function () {
+            $(this).parent().parent().find(".timeline-info").css("z-index", "1000");
+        });
+        $(".timeline-icon").blur(function () {
+            $(".timeline-info").css("z-index", "-1000");
+        });
+    }
 }
 
 /*
@@ -118,25 +117,25 @@ function toggleTimelineAccessible() {
     */
 
 function addBlurDarken() {
-  workHistorySection.find(".timeline-icon").addClass("blur-and-darken");
-  workHistorySection.find(".timeline-line").addClass("blur-and-darken");
-  $(".work-history-heading").addClass("blur-and-darken");
-  $(".timeline-instruction-tap-click").addClass("blur-and-darken");
-  $(".timeline-instruction-hover-focus").addClass("blur-and-darken");
-  $(".end-of-timeline").addClass("blur-and-darken");
-  $(".arrow-down-history-to-skills").addClass("blur-and-darken");
+    workHistorySection.find(".timeline-icon").addClass("blur-and-darken");
+    workHistorySection.find(".timeline-line").addClass("blur-and-darken");
+    $(".work-history-heading").addClass("blur-and-darken");
+    $(".timeline-instruction-tap-click").addClass("blur-and-darken");
+    $(".timeline-instruction-hover-focus").addClass("blur-and-darken");
+    $(".end-of-timeline").addClass("blur-and-darken");
+    $(".arrow-down-history-to-skills").addClass("blur-and-darken");
 }
 
 /* FUNCTION 4: Removes the blur and darkenening class from the elements listed above.  */
 
 function removeBlurDarken() {
-  workHistorySection.find(".timeline-icon").removeClass("blur-and-darken");
-  workHistorySection.find(".timeline-line").removeClass("blur-and-darken");
-  $(".work-history-heading").removeClass("blur-and-darken");
-  $(".timeline-instruction-tap-click").removeClass("blur-and-darken");
-  $(".timeline-instruction-hover-focus").removeClass("blur-and-darken");
-  $(".end-of-timeline").removeClass("blur-and-darken");
-  $(".arrow-down-history-to-skills").removeClass("blur-and-darken");
+    workHistorySection.find(".timeline-icon").removeClass("blur-and-darken");
+    workHistorySection.find(".timeline-line").removeClass("blur-and-darken");
+    $(".work-history-heading").removeClass("blur-and-darken");
+    $(".timeline-instruction-tap-click").removeClass("blur-and-darken");
+    $(".timeline-instruction-hover-focus").removeClass("blur-and-darken");
+    $(".end-of-timeline").removeClass("blur-and-darken");
+    $(".arrow-down-history-to-skills").removeClass("blur-and-darken");
 }
 
 /* FUNCTION 5: Add and remove the "active" class to NavBar as a user browses the page.
@@ -147,10 +146,10 @@ function removeBlurDarken() {
     3. Add it to the current <a> tag's parent <li>. 
    
    */
-  
-  $(".navbar-nav a").on("click", function() {
-  $(".navbar-nav").find(".active").removeClass("active");
-  $(this).parent().addClass("active");
+
+$(".navbar-nav a").on("click", function () {
+    $(".navbar-nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
 });
 
 /* FUNCTION 6: Code to close the navbar on mobile devices when a user clicks outside of the navigation & when they click on a navigation link.
@@ -164,14 +163,14 @@ function removeBlurDarken() {
     6. Click on the navbar toggler - effectively closing the navbar. 
     */
 
-   $(document).ready(function() {
-    $(document).click(function(event) {
-    var clickedArea = $(event.target);
-    var _opened = $(".navbar-collapse").hasClass("show");
-    if (_opened === true && !clickedArea.hasClass("navbar")) {
-      $("button.navbar-toggler").click();
-    }
-  });
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var clickedArea = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickedArea.hasClass("navbar")) {
+            $("button.navbar-toggler").click();
+        }
+    });
 });
 
 /* FUNCTION 7: Code to animate the up arrow when a user hovers over the entire "Back to Top" div.
@@ -185,10 +184,10 @@ I had this originally as a hover effect over the icon, but I felt the icon was t
 
 */
 function animateUpArrow() {
-  $(".back-to-top").mouseover(function() {
-    $(".fa-long-arrow-alt-up").css("animation", "arrow-up 1s ease-in-out infinite");
-  });
-  $(".back-to-top").mouseout(function() {
-    $(".fa-long-arrow-alt-up").css("animation", "none");
-  });
+    $(".back-to-top").mouseover(function () {
+        $(".fa-long-arrow-alt-up").css("animation", "arrow-up 1s ease-in-out infinite");
+    });
+    $(".back-to-top").mouseout(function () {
+        $(".fa-long-arrow-alt-up").css("animation", "none");
+    });
 }

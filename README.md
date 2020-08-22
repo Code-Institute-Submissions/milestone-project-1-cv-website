@@ -64,20 +64,20 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
   * [2.8 Footer](#8-footer)
 - [3. Accessibility](#accessibility-1)
 - [4. Future Features to Implement](#future-features-to-implement)
-- [5. Issues / Room for Improvement](#issues---room-for-improvement)
-- [6. Testing](#testing)
-  * [6.1 Code Validators](#code-validators)
-  * [6.2 UX Goal Testing](#ux-goal-testing)
-  * [6.3 Mobile-first Responsivity](#mobile-first-responsivity)
+- [5. Testing](#testing)
+  * [5.1 Code Validators](#code-validators)
+  * [5.2 UX Goal Testing](#ux-goal-testing)
+  * [5.3 Mobile-first Responsivity](#mobile-first-responsivity)
     + [Mobile/xs & sm breakpoints](#mobile-xs---sm-breakpoints)
     + [Md breakpoint](#md-breakpoint)
     + [Lg breakpoint](#lg-breakpoint)
     + [Xl breakpoint](#xl-breakpoint)
-  * [6.4 Manual Testing](#manual-testing)
-  * [6.5 Bugs & Fixes](#bugs---fixes)
+  * [5.4 Manual Testing](#manual-testing)
+  * [5.5 Bugs & Fixes](#bugs---fixes)
     + [Landing Page & Contact Page](#landing-page---contact-page)
     + [Work History](#work-history)
-  * [6.6 Other Testing](#other-testing)
+  * [5.6 Other Testing](#other-testing)
+- [6. Issues / Room for Improvement](#issues---room-for-improvement)
 - [7. Attribution](#attribution)
 - [8. Deployment](#deployment)
   * [8.1 How I Published to GitHub Pages:](#how-i-published-to-github-pages-)
@@ -275,12 +275,12 @@ If you choose to view them this way, please click download as the GitHub viewer 
 
 ## Surface
 
-Once the structure, information architecture and wireframing was completed, the choice of design elements, colours, typography and creative flourishes, were actually very simple to add. I knew I 
-wanted a dark-toned website, but I still created a few alternative mock-ups to see how they felt. The alternatives cemented my initial instinct for how I wanted the site to look and feel. 
-
+Once the structure, information architecture and wireframing was completed, the choice of design elements, colours, typography and creative flourishes, were actually very simple to add. 
 #### *Palette & Typography Tests*
+I knew I wanted a dark-toned website, but I still created a few alternative mock-ups to see how they felt. The alternatives cemented my initial instinct for how I wanted the site to look and feel. 
 
-- [Palette & Typography Mock-Ups](wireframes-et-al/palette-typography-tests.pdf)
+
+- [Palette & Typography Tests](wireframes-et-al/palette-typography-tests.pdf)
 
 #### *Colour Palette*
 
@@ -344,10 +344,10 @@ It is a full-width navbar on screens larger than 992px and then it compresses to
 ### Elements to Note
 
 - The navbar has been altered via jQuery so that the active class switches from tab to tab as the site is browsed. I found 
-[code](https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working) that achieved this online and I altered it to work on this website.  I was surprised this functionality was not
+<a href="https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working" target="_blank">code</a> that achieved this online and I altered it to work on this website.  I was surprised this functionality was not
 default with Bootstrap.
 
-- From a UX perspective I found it irksome that a mobile user had to click directly on the hamburger icon to close the navigation, even after tapping on where they wanted to navigate to. Again I found [code online](https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen) which I altered 
+- From a UX perspective I found it irksome that a mobile user had to click directly on the hamburger icon to close the navigation, even after tapping on where they wanted to navigate to. Again I found <a href="https://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen" target="_blank">code online</a> which I altered 
 to work for this website. Now, when a user clicks on a navigation tab, the user is brought to the chosen section and the navigation options close, so they can see the page. 
 
 - Additionally if they click anywhere outside the nav drop-down, it also closes. I think this is far preferable to Bootstrap's default behaviour.  
@@ -360,9 +360,9 @@ text.
 
 The down arrow and concurrent instructions to scroll were added as the landing page takes up the full height of the screen.
 
-## 3. Short personal biography & photo of Karina
+## 3. Short biography & photo of Karina
 
-I wasn't sure about including this page, but I was convinced by both a recruiter and an employer that a basic introduction and photograph would be beneficial, as people like to be able to place a face to go with information.
+I wasn't sure about including this page, and I hadn't included it in my wireframes or mock-ups, but I was convinced by both a recruiter and an employer that a basic introduction and photograph would be beneficial, as people like to be able to place a face to go with information.
 I was also made aware that this was a good opportunity to expand on my experience in business and wealth of knowledge about SMEs in particular. 
 
 The page is fully responsive and I ensured that I compressed the image, so as not to impact load times unnecessarily.
@@ -505,12 +505,6 @@ This will be controlled and organised from a central CMS.
 
 * I plan to make the contact form functional. 
 
-# Issues / Room for Improvement
-
-* *Unused CSS*: As per web-dev Measure results I tested my CSS via Chrome dev tools' "Coverage" tool and found that there was a substantial amount of unused CSS.
-For this particular site, the load time is quite fast, so I don't think this is a massive issue, but there is definitely scope for reducing the size of the Bootstrap and Font Awesome libraries.
-
-* *Cache Policy*: As per Chrome Dev Tools: Lighthouse - I need to "serve my static assets with an efficient cache policy" but as this is beyond the scope of this project I will implement this at a later date, when I know more server-side programming.
 
 # Testing 
 
@@ -629,9 +623,23 @@ is also changed from being centered to being absolutely positioned. I also appli
 
 ## Manual Testing
 
-I manually tested every section and link myself before sending it out to friends and family. I tested the website at different breakpoints using: Chrome, Safari, Opera, Firefox, Firefox Nightly, all of which I have installed on my local machine.
+I manually tested every section and link myself before sending it out to friends and family. 
 
-I then tested the website on my iphone6, and my partner's ancient and tiny iphoneSE as well as my ipad mini. 
+1. I tested the website layout at different breakpoints to ensure it looked good on every browser. I used: Chrome, Safari, Opera, Firefox, Firefox Nightly, all of which I have installed on my local machine.
+
+2. I then tested the website on my iphone6, and my partner's ancient and tiny iphoneSE as well as my ipad mini. 
+
+3. I tested the contact form:
+
+    - I tried to submit an empty form to ensure I received a prompt to fill in the required fields.
+    - I filled in all permutations of fields, leaving one required field empty each time to make sure I was always prompted to fill in the empty field.
+    - I filled in a wrongly formatted email address to test that the user would be prompted to fill in a valid email address. 
+
+    The contact form passed these tests. 
+
+4. I manually checked each link, to make sure they were all opening in a new window and to the correct address.
+
+5. I checked that all the internal navigation was working as it should. 
 
 I then sent the page to friends and family, who used a range of different devices both android and apple, alongside a range of 
 different desktops and operating systems. 
@@ -704,6 +712,31 @@ Safari v9 and earlier also do not support CSS3 variables, but again usage of the
 
 I used this during testing to work out why my website looked so bad on older versions of safari and IE. CSS3 variables were to blame.
 My website colour variables are supported by 94.75% of browsers globally, according to "Can I use?".
+
+### 4. [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+I used the Chrome Dev Tools in browser to test the site's responsiveness across a range of screens sizes and device types.
+
+### 5. [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en)
+I used this Chrome Extension to further test the website across a range of devices and screen sizes. 
+<img src="wireframes-et-al/other-readme-misc/responsive-viewer.png">
+
+### 6. [Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#psi)
+Similar to Measure - this set of tools is amazing for showing where aspects of your site can be improved. My site scores highly with one or two
+future alterations to make:
+
+<img src="wireframes-et-al/other-readme-misc/lighthouse-results.png">
+
+
+
+# Issues / Room for Improvement
+
+* *Unused CSS*: As per web-dev Measure results I tested my CSS via Chrome dev tools' "Coverage" tool and found that there was a substantial amount of unused CSS.
+For this particular site, the load time is quite fast, so I don't think this is a massive issue, but there is definitely scope for reducing the size of the Bootstrap and Font Awesome libraries.
+
+* *Cache Policy*: As per Chrome Dev Tools: Lighthouse - I need to "serve my static assets with an efficient cache policy" but as this is beyond the scope of this project I will implement this at a later date, when I know more server-side programming.
+
+* *Add A Service Worker to My Project* As per web-dev (Lighthouse) - I should make my page Progressive by adding a service worker, so it responds with a 200 when offline.
+
 
 # Attribution
 
@@ -794,6 +827,9 @@ Here are the additional tools and resources I used during all stages of this pro
 - ### **[Adobe Colour](https://color.adobe.com/create/color-wheel)**
     Used this resource for colour inspiration and testing colour combinations. 
 
+- ### **[Coolors](https://coolors.co/)**
+    Used to generate the colour palette image displayed in this README.
+
 - ### **[Unsplash](https://unsplash.com/)**
     Specifically:<br>
     * <span>Photo by <a href="https://unsplash.com/@bekirdonmeez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bekir Dönmez</a> on <a href="https://unsplash.com/s/photos/acupuncture?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
@@ -847,7 +883,7 @@ Here are the additional tools and resources I used during all stages of this pro
 - ### **[CSS Tricks: Learn jQuery from Scratch](https://css-tricks.com/lodge/learn-jquery/)**
     Great starter guide.
 
-## 4. Accessibility & Performance
+## 4. Accessibility, Performance & Testing
 - ### **[Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools)**
 
     Amazing for checking a number of site performance indicators. 
@@ -870,6 +906,8 @@ Here are the additional tools and resources I used during all stages of this pro
 - ### **[Aria-Labels](https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html#:~:text=The%20purpose%20of%20this%20technique,will%20know%20what%20it%20is.)**
     Used to understand how and when to use aria-labels.
 
+- ### **[Responsive Viewer](chrome-extension://inmopeiepgfljkpkidclfgbgbmfcennb/index.html)**
+    Used to test the website across different screen sizes and devices. 
 ## 5. General Resources
 
 - ### **[Table of Contents Generator](http://ecotrust-canada.github.io/markdown-toc/)**
@@ -901,6 +939,7 @@ Here are the additional tools and resources I used during all stages of this pro
 
 Thank you to my friends and family for doing usability testing for me on various devices, and for giving me feedback. <br>
 Special thanks to Cristina Cista for her professional input.<br>
+Thank you to my Mother for proof-reading this README, even though she has 0 interest in web development. :)<br>
 Thanks to the Code Institute Slack Community for their resources and information. <br>
 Thank you to my Code Institute mentor Oluwafemi Medale for his invaluable insight and instruction. 
 
