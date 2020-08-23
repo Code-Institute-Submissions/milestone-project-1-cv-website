@@ -82,7 +82,8 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
 - [7. Attribution](#attribution)
 - [8. Deployment](#deployment)
   * [8.1 How I Published to GitHub Pages:](#how-i-published-to-github-pages-)
-  * [8.2 To open this project locally:](#to-open-this-project-locally-)
+  * [8.2 To fork this GitHub repository:](#to-fork-this-github-repository-)
+  * [8.3 To open this project locally:](#to-open-this-project-locally-)
     + [Using the Command Line](#using-the-command-line)
     + [Using GitHub Desktop](#using-github-desktop)
 - [9 Tools & Other Resources Used & Perused](#tools---other-resources-used---perused)
@@ -859,7 +860,7 @@ close the navigation, and I question how user-friendly this is. In addition, the
 stays open and they have to click the icon to close it. I think this code improves upon the default behaviour. 
 
 #### [Alexandr Malyita's Code on Stack Overflow](https://stackoverflow.com/questions/41630229/how-to-change-the-active-class-on-scroll-in-bootstrap-using-jquery)
-I only needed to alter a single class name to implement this code which changes the active class on the navbar when a user scrolls through the pages.
+I altered this only slightly to implement this code which changes the active class on the navbar when a user scrolls through the pages.
 
 # Deployment
 
@@ -873,6 +874,12 @@ This site is currently hosted on GitHub pages.
 4. I selected "Branch: Master" and the "Root" Directory and then clicked "Save".
 5. Site Published. 
 
+## To fork this GitHub repository:
+
+1. Log into GitHub and locate [this repo](https://github.com/kairosity/milestone-project-1-cv-website).
+2. At the top right-hand corner of the page find and click the "Fork" button.<br></br>
+<img src="readme-images/fork.png">
+3. You have forked this repository.
 
 ## To open this project locally:
 
@@ -944,7 +951,10 @@ Here are the additional tools and resources I used during all stages of this pro
   All the awesome icons used are from Font Awesome.
 
 - ### **[Image Optim](https://imageoptim.com/mac)**
-    Great little program to compress images for use online. 
+    Great little program to compress images for use online.
+
+- ### **[Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)** 
+    Used for the first image of this README.
 
 ## 2. HTML & CSS Code
 - ### **[Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)**
@@ -982,6 +992,9 @@ Here are the additional tools and resources I used during all stages of this pro
 
 - ### **[CSS Tricks: Learn jQuery from Scratch](https://css-tricks.com/lodge/learn-jquery/)**
     Great starter guide.
+
+- ### **[How To Write Comments in JavaScript](https://www.digitalocean.com/community/tutorials/how-to-write-comments-in-javascript)**
+    Useful for reference.
 
 ## 4. Accessibility, Performance & Testing
 - ### **[Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools)**
@@ -1039,7 +1052,7 @@ Here are the additional tools and resources I used during all stages of this pro
 
 Thank you to my friends and family for doing usability testing for me on various devices, and for giving me feedback. <br>
 Special thanks to Cristina Cista for her professional input.<br>
-Thank you to my Mother for proof-reading this README, even though she has 0 interest in web development. :)<br>
+Thank you to my Mother for proof-reading this README, even though she has [```-infinity```](https://www.w3schools.com/JSREF/jsref_infinity.asp) interest in web development. :)<br>
 Thanks to the Code Institute Slack Community for their resources and information. <br>
 Thank you to my Code Institute mentor Oluwafemi Medale for his invaluable insight and instruction. 
 
