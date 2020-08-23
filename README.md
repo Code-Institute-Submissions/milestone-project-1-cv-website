@@ -7,7 +7,7 @@ Firstly it provides a lot of the information that would be contained in a tradit
 The design mood is intended to be a subtle blend of professionalism and creativity. I wanted to create a clean dark-toned site that displayed the required information in a pleasing and 
 interesting way with a strong emphasis on excellent UX and accessibility. The website's primary goal is to help illustrate my suitability for employment in web development.
 
-<a href="https://kairosity.github.io/milestone-project-1-cv-website"><img src="wireframes-et-al/other-readme-misc/kf-cv-landing-page.png"></a>
+<a href="https://kairosity.github.io/milestone-project-1-cv-website"><img src="readme-images/kf-cv-landing-page.png"></a>
 
 ## [View the Live Website Here](https://kairosity.github.io/milestone-project-1-cv-website)
 
@@ -261,17 +261,17 @@ or what the user's role is.
 #### *Wireframes*
 
 My wireframes enabled me to get a sense of how this structure would look on the page, and they provided the foundation for more detailed design choices later in the process.
-<a href="https://www.figma.com/file/R1rKGdgD34jz9jH3s9oMJd/Personal-CV?node-id=115%3A0"><img src="wireframes-et-al/other-readme-misc/wireframes.png"></a>
+<a href="https://www.figma.com/file/R1rKGdgD34jz9jH3s9oMJd/Personal-CV?node-id=115%3A0"><img src="readme-images/wireframes.png"></a>
 [My full Figma workspace can be viewed here.](https://www.figma.com/file/R1rKGdgD34jz9jH3s9oMJd/Personal-CV?node-id=115%3A0)
 
 #### *Alternatively here are the individual wireframes in pdf format:* 
 If you choose to view them this way, please click download as the GitHub viewer expands the smaller wireframes too much.
 
-- [xs Wireframe (Default mobile-first) ](wireframes-et-al/xs-wireframe-default.pdf)<br>
-- [sm Wireframe](wireframes-et-al/sm-wireframe.pdf)
-- [md Wireframe](wireframes-et-al/md-wireframe.pdf)
-- [lg Wireframe](wireframes-et-al/lg-wireframe.pdf)
-- [xl Wireframe](wireframes-et-al/xl-wireframe.pdf)
+- [xs Wireframe (Default mobile-first) ](wireframes/xs-wireframe-default.pdf)<br>
+- [sm Wireframe](wireframes/sm-wireframe.pdf)
+- [md Wireframe](wireframes/md-wireframe.pdf)
+- [lg Wireframe](wireframes/lg-wireframe.pdf)
+- [xl Wireframe](wireframes/xl-wireframe.pdf)
 
 ## Surface
 
@@ -280,11 +280,11 @@ Once the structure, information architecture and wireframing was completed, the 
 I knew I wanted a dark-toned website, but I still created a few alternative mock-ups to see how they felt. The alternatives cemented my initial instinct for how I wanted the site to look and feel. 
 
 
-- [Palette & Typography Tests](wireframes-et-al/palette-typography-tests.pdf)
+- [Palette & Typography Tests](wireframes/palette-typography-tests.pdf)
 
 #### *Colour Palette*
 
-<img src="wireframes-et-al/other-readme-misc/project-palette.png">
+<img src="readme-images/project-palette.png">
 
 My initial strategy was intimately linked to surface design as I went with a weighty dark-toned colour palette to add gravitas to my content and I then lightened this with a playful throw-pillow of colour. I was also very conscious 
 of maintaining colour contrast for accessibility reasons, and my choice of a bright yellow/green fit the brief well. In my initial mock-ups I had planned to use black writing on a dark grey, because I love the rich velvety tone and feel of that 
@@ -297,10 +297,10 @@ I did detailed colour mock-ups before starting development, but as you can see f
 
 #### *Mock-ups*
 
-- [Mobile Mock-up](wireframes-et-al/mock-up-for-mobile.pdf)
-- [Desktop Mock-up](wireframes-et-al/mock-up-for-desktop.pdf)
+- [Mobile Mock-up](wireframes/mock-up-for-mobile.pdf)
+- [Desktop Mock-up](wireframes/mock-up-for-desktop.pdf)
 
-<img src="wireframes-et-al/other-readme-misc/mock-ups.png">
+<img src="readme-images/mock-ups.png">
 
 I ended up refining the Portfolio section quite a bit during development but the remaining sections stayed mostly true to my 
 wireframing and mock-ups.
@@ -718,13 +718,13 @@ I used the Chrome Dev Tools in browser to test the site's responsiveness across 
 
 ### 5. [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en)
 I used this Chrome Extension to further test the website across a range of devices and screen sizes. 
-<img src="wireframes-et-al/other-readme-misc/responsive-viewer.png">
+<img src="readme-images/responsive-viewer.png">
 
 ### 6. [Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#psi)
 Similar to Measure - this set of tools is amazing for showing where aspects of your site can be improved. My site scores highly with one or two
 future alterations to make:
 
-<img src="wireframes-et-al/other-readme-misc/lighthouse-results.png">
+<img src="readme-images/lighthouse-results.png">
 
 
 
@@ -786,11 +786,11 @@ To open this project locally you have to clone the project on GitHub, you can do
 
 3. To clone using HTTPS click the clipboard icon pictured next to the repository link.
 
-![Image of cloning using https](wireframes-et-al/other-readme-misc/clone-with-https.png)
+![Image of cloning using https](readme-images/clone-with-https.png)
 
 4. To clone using SSH click the blue link on the upper right hand side that says "Use SSH" and then click the clipboard icon to copy. 
 
-![Image of cloning using https](wireframes-et-al/other-readme-misc/clone-with-ssh.png)
+![Image of cloning using https](readme-images/clone-with-ssh.png)
 
 5. Here is some more information on [which remote URL to use](https://docs.github.com/en/github/using-git/which-remote-url-should-i-use) if you're not sure.
 

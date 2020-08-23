@@ -22,13 +22,11 @@ $(window).resize(function() {
 });
 
 /* FUNCTION 1: This toggles the timeline information.
-
     This code was modified from Will Chow's original at: https://jsfiddle.net/wilchow/4hzenxkh/ (also linked in README)
     I also used the first line of @dynamyc-2's code from CSS Tricks: https://css-tricks.com/forums/topic/jquery-window-width-condition/ (also linked in README)
 
     On Small screens it shows timeline info by increasing the z-index, it calls the blur and darken function to apply those styles to the background, and it
     ensures this doesn't apply when the sun icon is clicked. When the close button or elsewhere is clicked the timeline info is hidden and blur and darkness is undone.
-
     On Larger screens it just shows and hides the timeline information.
 */
 function toggleTimeline() {
@@ -138,8 +136,8 @@ $(".navbar-nav a").on("click", function() {
 });
 
 /* SCROLL EVENT: Changes the "active" class on scroll. 
-Taken in its entirety from Alexandr Malyita's code on Stack Overflow: https://stackoverflow.com/questions/41630229/how-to-change-the-active-class-on-scroll-in-bootstrap-using-jquery  */
-
+Taken in its entirety from Alexandr Malyita's code on Stack Overflow: https://stackoverflow.com/questions/41630229/how-to-change-the-active-class-on-scroll-in-bootstrap-using-jquery  
+*/
 $(window).on('scroll', function(event){
    var scrollPos = $(document).scrollTop();
    $(".navbar-nav li a").each(function () {
