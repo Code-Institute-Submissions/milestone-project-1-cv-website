@@ -7,7 +7,7 @@ Firstly it provides a lot of the information that would be contained in a tradit
 The design mood is intended to be a subtle blend of professionalism and creativity. I wanted to create a clean dark-toned site that displayed the required information in a pleasing and 
 interesting way with a strong emphasis on excellent UX and accessibility. The website's primary goal is to help illustrate my suitability for employment in web development.
 
-<a href="https://kairosity.github.io/milestone-project-1-cv-website"><img src="readme-images/kf-cv-landing-page.png"></a>
+<a href="https://kairosity.github.io/milestone-project-1-cv-website"><img src="readme-images/kf-cv-screenshots.png"></a>
 
 ## [View the Live Website Here](https://kairosity.github.io/milestone-project-1-cv-website)
 
@@ -18,9 +18,10 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
 - [1. UX](#ux)
   * [1.1 User Stories](#user-stories)
       - [*Project Developer*](#-project-developer-)
+      - [*Applicable to both target users*](#-applicable-to-both-target-users-)
       - [*Tech Recruiters*](#-tech-recruiters-)
       - [*Employers*](#-employers-)
-      - [*Applicable to both target users*](#-applicable-to-both-target-users-)
+      - [*Returning Visitors*](#-returning-visitors-)
   * [1.2 Strategy](#strategy)
       - [*Project Goals*](#-project-goals-)
       - [*Target Users*](#-target-users-)
@@ -106,6 +107,20 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
 As the sole developer and contributor to this project, my goal for this website is that it helps me futher my aim of securing employment in web development. My vested interest in creating an excellent user experience is 
 therefore rather deep. 
 
+#### *Applicable to both target users*
+
+* As a user I would like to be able to quickly and easily understand the purpose of this website.
+
+* As a user I want to be able to easily navigate this website, using a mouse or a keyboard, or screen reader technology.
+
+* As a user I would like to view this candidate's work and education history.
+
+* As a user I would like to know what languages this candidate is able to work in.
+
+* As a user I would like to see examples of projects this candidate has developed.
+
+* As a user I would like a way to contact this candidate.
+
 #### *Tech Recruiters*
 
 * As a recruiter for a large firm, I am always looking for new talent to send my clients. 
@@ -131,15 +146,10 @@ therefore rather deep.
 
 * As an employer who runs an SME I would like an online portfolio to tell me what experience a candidate has specific to my type of business.
 
-#### *Applicable to both target users*
+#### *Returning Visitors*
 
-* As a user I would like to view this candidate's work and education history.
-
-* As a user I would like to know what languages this candidate is able to work in.
-
-* As a user I would like to see examples of projects this candidate has developed.
-
-* As a user I would like a way to contact this candidate.
+* As a returning user, I want to see if there are any new portfolio examples on display. 
+* As a returning user, I want to see if there are new additions to this candidates GitHub account.
 
 
 
@@ -544,22 +554,99 @@ I used a number of code validators to check my code:
  
  
 
-## UX Goal Testing 
+## Testing User Stories 
+#### *Project-Developer* 
+
+As the sole stakeholder in this project, I am happy that my requirements for this project have been met. Once I link up my contact form, I am happy to begin using this website to showcase my work. 
+
+#### *Applicable to both target users*
+
+* GOAL: *As a user I would like to be able to quickly and easily understand the purpose of this website.*
+
+    - FULFILLMENT: The first thing users are greeted with is a clear introduction that perfectly encapsulates the website's purpose.
+
+* GOAL: *As a user I want to be able to easily navigate this website, using a mouse or a keyboard, or screen reader technology.*
+
+    - FULFILLMENT: The website is fully responsive and accessible by keyboard, mouse and screen-readers.
+
+* GOAL: *As a user I would like to view this candidate's work and education history.*
+
+    - FULFILLMENT: This is easily accessible for all users via the interactive timeline.
+
+* GOAL: *As a user I would like to know what languages this candidate is able to work in.*
+
+    - FULFILLMENT: These are laid out in the skills section in writing and through the use of progress bars. 
+
+* GOAL: *As a user I would like to see examples of projects this candidate has developed.*
+
+    - FULFILLMENT: The portfolio section fulfils this goal.
+
+* GOAL: *As a user I would like a way to contact this candidate.*
+
+    - The contact form achieves this. (Well... it will, once it is fully functional)
+
+#### *Tech Recruiters*
+
+* GOAL: *As a recruiter for a large firm, I am always looking for new talent to send my clients.*
+    
+    - FULFILLMENT: The site has been designed to present me as a potential candidate for employment.
+
+* GOAL: *As a recruiter I have many clients who are looking for developers. I'd like to be able to quickly browse an online resume to get a general sense of whether or not this particular developer might be a good fit for any of my clients.*
+
+    - FULFILLMENT: While not too brief, the site is designed so as to lay out the essential information in easily accessible sections that can be browsed in their entirety or skim-read.
+
+* GOAL: *As a tech recruiter I'm not always 100% certain what languages or tools my client requires, so I would like the ability to download a detailed CV that clearly outlines the candidate's skills.*
+
+    - FULFILLMENT: A traditional CV is available for download from the footer of the website.
+
+* GOAL: *As a tech recruiter I want to know about the specific skills a candidate has and whether they apply to SMEs or large corporations.*
+
+    - FULFILLMENT: The personal bio touches on my experience working for and as an SME, and the work history timeline and downloadable CV further emphasises this.
+
+
+#### *Employers*
+
+* GOAL: *As an employer looking for a new full stack developer to join my team, I find online resumes incredibly useful to get a broad sense of someone's capabilities.* 
+
+    - FULFILLMENT: The website clearly outlines my development experience and my goals for further learning in that field.
+
+* GOAL: *As an employer I would like a more detailed CV to further help me decide whether or not to call that candidate for interview.*
+
+    - FULFILLMENT: This is available to download from the footer of the website.
+
+* GOAL: *As an employer looking for a new front end developer, I am heartened to see an online CV built by that potential candidate because it is an instant assurance that they know how to design and build a website.* 
+
+    - FULFILLMENT: The site is an online CV, built by its subject.
+
+* GOAL: *As an employer who shares decision-making with others I like how easy it is to send that CV to other members of my organization as a way of fielding potential candidates.*
+
+    - FULFILLMENT: The website is deployed correctly and thus can be shared easily via url. 
+
+* GOAL: *As an employer I would also be interested in seeing the code behind this candidate's other projects. A link to the associated GitHub accounts is very useful to me.*
+
+    - FULFILLMENT: There is a link to my associated GitHub account in the top and footer navigation of the site, where all this code is available to examine.
+
+* GOAL: *As an employer who runs an SME I would like an online portfolio to tell me what experience a candidate has specific to my type of business.*
+
+    - FULFILLMENT: This information is outlined in the biography, the work experience timeline, the skills section and in my downloadable traditional CV.
+
+#### *Returning Visitors*
+
+* GOAL: *As a returning user, I want to see if there are any new portfolio examples on display.* 
+
+    - FULFILLMENT: As I complete new projects, I will be updating the portfolio section, as well as eventually making it dynamic. 
+
+* GOAL: *As a returning user, I want to see if there are new additions to this candidates GitHub account.*
+
+    - FULFILLMENT: Again easily accessed via the links. 
+
+**IN SUMMARY:** 
 
 My primary goal was to create a website that showcases and communicates my skills and employability in a modern and interesting way and I feel that the project has acheived this.
 
-All my user stories have been fulfilled:
-
-Recruiters can browse, see my work history and education, they can see a number of projects I have already completed and others I am currently working on, and they can download project specifications for a greater insight into 
-how I work. I have also expounded on my experience working within and running an SME. A USP that makes me especially qualified to work for other SMEs. Recruiters also have the ability to download an in-depth CV. 
-
-Employers can do all of the above, as well as access my GitHub account where they will be able to see detailed examples of my coding.
-
-Regarding the downloadble CV, my actual CV is not linked up yet, because I do not want that level of personal information online. When I password protect that function I will connect the real CV.
-
-Both kinds of target users can also get in touch with me using the contact form. 
-(Except they can't yet, because it doesn't send anywhere, but when I code the back-end they *will* be able to get in touch that way.)
-
+Users can browse, see my work history and education, they can see a number of projects I have already completed and others I am currently working on, and they can download project specifications for a greater insight into 
+how I work. I have also expounded on my experience working within and running an SME. A USP that makes me especially qualified to work for other SMEs. Users also have the ability to download an in-depth CV and examine my coding in
+more depth should they want to, via the GitHub links.
 
 ## Mobile-first Responsivity
 
@@ -650,6 +737,11 @@ There were some design tweaks to be made as a result of this, mostly increasing 
 
 As a result of manual testing on my local machine I came across a number of bugs (mostly jQuery related):
 
+### Navigation 
+1. **_Navbar Active Class on Scroll_**
+- BUG: As the user scrolls down or up the page, the active class was not changing from link to link.
+- FIX: I found jQuery code online that implemented this perfectly.(Attributed below).
+
 ### Landing Page & Contact Page
 1. **_Accessibility Bug on Page Zoom._**
 - BUG: As I began testing the site on different devices, zoomed in to 200% as stipulated by HTML official standards, I found that on certain screen sizes both the landing page and the contact page were not working as expected. The writing on the landing page 
@@ -681,9 +773,7 @@ flickering issue completely.
 3.  **_The animated sun icon._**
 
 - BUG: The sun has no timeline information attached, its function is aesthetic, yet because my code targeted the ```".timeline-icon"``` class, it was included in the blur and darken function.
-
 - FIX: To stop this, I added a conditional statement removing the blur and darken function from the sun specifically.
-
 
 
 ## Other Testing
@@ -727,7 +817,6 @@ future alterations to make:
 <img src="readme-images/lighthouse-results.png">
 
 
-
 # Issues / Room for Improvement
 
 * *Unused CSS*: As per web-dev Measure results I tested my CSS via Chrome dev tools' "Coverage" tool and found that there was a substantial amount of unused CSS.
@@ -746,7 +835,6 @@ The jQuery code I used and altered to display the Work History Timeline informat
 #### [@dynamyc-2's jQuery code](https://css-tricks.com/forums/topic/jquery-window-width-condition/)
 I used and altered the first line from this user's question on CSS Tricks, to make my work history timeline logic work.  
 
-
 #### [Taha Paksu's Code from Stack Overflow](https://stackoverflow.com/questions/10750603/detect-a-window-width-change-but-not-a-height-change)
 I used this code to stop the browser reloading on mobile devices when a user scrolls vertically. 
 
@@ -760,6 +848,9 @@ I used and altered this code to make my Bootstrap navbar work the way it should 
 I used and altered this code to make the navbar close when a user clicks away from it on mobile devices. The Bootstrap default is that you have to click on the hamburger icon to 
 close the navigation, and I question how user-friendly this is. In addition, the Bootstrap default behaviour is that even when a user clicks on a navigation link, the navigation
 stays open and they have to click the icon to close it. I think this code improves upon the default behaviour. 
+
+#### [Alexandr Malyita's Code on Stack Overflow](https://stackoverflow.com/questions/41630229/how-to-change-the-active-class-on-scroll-in-bootstrap-using-jquery)
+I only needed to alter a single class name to implement this code which changes the active class on the navbar when a user scrolls through the pages.
 
 # Deployment
 

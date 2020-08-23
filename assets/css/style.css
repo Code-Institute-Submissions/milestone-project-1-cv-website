@@ -1455,6 +1455,9 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		width: 65%;
 		margin: 0 auto;
 	}
+    #cv-download {
+        justify-self: flex-end;
+    }
 	.footer-download-trad-cv {
 		border: var(--accent-1) 1px solid;
 		border-radius: 8px;
