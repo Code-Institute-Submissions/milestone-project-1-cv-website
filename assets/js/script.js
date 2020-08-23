@@ -136,3 +136,22 @@ $(".navbar-nav a").on("click", function() {
 	$(".navbar-nav").find(".active").removeClass("active");
 	$(this).parent().addClass("active");
 });
+
+/* SCROLL EVENT: Changes the "active" class on scroll. 
+Taken in its entirety from Alexandr Malyita's code on Stack Overflow: https://stackoverflow.com/questions/41630229/how-to-change-the-active-class-on-scroll-in-bootstrap-using-jquery  */
+
+$(window).on('scroll', function(event){
+   var scrollPos = $(document).scrollTop();
+   $(".navbar-nav li a").each(function () {
+     var currLink = $(this);
+     var refElement = $(currLink.attr("href"));
+
+     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+       currLink.parent().addClass("active").siblings().removeClass("active"); 
+       return;
+     }
+     else{
+       currLink.parent().removeClass("active");
+     }
+   })
+ })
