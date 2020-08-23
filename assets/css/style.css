@@ -14,7 +14,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/****************************************** Colours */
+/*---------------------------------------------------- Colours */
 
 :root {
 	--pure-black: #000;
@@ -55,7 +55,7 @@ body {
 .progress {
 	background-color: var(--mid-grey);
 }
-/****************************************** Spacing */
+/*---------------------------------------------------- Spacing */
 
 .line-break-lg-screens {
 	display: none;
@@ -63,7 +63,7 @@ body {
 .br-from-md {
 	display: none;
 }
-/****************************************** Dividers */
+/*---------------------------------------------------- Dividers */
 
 .divider-short {
 	background-color: var(--light-grey);
@@ -131,7 +131,7 @@ a>.arrow-down>i {
 		transform: translate(0, 0);
 	}
 }
-/****************************************** Universal Styles */
+/*---------------------------------------------------- Universal Styles */
 
 * {
 	-webkit-box-sizing: border-box;
@@ -147,7 +147,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-/****************************************** Font Sizing */
+/*---------------------------------------------------- Font Sizing */
 
 /* h1 */
 
@@ -177,7 +177,7 @@ a {
 a:hover {
 	text-decoration: none;
 }
-/****************************************** Navigation */
+/*---------------------------------------------------- Navigation */
 
 /* Skip To Main Link: Accessibility for keyboard users. */
 
@@ -239,7 +239,7 @@ a:hover {
 .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
 	outline: var(--accent-1) 2px solid;
 }
-/****************************************** Navigation: Social Media Styles */
+/*---------------------------------------------------- Navigation: Social Media Styles */
 
 .social-media-icon {
 	font-size: 1em;
@@ -254,7 +254,7 @@ a:hover {
 .social-media-link {
 	margin-right: 0.6rem;
 }
-/****************************************** Home Section */
+/*---------------------------------------------------- Home Section */
 
 #home-section {
 	min-height: 100vh;
@@ -276,7 +276,7 @@ a:hover {
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
-/****************************************** Personal Bio Section */
+/*---------------------------------------------------- Personal Bio Section */
 
 .bio-heading {
 	padding-bottom: 0.3em;
@@ -300,7 +300,7 @@ p.personal-info {
 	text-align: center;
 	padding: 2em;
 }
-/****************************************** Work History Section */
+/*----------------------------------------------------Work History Section */
 
 .timeline-container {
 	position: relative;
@@ -447,7 +447,7 @@ p.personal-info {
 		transform: rotate(360deg);
 	}
 }
-/****************************************** Skills Section */
+/*---------------------------------------------------- Skills Section */
 
 /* Skills text */
 
@@ -554,7 +554,7 @@ p.personal-info {
 	align-items: flex-start;
 	padding-left: 1.5em;
 }
-/****************************************** Portfolio Section */
+/*---------------------------------------------------- Portfolio Section */
 
 .portfolio-intro>p {
 	color: var(--light-grey);
@@ -664,7 +664,7 @@ h3.in-development-a, h3.in-development-b {
 	width: 75%;
 	text-align: center;
 }
-/****************************************** Contact Form Section */
+/*---------------------------------------------------- Contact Form Section */
 
 #contact-section {
 	min-height: 100vh;
@@ -794,7 +794,7 @@ form input:focus::-ms-input-placeholder, form textarea:focus::-ms-input-placehol
 form input:focus::placeholder, form textarea:focus::placeholder {
 	color: var(--light-black);
 }
-/****************************************** Footer Section */
+/*---------------------------------------------------- Footer Section */
 
 /* Footer Spacing and Layout */
 
@@ -1012,7 +1012,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		transform: translate(0, 0);
 	}
 }
-/****************************************** Small devices (landscape phones, 576px and up) */
+/*---------------------------------------------------- Small devices (landscape phones, 576px and up) */
 
 @media screen and (min-width: 576px) {
 	/* Skip To Main Keyboard Accessibility Link */
@@ -1020,7 +1020,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		top: 10%;
 		left: 25%;
 	}
-	/****************************************** Small Screens - Home Section */
+/*---------------------------------------------------- Small Screens - Home Section */
 	.arrow-down-home-to-bio {
 		margin-top: 5%;
 	}
@@ -1032,7 +1032,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		padding: 1.5em;
 		font-size: 2.2em;
 	}
-	/****************************************** Small Screens - Personal Bio Section */
+/*---------------------------------------------------- Small Screens - Personal Bio Section */
 	#bio-section {
 		position: relative;
 	}
@@ -1059,11 +1059,11 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		max-width: 280px;
 		max-height: 350px;
 	}
-	/****************************************** Small Screens - Work History Section */
+/*---------------------------------------------------- Small Screens - Work History Section */
 	.timeline-icon {
 		width: 100px;
 	}
-	/****************************************** Small Screens - Portfolio Section */
+/*---------------------------------------------------- Small Screens - Portfolio Section */
 	h3.in-development-a, h3.in-development-b {
 		width: 50%;
 		font-size: 1.3em;
@@ -1096,10 +1096,10 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		justify-self: right;
 	}
 }
-/****************************************** Medium devices (tablets, 768px and up) */
+/*---------------------------------------------------- Medium devices (tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
-	/****************************************** Medium Screens - Universal Style Changes */
+/*---------------------------------------------------- Medium Screens - Universal Style Changes */
 	.section-heading {
 		font-size: 3.8em;
 	}
@@ -1107,19 +1107,19 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		top: 5%;
 		left: 30%;
 	}
-	/****************************************** Medium Screens - Landing Page Section */
+/*---------------------------------------------------- Medium Screens - Landing Page Section */
 	.landing-page-heading {
 		font-size: 2.7em;
 	}
 	.arrow-down-home-to-bio {
 		margin-top: 9%;
 	}
-	/****************************************** Medium Screens - Personal Bio Section */
+/*---------------------------------------------------- Medium Screens - Personal Bio Section */
 	.profile-pic {
 		padding-bottom: 0.5em;
 		padding-top: 0;
 	}
-	/****************************************** Medium Screens - Work History Section */
+/*---------------------------------------------------- Medium Screens - Work History Section */
 	.timeline-icon {
 		font-size: 3em;
 	}
@@ -1142,7 +1142,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 	.close-button {
 		display: none;
 	}
-	/****************************************** Medium Screens - Skills Section */
+/*---------------------------------------------------- Medium Screens - Skills Section */
 	.divider-short {
 		display: none;
 	}
@@ -1239,7 +1239,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 	.skills-code-institute>p {
 		font-size: 0.95em;
 	}
-	/****************************************** Medium Screens - Portfolio Section */
+/*---------------------------------------------------- Medium Screens - Portfolio Section */
 	.portfolio-intro>p {
 		font-size: 1.3em;
 	}
@@ -1291,7 +1291,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 	h3.in-development-a, h3.in-development-b {
 		width: 40%;
 	}
-	/****************************************** Medium Screens - Footer Section */
+/*---------------------------------------------------- Medium Screens - Footer Section */
 	.footer-grid {
 		grid-template-areas: "social-navigation download-cv main-navigation" "developer-brand developer-brand developer-brand";
 	}
@@ -1321,29 +1321,29 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		left: auto;
 		right: 5%;
 	}
-	/****************************************** Large Screens - Home Section */
+/*---------------------------------------------------- Large Screens - Home Section */
 	.arrow-down-home-to-bio {
 		margin-top: 11%;
 	}
-	/****************************************** Large Screens - Font-Sizing */
+/*---------------------------------------------------- Large Screens - Font-Sizing */
 	.landing-page-heading, .section-heading {
 		font-size: 3.8em;
 	}
-	/****************************************** Large Screens - Home Section */
+/*---------------------------------------------------- Large Screens - Home Section */
 	.landing-page-heading {
 		font-size: 3em;
 	}
 	.line-br-lg-screens {
 		display: block;
 	}
-	/****************************************** Large Screens - Navigation Bar */
+/*---------------------------------------------------- Large Screens - Navigation Bar */
 	.navbar-ul {
 		padding: 0.5em;
 	}
 	.navbar .navbar-ul .nav-link {
 		font-size: 1.2em;
 	}
-	/****************************************** Large Screens - Navigation: Social Media Styles */
+/*---------------------------------------------------- Large Screens - Navigation: Social Media Styles */
 	.social-media-icon {
 		font-size: 1em;
 	}
@@ -1351,12 +1351,12 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		margin-right: 0.6rem;
 		font-size: 1.5rem;
 	}
-	/****************************************** Large Screens - Personal Bio Section */
+/*---------------------------------------------------- Large Screens - Personal Bio Section */
 	.personal-info-wrapper {
 		width: 75%;
 		margin: 0 auto;
 	}
-	/****************************************** Large Screens - Work History Section */
+/*---------------------------------------------------- Large Screens - Work History Section */
 	.timeline-icon {
 		font-size: 3em;
 	}
@@ -1372,7 +1372,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		top: 55%;
 		left: auto;
 	}
-	/****************************************** Large Screens - Skills Section */
+/*---------------------------------------------------- Large Screens - Skills Section */
 	.skill-col-boxes {
 		padding: 1.1em 1.1em;
 	}
@@ -1399,7 +1399,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 	.skills-h2-boxes-2, .languages-wrapper>p {
 		left: 25%;
 	}
-	/****************************************** Large Screens Portfolio Section */
+/*---------------------------------------------------- Large Screens Portfolio Section */
 	/* Grid definitions and styles for left-heading project boxes */
 	.project-container-a {
 		padding: 3em;
@@ -1449,7 +1449,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 	h3.in-development-a, h3.in-development-b {
 		width: 50%;
 	}
-	/****************************************** Large Screens Footer Section */
+/*---------------------------------------------------- Large Screens Footer Section */
 	.footer-grid {
 		grid-template-areas: "social-navigation  download-cv download-cv" "developer-brand developer-brand developer-brand";
 		width: 65%;
@@ -1479,16 +1479,16 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media screen and (min-width: 1200px) {
-	/****************************************** Extra-Large Screens - Personal Bio Section */
+/*---------------------------------------------------- Extra-Large Screens - Personal Bio Section */
 	.home-scroll-down {
 		left: 43%;
 	}
-	/****************************************** Extra-Large Screens - Personal Bio Section */
+/*---------------------------------------------------- Extra-Large Screens - Personal Bio Section */
 	.personal-info-wrapper {
 		width: 65%;
 		margin: 0 auto;
 	}
-	/****************************************** Extra-Large Screens - Work History Section */
+/*---------------------------------------------------- Extra-Large Screens - Work History Section */
 	.timeline-info-left {
 		left: 20%;
 		top: 55%;
@@ -1497,7 +1497,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		right: 20%;
 		top: 55%;
 	}
-	/****************************************** Extra-Large Screens - Skills Section */
+/*---------------------------------------------------- Extra-Large Screens - Skills Section */
 	.skill-row-boxy-box {
 		padding: 2em;
 		width: 270px;
@@ -1514,7 +1514,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		left: 35%;
 		bottom: 55%;
 	}
-	/****************************************** Extra-Large Screens - Portfolio Section */
+/*---------------------------------------------------- Extra-Large Screens - Portfolio Section */
 	.portfolio-section-wrapper {
 		max-width: 88%;
 		margin: 0 auto;
