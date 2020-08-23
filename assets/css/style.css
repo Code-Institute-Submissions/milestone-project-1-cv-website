@@ -254,6 +254,12 @@ a:hover {
 .social-media-link {
 	margin-right: 0.6rem;
 }
+/*---------------------------------------------------- Spacing */
+
+.section-heading{
+    padding-top: 2rem;
+}
+
 /*---------------------------------------------------- Home Section */
 
 #home-section {
@@ -1015,6 +1021,11 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 /*---------------------------------------------------- Small devices (landscape phones, 576px and up) */
 
 @media screen and (min-width: 576px) {
+
+    .section-heading{
+        padding-top: 3rem;
+	}
+    
 	/* Skip To Main Keyboard Accessibility Link */
 	#skip-to-main {
 		top: 10%;
@@ -1101,7 +1112,8 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 @media screen and (min-width: 768px) {
 /*---------------------------------------------------- Medium Screens - Universal Style Changes */
 	.section-heading {
-		font-size: 3.8em;
+		font-size: 4rem;
+        padding-top: 3rem;
 	}
 	#skip-to-main {
 		top: 5%;

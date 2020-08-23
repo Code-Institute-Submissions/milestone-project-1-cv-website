@@ -740,7 +740,16 @@ As a result of manual testing on my local machine I came across a number of bugs
 ### Navigation 
 1. **_Navbar Active Class on Scroll_**
 - BUG: As the user scrolls down or up the page, the active class was not changing from link to link.
-- FIX: I found jQuery code online that implemented this perfectly.(Attributed below).
+
+- FIX: I found jQuery code online that implemented this.(Attributed below).
+
+2. **_Navbar Active Class on Scroll - part deux_**
+- BUG: I realised that although the code worked, a user had to scroll a good bit past the heading to cause the active class to change, and as a result
+when you clicked on say 'Portfolio' the navigation brought you there, but the 'Skills' section was still claiming to be the active class through the yellow link colour.
+- FIX: I added 100px on to the required scroll position, so that it needed less space to apply the rule. 
+
+    ```if (refElement.position().top <= (scrollPos + 100) && refElement.position().top + refElement.height() > scrollPos)...```
+ 
 
 ### Landing Page & Contact Page
 1. **_Accessibility Bug on Page Zoom._**
