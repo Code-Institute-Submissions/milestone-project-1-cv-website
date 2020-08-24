@@ -140,7 +140,6 @@ Taken and altered from Alexandr Malyita's code on Stack Overflow: https://stacko
 */
 $(window).on('scroll', function(event){
    var scrollPos = $(document).scrollTop();
-   console.log(scrollPos);
    $(".navbar-nav li a").each(function () { 
      var currLink = $(this); 
      var refElement = $(currLink.attr("href")); 
