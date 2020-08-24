@@ -63,6 +63,7 @@ interesting way with a strong emphasis on excellent UX and accessibility. The we
     + [Responsiveness & Images](#responsiveness---images)
   * [2.7 Contact Page / Get in Touch](#7-contact-page---get-in-touch)
   * [2.8 Footer](#8-footer)
+  * [2.9 404 Page](#404-page)
 - [3. Accessibility](#accessibility-1)
 - [4. Future Features to Implement](#future-features-to-implement)
 - [5. Testing](#testing)
@@ -502,6 +503,14 @@ Ultimately I didn't think the downside of redundancy outweighed the positives of
 I included both of these CTAs as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px as at this size the navbar is completely visible. 
 
 <div align="center"><img src="readme-images/footer-md.png"></div>
+
+## 9. 404 Page
+
+I created a custom 404 page in the same style as my website, with a personalised message referencing where the user strayed from and how to get back quickly. 
+
+<div align="center"><img src="readme-images/404-page.png"></div><br>
+
+
 
 # Accessibility
 
@@ -1030,6 +1039,8 @@ Here are the additional tools and resources I used during all stages of this pro
 - ### **[dirtyMarkup by 10 Best Design](https://www.10bestdesign.com/dirtymarkup/)**
     HTML, CSS, JS & API code formatter. Super useful resource thanks to Richard Read (Readri205 @ Code Institute) for the link. 
 
+- ### **[Creating a Custom 404 Page for GitHub Pages](https://docs.github.com/en/enterprise/2.19/user/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)**
+    Helped acheive the above.
 
 ## 3. jQuery Code
 - ### **[jQuery Documentation](https://api.jquery.com/)**
