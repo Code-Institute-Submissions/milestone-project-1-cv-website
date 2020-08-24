@@ -345,10 +345,11 @@ I changed the colour of the Bootstrap hamburger icon to match my site design.
 
 When the navigation bar items are hovered over they scale up in size and a yellow/green bar underlines them.<br>
 
-<img src="readme-images/hamburger-nav.png">
+<div align="center"><img src="readme-images/hamburger-nav.png"></div>
 
 I also added content hinting down arrows at key points throughout the site where I felt they were needed. These are animated for extra emphasis.<br><br>
-<img src="readme-images/content-hints.png">
+<div align="center"><img src="readme-images/content-hints.png"></div><br>
+
 ### Responsiveness
 
 It is a full-width navbar on screens larger than 992px and then it compresses to a hamburger navigation on smaller screens.
@@ -372,7 +373,7 @@ text.
 
 The down arrow and concurrent instructions to scroll were added as the landing page takes up the full height of the screen.
 
-<img src="readme-images/kf-cv-landing-page.png">
+<div align="center"><img src="readme-images/kf-cv-landing-page.png"></div>
 
 ## 3. Short biography & photo of Karina
 
@@ -390,7 +391,7 @@ nice to have a little fun with this section. I had (perhaps naively) imagined th
 doing pretty much everything conceivable in JavaScript and I found code that helped me to begin to acheive the desired effect. I had to modify and add to this code to make it work for this website and I drew from multiple sources online (attributed below and in my script.js file). This section went through 
 many permutations in order to create an interactivity that was both interesting and different, but also accessible. 
 
-<img src="readme-images/work-history.png">
+<div align="center"><img src="readme-images/work-history.png"></div>
 
 ### Accessibility
 
@@ -467,7 +468,7 @@ The section is fully responsive and flips between three different designs:
 2. The elements stacked but diagonally opposed on medium and screens up to 992px.
 3. The elements in a single horizontal card. 
 
-<img src="readme-images/portfolio-lg.png">
+<div align="center"><img src="readme-images/portfolio-lg.png"></div>
 
 I used CSS Grid to get the advanced level of flexibility I required for this page, and I set my images to ```width:100%``` with ```height:auto``` to ensure full responsiveness across 
 screen sizes. I also sized my images very specifically to suit the design without being too large, and then I gave them a ```max-width:450px``` to keep them from pixelating. 
@@ -492,7 +493,7 @@ quite small, thus easily ignored.
 Ultimately I didn't think the downside of redundancy outweighed the positives of potentially reminding a user to connect with me on social media, or have another look at part of my website.
 I included both of these CTAs as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px as at this size the navbar is completely visible. 
 
-<img src="readme-images/footer-md.png">
+<div align="center"><img src="readme-images/footer-md.png"></div>
 
 # Accessibility
 
@@ -505,7 +506,7 @@ I realised my colour choices were problematic for a subsection of potential user
 * I added descriptive alt text to all my images. 
 
 * I added a "Skip to Main" link before my nav bar that was absolutely positioned off screen until tabbed and then it appears and is very obvious. <br><br>
-<img src="readme-images/skip-to-main.png">
+<div align="center"><img src="readme-images/skip-to-main.png"></div>
 * I ensured readability for those hard of vision, by ensuring that the entire site was readable up to 200% zoom. 
 
 * I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear.
@@ -513,7 +514,7 @@ I wrote it like this because I personally find it off-putting to type over somet
 functionality online and found that this was not acceptable HTML standard in terms of usability, so I changed it back to the default behaviour. 
 It is important to see the placeholder text right up until a user types, especially when not including form labels, which I have chosen to omit for design reasons.
 <br><br>
-<img src="readme-images/contact-page-focus.png">
+<div align="center"><img src="readme-images/contact-page-focus.png"></div>
 * Because I am not including form labels, I was careful to include the aria-label for each element of the form to make them available to screen-readers. 
 
 # Future Features to Implement
@@ -675,7 +676,7 @@ or tapping anywhere on the page will close the information boxes.
 - As per my mentor's advice, when the information is displayed on small screens I used jQuery to create a blurred background effect to focus the user solely on the 
 timeline information.
 
-<div align="center" ><img src="readme-images/mobile-wh.png"></div>
+<div align="center" ><img src="readme-images/mobile-wh.png"></div><br>
 
 
 - The Skills page is simplified by removing the dark grey boxes from around the skills and languages information.
@@ -713,11 +714,11 @@ is also changed from being centered to being absolutely positioned. I also appli
 
 - The progress bars appear at this breakpoint, because the page is now wide enough to accomodate them comfortably and without confusion. 
 
-- The Portfolio section continues to stack vertically, but the staggered opposing alignment of the text and images becomes pleasingly obvious. 
+- The Portfolio section continues to stack vertically, but the staggered opposing alignment of the text and images becomes pleasingly obvious. <br>
 
-<div align="center" ><img src="readme-images/portfolio-md.png"></div>
+<div align="center" ><img src="readme-images/portfolio-md.png"></div><br>
 
-- The Footer is now horizontally aligned with dividers and both sets of navigation are included, as the main navigation is still hidden behind the hamburger icon. 
+- The Footer is now horizontally aligned with dividers and both sets of navigation are included, as the main navigation is still hidden behind the hamburger icon. <br>
 
 <div align="center" ><img src="readme-images/footer-md.png"></div>
 
@@ -815,7 +816,7 @@ flickering issue completely.
 - BUG: The sun has no timeline information attached, its function is aesthetic, yet because my code targeted the ```".timeline-icon"``` class, it was included in the blur and darken function.
 - FIX: To stop this, I added a conditional statement removing the blur and darken function from the sun specifically.
 
-<div align="center" ><img src="readme-images/animated-sun.png"></div>
+<div align="center"><img src="readme-images/animated-sun.png"></div>
 
 ## Other Testing
 
@@ -849,13 +850,13 @@ I used the Chrome Dev Tools in browser to test the site's responsiveness across 
 
 ### 5. [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en)
 I used this Chrome Extension to further test the website across a range of devices and screen sizes. 
-<img src="readme-images/responsive-viewer.png">
+<div align="center"><img src="readme-images/responsive-viewer.png"></div>
 
 ### 6. [Chrome Dev Tools: Lighthouse](https://developers.google.com/web/tools/lighthouse#psi)
 Similar to Measure - this set of tools is amazing for showing where aspects of your site can be improved. My site scores highly with one or two
 future alterations to make:
 
-<img src="readme-images/lighthouse-results.png">
+<div align="center"><img src="readme-images/lighthouse-results.png"></div>
 
 
 # Issues / Room for Improvement
