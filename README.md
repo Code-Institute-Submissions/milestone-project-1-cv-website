@@ -150,8 +150,7 @@ therefore rather deep.
 #### *Returning Visitors*
 
 * As a returning user, I want to see if there are any new portfolio examples on display. 
-* As a returning user, I want to see if there are new additions to this candidates GitHub account.
-
+* As a returning user, I want to see if there are new additions to this candidate's GitHub account.
 
 
 ## Strategy
@@ -470,7 +469,8 @@ screen sizes. I also sized my images very specifically to suit the design withou
 
 The aim for this page was for it to be eye-catching and simple. The form itself takes up most of the page and the heading is somewhat colloquial to encourage use.  
 
-I also included a content hinting down arrow to lead users to the footer.
+I also included a content hinting down arrow to lead users to the footer, because if you navigate to the contact form directly from the navbar, it is not immediately obvious that you can scroll 
+further.
 
 ## 8. Footer
 
@@ -512,7 +512,7 @@ This will be controlled and organised from a central CMS.
 
 * I plan to implement the sequential loading of elements on scroll. So as the user scrolls down elements pop into view.
 
-* I plan to password protect my downloadable traditional CV, as I don't want all my personal details to be readily available online. Once I've instituted that feature I will upload my actual CV as opposed to the dummy one that is currently there.
+* I plan to password protect my downloadable traditional CV, as I don't want all my personal details to be readily available online.
 
 * I plan to make the contact form functional. 
 

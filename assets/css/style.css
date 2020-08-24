@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*---------------------------------------------------- Colours */
@@ -60,7 +53,7 @@ body {
 .line-break-lg-screens {
 	display: none;
 }
-.br-from-md {
+.line-break-from-md {
 	display: none;
 }
 /*---------------------------------------------------- Dividers */
@@ -687,8 +680,9 @@ h3.in-development-a, h3.in-development-b {
 	align-self: center;
 }
 #contact-section h1 {
-	padding: 0.5em;
+	padding: 3rem;
 }
+
 /* Contact Form Styles */
 
 form input, form textarea, form button {
@@ -1244,7 +1238,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		font-size: 0.9em;
 	}
 	/* <br> from medium screens and up */
-	.br-from-md {
+	.line-break-from-md {
 		display: block;
 	}
 	/* Code Institute Paragragh text size change */
@@ -1327,7 +1321,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 }
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 	#skip-to-main {
 		top: 15%;
 		left: auto;
@@ -1540,7 +1534,7 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 		max-width: 88%;
 	}
 }
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
 	.portfolio-section-wrapper {
 		max-width: 79%;
 	}
