@@ -891,6 +891,11 @@ For this particular site, the load time is quite fast, so I don't think this is 
 
 * *.pdf downloads on devices* Certain device functionality is to open .pdf files in the same browser window as the website, regardless of them being "download" files or stipulating "target=_blank".
 
+* *Custom 404* Using the GitHub Pages method of creating a custom 404 works, but with the caveat that if a user types a trailing '/' after typing in the incorrect URL the custom 404 page is unstyled. 
+Furthermore, if a hyphen or any other characters are typed after the final URL but without the original trailing / - then the GitHub pages default 404 page is shown. I'm not sure these issues can be fixed without more complicated back-end logic, but as the user
+is never left without some form of 404 page, they are acceptable for the time being.
+(Thanks to [Anthony](https://github.com/auxfuse) from CI Slack channel for catching these 404 bugs). 
+
 # Attribution
 
 #### [Will Chow's jQuery Code.](https://jsfiddle.net/wilchow/4hzenxkh/) 
