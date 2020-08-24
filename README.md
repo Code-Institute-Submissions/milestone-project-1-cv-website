@@ -608,7 +608,7 @@ As the sole stakeholder in this project, I am happy that my requirements for thi
 
 * GOAL: *As a user I would like a way to contact this candidate.*
 
-    - The contact form achieves this. (Well... it will, once it is fully functional)
+    - FULFILLMENT: The contact form achieves this. (Well... it will, once it is fully functional)
 
 #### *Tech Recruiters*
 
