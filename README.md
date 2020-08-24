@@ -343,9 +343,9 @@ I used the same colour as my darker background colour so it would blend in nicel
 
 I changed the colour of the Bootstrap hamburger icon to match my site design.
 
-When the navigation bar items are hovered over they scale up in size and a yellow/green bar underlines them.<br>
+When the navigation bar items are hovered over they scale up in size and a yellow/green bar underlines them.<br><br>
 
-<div align="center"><img src="readme-images/hamburger-nav.png"></div>
+<div align="center"><img src="readme-images/hamburger-nav.png"></div><br>
 
 I also added content hinting down arrows at key points throughout the site where I felt they were needed. These are animated for extra emphasis.<br><br>
 <div align="center"><img src="readme-images/content-hints.png"></div><br>
@@ -381,6 +381,9 @@ I wasn't sure about including this page, and I hadn't included it in my wirefram
 I was also made aware that this was a good opportunity to expand on my experience in business and wealth of knowledge about SMEs in particular. 
 
 The page is fully responsive and I ensured that I compressed the image, so as not to impact load times unnecessarily.
+<br>
+<div align="center"><img src="readme-images/personal-bio.png"></div>
+<br>
 
 ## 4. Work History
 
@@ -466,10 +469,10 @@ The section is fully responsive and flips between three different designs:
 
 1. The elements stacked on top of each other on small screens. 
 2. The elements stacked but diagonally opposed on medium and screens up to 992px.
-3. The elements in a single horizontal card. 
+3. The elements in a single horizontal card. <br><br>
 
 <div align="center"><img src="readme-images/portfolio-lg.png"></div>
-
+<br><br>
 I used CSS Grid to get the advanced level of flexibility I required for this page, and I set my images to ```width:100%``` with ```height:auto``` to ensure full responsiveness across 
 screen sizes. I also sized my images very specifically to suit the design without being too large, and then I gave them a ```max-width:450px``` to keep them from pixelating. 
 
@@ -507,6 +510,8 @@ I realised my colour choices were problematic for a subsection of potential user
 
 * I added a "Skip to Main" link before my nav bar that was absolutely positioned off screen until tabbed and then it appears and is very obvious. <br><br>
 <div align="center"><img src="readme-images/skip-to-main.png"></div>
+<br>
+
 * I ensured readability for those hard of vision, by ensuring that the entire site was readable up to 200% zoom. 
 
 * I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear.
@@ -515,6 +520,8 @@ functionality online and found that this was not acceptable HTML standard in ter
 It is important to see the placeholder text right up until a user types, especially when not including form labels, which I have chosen to omit for design reasons.
 <br><br>
 <div align="center"><img src="readme-images/contact-page-focus.png"></div>
+<br>
+
 * Because I am not including form labels, I was careful to include the aria-label for each element of the form to make them available to screen-readers. 
 
 # Future Features to Implement
