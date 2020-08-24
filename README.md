@@ -341,12 +341,14 @@ The navigation bar is a fixed top horizontal Bootstrap navbar with some key alte
 
 I used the same colour as my darker background colour so it would blend in nicely with my landing page. I wanted it present, but without detracting from the rest of the pages.
 
-I changed the colour of the Bootstrap hamburger icon to match my site design. 
+I changed the colour of the Bootstrap hamburger icon to match my site design.
 
-When the navigation bar items are hovered over they scale up in size and a yellow/green bar underlines them.
+When the navigation bar items are hovered over they scale up in size and a yellow/green bar underlines them.<br>
 
-I also added content hinting down arrows at key points throughout the site where I felt they were needed. These are animated for extra emphasis.
+<img src="readme-images/hamburger-nav.png">
 
+I also added content hinting down arrows at key points throughout the site where I felt they were needed. These are animated for extra emphasis.<br><br>
+<img src="readme-images/content-hints.png">
 ### Responsiveness
 
 It is a full-width navbar on screens larger than 992px and then it compresses to a hamburger navigation on smaller screens.
@@ -370,6 +372,8 @@ text.
 
 The down arrow and concurrent instructions to scroll were added as the landing page takes up the full height of the screen.
 
+<img src="readme-images/kf-cv-landing-page.png">
+
 ## 3. Short biography & photo of Karina
 
 I wasn't sure about including this page, and I hadn't included it in my wireframes or mock-ups, but I was convinced by both a recruiter and an employer that a basic introduction and photograph would be beneficial, as people like to be able to put a face to the information they are reading.
@@ -385,6 +389,8 @@ This section comprises of an interactive timeline of my education and work histo
 nice to have a little fun with this section. I had (perhaps naively) imagined that I would be able to implement this easily with CSS, but I found that JavaScript was required to get the behaviour I needed. Thankfully the internet is replete with developers 
 doing pretty much everything conceivable in JavaScript and I found code that helped me to begin to acheive the desired effect. I had to modify and add to this code to make it work for this website and I drew from multiple sources online (attributed below and in my script.js file). This section went through 
 many permutations in order to create an interactivity that was both interesting and different, but also accessible. 
+
+<img src="readme-images/work-history.png">
 
 ### Accessibility
 
@@ -461,6 +467,8 @@ The section is fully responsive and flips between three different designs:
 2. The elements stacked but diagonally opposed on medium and screens up to 992px.
 3. The elements in a single horizontal card. 
 
+<img src="readme-images/portfolio-lg.png">
+
 I used CSS Grid to get the advanced level of flexibility I required for this page, and I set my images to ```width:100%``` with ```height:auto``` to ensure full responsiveness across 
 screen sizes. I also sized my images very specifically to suit the design without being too large, and then I gave them a ```max-width:450px``` to keep them from pixelating. 
 
@@ -484,6 +492,8 @@ quite small, thus easily ignored.
 Ultimately I didn't think the downside of redundancy outweighed the positives of potentially reminding a user to connect with me on social media, or have another look at part of my website.
 I included both of these CTAs as titles over the footer navigation. I did however remove the main navigation links from the footer on screens above 992px as at this size the navbar is completely visible. 
 
+<img src="readme-images/footer-md.png">
+
 # Accessibility
 
 In addition to the elements I've already discussed in previous sections of this README, I did the following to ensure accesibility across the board:
@@ -494,15 +504,16 @@ I realised my colour choices were problematic for a subsection of potential user
 
 * I added descriptive alt text to all my images. 
 
-* I added a "Skip to Main" link before my nav bar that was absolutely positioned off screen until tabbed and then it appears and is very obvious.
-
+* I added a "Skip to Main" link before my nav bar that was absolutely positioned off screen until tabbed and then it appears and is very obvious. <br><br>
+<img src="readme-images/skip-to-main.png">
 * I ensured readability for those hard of vision, by ensuring that the entire site was readable up to 200% zoom. 
 
 * I had initially changed the inputs on my contact form so that when a user clicks into an input to type, the placeholder would disappear.
 I wrote it like this because I personally find it off-putting to type over something already written. However, I then researched placeholder 
 functionality online and found that this was not acceptable HTML standard in terms of usability, so I changed it back to the default behaviour. 
 It is important to see the placeholder text right up until a user types, especially when not including form labels, which I have chosen to omit for design reasons.
-
+<br><br>
+<img src="readme-images/contact-page-focus.png">
 * Because I am not including form labels, I was careful to include the aria-label for each element of the form to make them available to screen-readers. 
 
 # Future Features to Implement
@@ -664,8 +675,13 @@ or tapping anywhere on the page will close the information boxes.
 - As per my mentor's advice, when the information is displayed on small screens I used jQuery to create a blurred background effect to focus the user solely on the 
 timeline information.
 
+<div align="center" ><img src="readme-images/mobile-wh.png"></div>
+
+
 - The Skills page is simplified by removing the dark grey boxes from around the skills and languages information.
 As they are not all visible on the page together, those boxes were not needed. 
+
+<div align="center" ><img src="readme-images/skills-mobile.png"></div>
 
 - I also removed the progress bars from xs and sm breakpoints. The languages represented by the bars are mentioned in the paragraph before them and 
 the effect of the progress bars works better when there is space to view them. 
@@ -673,9 +689,13 @@ the effect of the progress bars works better when there is space to view them.
 - On xs screens my portfolio page stacks the elements vertically and then on sm screens it begins to separate the images from the 
 text horizontally/diagonally while retaining a vertical alignment. 
 
+<div align="center" ><img src="readme-images/portfolio-mobile.png"></div>
+
 - Each element of my contact form takes up their own horizontal space and this does not change as the screen widens, it just gets proportionately wider.
 
 - My footer stacks vertically, starting with the most important element which is my cv download, followed by my social media links and then my navigation links. 
+
+<div align="center" ><img src="readme-images/footer-mob.png"></div>
 
 ### Md breakpoint
 
@@ -687,19 +707,27 @@ now sit on either side of the timeline and are bordered with my accent colour an
 - The skills section is also redesigned at this breakpoint. The individual skills are now two to a line, and they get a dark grey box effect and the UX/UI box is animated for extra pzazz. The layout inside the boxes
 is also changed from being centered to being absolutely positioned. I also applied a box-shadow to the grey skill boxes to add to the effect.
 
+<div align="center" ><img src="readme-images/skills-md.png"></div>
+
 - The dividers I included to delineate the skills sections are also unnecessay and thus removed at this breakpoint.
 
 - The progress bars appear at this breakpoint, because the page is now wide enough to accomodate them comfortably and without confusion. 
 
 - The Portfolio section continues to stack vertically, but the staggered opposing alignment of the text and images becomes pleasingly obvious. 
 
+<div align="center" ><img src="readme-images/portfolio-md.png"></div>
+
 - The Footer is now horizontally aligned with dividers and both sets of navigation are included, as the main navigation is still hidden behind the hamburger icon. 
+
+<div align="center" ><img src="readme-images/footer-md.png"></div>
 
 ### Lg breakpoint
 
 - The main navigation becomes a full horizontal fixed top nav-bar. 
 
 - The first four skills' boxes now sit next to each other sharing a single line of layout. 
+
+<div align="center" ><img src="readme-images/skills-lg.png"></div>
 
 - The individual projects are now laid out in a more horizontal way and the images sits next to the text.
 
@@ -751,6 +779,7 @@ when you clicked on say 'Portfolio' the navigation brought you there, but the 'S
 
     ```if (refElement.position().top <= (scrollPos + 100) && refElement.position().top + refElement.height() > scrollPos)...```
  
+ <div align="center" ><img src="readme-images/active-class.png"></div>
 
 ### Landing Page & Contact Page
 1. **_Accessibility Bug on Page Zoom._**
@@ -758,6 +787,7 @@ when you clicked on say 'Portfolio' the navigation brought you there, but the 'S
 was disappearing above the page, so that the user would not be able to read the first line. The contact form itself was seeping into the footer, obscuring most of it. 
 
 - FIX: I had set the heights of both sections to height: 100vh. Changing them to min-height: 100vh fixed the issue.  
+<div align="center" ><img src="readme-images/zoom-200.png"></div>
 
 ### Work History
 
@@ -785,6 +815,7 @@ flickering issue completely.
 - BUG: The sun has no timeline information attached, its function is aesthetic, yet because my code targeted the ```".timeline-icon"``` class, it was included in the blur and darken function.
 - FIX: To stop this, I added a conditional statement removing the blur and darken function from the sun specifically.
 
+<div align="center" ><img src="readme-images/animated-sun.png"></div>
 
 ## Other Testing
 
@@ -1019,7 +1050,7 @@ Here are the additional tools and resources I used during all stages of this pro
 - ### **[Aria-Labels](https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html#:~:text=The%20purpose%20of%20this%20technique,will%20know%20what%20it%20is.)**
     Used to understand how and when to use aria-labels.
 
-- ### **[Responsive Viewer](chrome-extension://inmopeiepgfljkpkidclfgbgbmfcennb/index.html)**
+- ### **[Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en)**
     Used to test the website across different screen sizes and devices. 
 ## 5. General Resources
 
@@ -1054,7 +1085,7 @@ Thank you to my friends and family for doing usability testing for me on various
 Special thanks to Cristina Cista for her professional input.<br>
 Thank you to my Mother for proof-reading this README, even though she has [```-infinity```](https://www.w3schools.com/JSREF/jsref_infinity.asp) interest in web development. :)<br>
 Thanks to the Code Institute Slack Community for their resources and information. <br>
-Thank you to my Code Institute mentor Oluwafemi Medale for his invaluable insight and instruction. 
+Thank you to my Code Institute mentor [Oluwafemi Medale](https://github.com/omedale) for his invaluable insight and instruction. 
 
 
 
