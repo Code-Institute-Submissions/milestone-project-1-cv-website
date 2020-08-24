@@ -880,6 +880,7 @@ For this particular site, the load time is quite fast, so I don't think this is 
 
 * *Add A Service Worker to My Project* As per web-dev (Lighthouse) - I should make my page Progressive by adding a service worker, so it responds with a 200 when offline.
 
+* *.pdf downloads on devices* Certain device functionality is to open .pdf files in the same browser window as the website, regardless of them being "download" files or stipulating "target=_blank".
 
 # Attribution
 
