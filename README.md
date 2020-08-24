@@ -453,6 +453,9 @@ I included a number of elements intended to retain the user's attention:
 - I sliced through the boxyness of the page with a bright border on the TOOLS section. 
 - I added the rather arbitrary progress bars at the bottom to reinforce the idea that I am making headway with a number of languages and technologies. 
 
+<div align="center"><img src="readme-images/skills-progress-bars.png"></div><br>
+
+
 ## 6. Portfolio
 
 ### Design & Concept
@@ -473,7 +476,9 @@ The section is fully responsive and flips between three different designs:
 
 <div align="center"><img src="readme-images/portfolio-lg.png"></div>
 <br><br>
-I used CSS Grid to get the advanced level of flexibility I required for this page, and I set my images to ```width:100%``` with ```height:auto``` to ensure full responsiveness across 
+I used CSS Grid to get the advanced level of flexibility I required for this page, and I set my images to:
+
+```width:100%``` with ```height:auto``` to ensure full responsiveness across 
 screen sizes. I also sized my images very specifically to suit the design without being too large, and then I gave them a ```max-width:450px``` to keep them from pixelating. 
 
 
